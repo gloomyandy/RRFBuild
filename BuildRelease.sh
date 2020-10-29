@@ -4,7 +4,7 @@ BUILD=${1:-Debug}
 CORE=${2:-STM32F4}
 NETWORK=${3:-SBC}
 TMC22XX=${4:-true}
-STARTUP_DELAY=${5:}
+STARTUP_DELAY=$5
 #extract firmware version from header file
 VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`
 
