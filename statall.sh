@@ -1,0 +1,19 @@
+#!/bin/sh
+echo "RRFBuild"
+git status
+cd CoreLPC
+echo "CoreLPC"
+git status
+cd ../CoreSTM32F4
+echo "CoreSTM32F4"
+git status
+cd ../RepRapFirmware
+echo "RepRapFirmware"
+git status
+cd ../RRFLibraries
+echo "RRFLibraries"
+git status
+cd ../FreeRTOS
+echo "FreeRTOS"
+git status
+cd ..
