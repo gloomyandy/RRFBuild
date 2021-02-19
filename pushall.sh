@@ -2,12 +2,8 @@
 echo "RRFBuild"
 git push
 git push --tags
-cd CoreLPC
-echo "CoreLPC"
-git push
-git push --tags
-cd ../CoreSTM32F4
-echo "CoreSTM32F4"
+cd CoreN2G
+echo "CoreN2G"
 git push
 git push --tags
 cd ../RepRapFirmware

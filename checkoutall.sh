@@ -1,11 +1,8 @@
 #!/bin/sh
 echo "RRFBuild"
 git checkout $1
-cd CoreLPC
-echo "CoreLPC"
-git checkout $1
-cd ../CoreSTM32F4
-echo "CoreSTM32F4"
+cd CoreN2G
+echo "CoreN2G"
 git checkout $1
 cd ../RepRapFirmware
 echo "RepRapFirmware"

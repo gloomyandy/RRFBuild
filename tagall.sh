@@ -1,8 +1,6 @@
 #!/bin/sh
 git tag $1
-cd CoreLPC
-git tag $1
-cd ../CoreSTM32F4
+cd CoreN2G
 git tag $1
 cd ../RepRapFirmware
 git tag $1

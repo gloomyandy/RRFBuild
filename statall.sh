@@ -1,11 +1,8 @@
 #!/bin/sh
 echo "RRFBuild"
 git status
-cd CoreLPC
-echo "CoreLPC"
-git status
-cd ../CoreSTM32F4
-echo "CoreSTM32F4"
+cd CoreN2G
+echo "CoreN2G"
 git status
 cd ../RepRapFirmware
 echo "RepRapFirmware"
