@@ -4,21 +4,31 @@
 //
 // Documentation: https://docs.platformio.org/page/plus/debugging.html
 // Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
+//         "svdFile": "${workspaceRoot}\\.vscode\\STM32F40x.svd"
 
 {
     "version": "0.2.0",
     "configurations": [
 
-    {
-        "cwd": "${workspaceRoot}",
-        "executable": "build/firmware.elf",
-        "name": "Debug Microcontroller",
-        "request": "launch",
-        "type": "cortex-debug",
-        "servertype": "openocd",
-        "configFiles": ["${workspaceRoot}\\.vscode\\openocd.cfg"],
-        "svdFile": "${workspaceRoot}\\.vscode\\STM32F40x.svd"
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "build/firmware.elf",
+            "name": "Debug 17xx Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-17xx.cfg"]
         },
-
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "build/firmware.elf",
+            "name": "Debug STM32F4 Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32f4.cfg"],
+            "svdFile": "${workspaceRoot}\\.vscode\\STM32F40x.svd"
+        },
+            
     ]
 }
