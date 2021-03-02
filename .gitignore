@@ -10,3 +10,11 @@
 /RADDS_RTOS/
 /SAME70XPLD/
 /.settings/language.settings.xml
+/RRFLibraries
+/CoreSTM32F4/
+/CoreLPC/
+/CoreN2G/
+/RepRapFirmware/
+/build/
+/DuetWiFiSocketServer/
+/FreeRTOS/
