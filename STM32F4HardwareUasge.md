@@ -3,6 +3,21 @@ Introduction
 This document provides a brief overview of how the STM32F4 version of RRF makes use of the
 MCU hardware.
 
+GPIO
+====
+RRF makes use of the interrupt on change EXI feature for the WiFi, accelerometer, 
+some filament sensors and the DHT sensor interfaces. This requires that the pins 
+selected for these functions must be on different pins within a port. I.E.
+if pin A.1 is used then no other 1 pin (B.1, C.1 etc) can be used. This applies
+to the following GPIO pins:
+* ESPTfrReady
+* ESP chip select
+* Accelerometer int1pin
+* Other pins that may be used for filament sensors
+
+GPIO pins are used to drive the stepper motor step/dir pins. If all of the step pins
+are on the same port the RRF can use a more efficient mechanism when stepping multiple
+drivers.
 
 Timers
 ======
@@ -44,10 +59,20 @@ SPI
 ===
 * SPI1 : Shared SPI, Master, main usage SD card interface, does not use DMA
 * SPI2 : Slave, SBC or WiFi interface, uses DMA (DMA1_Stream3, DMA1_Stream4)
-* SPI3 : Shared SPI, Master, main usage TMC SPI interface
+* SPI3 : Shared SPI, Master, main usage TMC SPI interface (DMA1_Stream5, DMA1_Stream0) 
 * SWSSP0 : Software SPI, Shared, main usage Thermocouples etc.
 * SWSSP1 : Software SPI, Shared, main usage LCD display
 * SWSSP2 : Software SPI, shared, main usage TMC SPI interface
+
+We have seen problems when running SPI1 using DMA. It seems to cause corruption of the
+GPIO regsiters being accessed via DMA for the software UART implementation. This problem
+may be cuased by this silicon bug: 
+2.1.10 DMA2 data corruption when managing AHB and APB peripherals in a concurrent way
+See: https://www.st.com/resource/en/errata_sheet/dm00037591-stm32f405-407xx-and-stm32f415-417xx-device-limitations-stmicroelectronics.pdf
+
+Because of this it is not recommended that SPI1 is operated using DMA unless this issue
+has been investigated further and resolved. This probably means that SPI1 should not be
+used for WiFi/SBC commications (which require operation ay high speen in slave mode).
 
 SDIO
 ====
@@ -92,7 +117,7 @@ Flash Memory
 RAM
 ===
 * 0x20000000 : 128K General purpose RAM
-* 0x10000000 : 64K CCMRAM unused
+* 0x10000000 : 64K CCMRAM used for task stacks and permanently allocated objects
 
 SD Card access and RRF configuration
 ====================================
