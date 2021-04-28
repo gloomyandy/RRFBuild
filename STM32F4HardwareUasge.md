@@ -54,6 +54,9 @@ The current allocation of pins to timers is:
 * TIM12: PB_14 PH_6
 * TIM13: PA_6, PF_8
 * TIM14: PA_7, PF_9
+In the current release there is a fixed mapping between a selected pin and the timer used to
+drive it via PWM. Future versions may relax this and allow the selection of timer based on
+pin and selected frequency.
 
 SPI
 ===
@@ -72,7 +75,7 @@ See: https://www.st.com/resource/en/errata_sheet/dm00037591-stm32f405-407xx-and-
 
 Because of this it is not recommended that SPI1 is operated using DMA unless this issue
 has been investigated further and resolved. This probably means that SPI1 should not be
-used for WiFi/SBC commications (which require operation ay high speen in slave mode).
+used for WiFi/SBC commications (which require operation at high speed in slave mode).
 
 SDIO
 ====
@@ -83,6 +86,7 @@ ADC
 * ADC1 : 12Bit Analog in + internal ref + mcu temp, uses DMA (DMA2_Stream4)
 * ADC2 : unused
 * ADC3 : 12Bit Analog in, uses DMA (DMA2_Stream0)
+The 12 bit ADC uses oversampling to provide an effective 14bit resolution.
 
 DMA
 ===
@@ -107,6 +111,16 @@ CRC Unit
 ========
 * CRC32 : Used for file I/O and SBC buffers
 
+USARTs
+======
+RRF currently uses only two serial devices, AUX and the WiFi interface. These are
+mapped based upon the selected pins to an actual hardware UART device. In versions 
+prior to V3.3-beta3 the only hardware UARTS enabled were 1, 3 and 6. In v3.3-beta3
+and later UARTS 1-6 are all available.
+
+TMC drivers that have a UART interface are driven via a DMA based software UART
+that can drive any pin in half duplex mode.
+
 Flash Memory
 ============
 * 0x8000000 : 32K Bootloader (provided by board)
@@ -118,6 +132,8 @@ RAM
 ===
 * 0x20000000 : 128K General purpose RAM
 * 0x10000000 : 64K CCMRAM used for task stacks and permanently allocated objects
+Note that because DMA access is not allowed to CCMRAM care must be taken when selecting
+objects to be placed in this area.
 
 SD Card access and RRF configuration
 ====================================
