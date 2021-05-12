@@ -67,6 +67,9 @@ SPI
 * SWSSP1 : Software SPI, Shared, main usage LCD display
 * SWSSP2 : Software SPI, shared, main usage TMC SPI interface
 
+Note the above usage for SPI2/SPI3 is the the most common configuration. It is possible
+to operate both of these devices in Master or Slave mode and both make use of DMA.
+
 We have seen problems when running SPI1 using DMA. It seems to cause corruption of the
 GPIO regsiters being accessed via DMA for the software UART implementation. This problem
 may be cuased by this silicon bug: 
