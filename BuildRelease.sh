@@ -11,6 +11,7 @@ VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | aw
 OUTPUT=releases/${VER}/${BUILD}
 
 mkdir -p ${OUTPUT}
+rm -f ${OUTPUT}/firmware-${CORE,,}-${NETWORK,,}-${VER,,}.*
 
 make distclean
 make -j2 firmware CORE=${CORE} NETWORK=${NETWORK} BUILD=${BUILD} TMC22XX=${TMC22XX} OUTPUT_NAME=firmware STARTUP_DELAY=${STARTUP_DELAY}

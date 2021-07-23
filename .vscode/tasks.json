@@ -35,7 +35,7 @@
       {
         "label": "build LPC WiFi firmware",
         "type": "shell",
-        "command": "make CORE=LPC NETWORK=ESP8266WIFI all",
+        "command": "make CORE=LPC NETWORK=WIFI all",
         "osx": {
           "options": {
             "env": {
@@ -159,7 +159,7 @@
       {
         "label": "build STM WiFi firmware",
         "type": "shell",
-        "command": "make CORE=STM32F4 NETWORK=ESP8266WIFI all",
+        "command": "make CORE=STM32F4 NETWORK=WIFI all",
         "osx": {
           "options": {
             "env": {
