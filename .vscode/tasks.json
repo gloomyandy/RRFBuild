@@ -4,7 +4,7 @@
       {
         "label": "build LPC SBC firmware",
         "type": "shell",
-        "command": "make CORE=LPC NETWORK=SBC all",
+        "command": "make -j8 CORE=LPC NETWORK=SBC all",
         "osx": {
           "options": {
             "env": {
@@ -35,7 +35,7 @@
       {
         "label": "build LPC WiFi firmware",
         "type": "shell",
-        "command": "make CORE=LPC NETWORK=WIFI all",
+        "command": "make -j8 CORE=LPC NETWORK=WIFI all",
         "osx": {
           "options": {
             "env": {
@@ -66,7 +66,7 @@
       {
         "label": "build LPC Ethernet firmware",
         "type": "shell",
-        "command": "make CORE=LPC NETWORK=ETHERNET TMC22XX=false all",
+        "command": "make -j8 CORE=LPC NETWORK=ETHERNET TMC22XX=false all",
         "osx": {
           "options": {
             "env": {
@@ -97,7 +97,7 @@
       {
         "label": "build LPC NoNet firmware",
         "type": "shell",
-        "command": "make CORE=LPC NETWORK=NONE all",
+        "command": "make -j8 CORE=LPC NETWORK=NONE all",
         "osx": {
           "options": {
             "env": {
@@ -128,7 +128,7 @@
       {
         "label": "build STM SBC firmware",
         "type": "shell",
-        "command": "make CORE=STM32F4 NETWORK=SBC all",
+        "command": "make -j8 CORE=STM32F4 NETWORK=SBC all",
         "osx": {
           "options": {
             "env": {
@@ -159,7 +159,7 @@
       {
         "label": "build STM WiFi firmware",
         "type": "shell",
-        "command": "make CORE=STM32F4 NETWORK=WIFI all",
+        "command": "make -j8 CORE=STM32F4 NETWORK=WIFI all",
         "osx": {
           "options": {
             "env": {

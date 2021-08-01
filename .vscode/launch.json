@@ -29,6 +29,16 @@
             "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32f4.cfg"],
             "svdFile": "${workspaceRoot}\\.vscode\\STM32F40x.svd"
         },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "build/firmware.elf",
+            "name": "Debug STM32F429 Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32f429.cfg"],
+            "svdFile": "${workspaceRoot}\\.vscode\\STM32F40x.svd"
+        },
             
     ]
 }
