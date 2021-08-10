@@ -7,7 +7,7 @@
 #./BuildRelease.sh Release LPC WIFI
 #./BuildRelease.sh Release LPC ETHERNET false
 #./BuildRelease.sh Release LPC NONE
-./BuildRelease.sh Debug LPC SBC
-./BuildRelease.sh Debug LPC WIFI
+#./BuildRelease.sh Debug LPC SBC
+#./BuildRelease.sh Debug LPC WIFI
 #./BuildRelease.sh Debug LPC ETHERNET
 #./BuildRelease.sh Debug LPC NONE
