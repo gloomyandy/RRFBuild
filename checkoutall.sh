@@ -10,6 +10,9 @@ git checkout $1
 cd ../RRFLibraries
 echo "RRFLibraries"
 git checkout $1
+cd ../CANlib
+echo "CANlib"
+git checkout $1
 cd ../FreeRTOS
 echo "FreeRTOS"
 git checkout $1

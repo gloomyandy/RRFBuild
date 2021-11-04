@@ -14,6 +14,10 @@ cd ../RRFLibraries
 echo "RRFLibraries"
 git push
 git push --tags
+cd ../CANlib
+echo "CANlib"
+git push
+git push --tags
 cd ../FreeRTOS
 echo "FreeRTOS"
 git push

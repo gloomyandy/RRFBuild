@@ -14,6 +14,10 @@ cd ../RRFLibraries
 echo "RRFLibraries"
 git status
 git checkout $1
+cd ../CANlib
+echo "CANlib"
+git status
+git checkout $1
 cd ../FreeRTOS
 echo "FreeRTOS"
 git status

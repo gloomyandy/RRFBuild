@@ -10,6 +10,9 @@ git status
 cd ../RRFLibraries
 echo "RRFLibraries"
 git status
+cd ../CANlib
+echo "CANlib"
+git status
 cd ../FreeRTOS
 echo "FreeRTOS"
 git status
