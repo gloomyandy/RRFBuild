@@ -186,7 +186,38 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      
+      },
+      {
+        "label": "build STMH7 WiFi firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=STM32H7 NETWORK=WIFI all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },     
       {
         "label": "clean firmware",
         "type": "shell",
@@ -206,7 +237,18 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
+      },
+      {
+        "label": "upload STM32H7 firmware",
+        "type": "shell",
+        "command": "make CORE=STM32H7 upload",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
       }
+
 
     ]
   }
