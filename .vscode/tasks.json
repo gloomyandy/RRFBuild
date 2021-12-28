@@ -188,6 +188,37 @@
         "problemMatcher": "$gcc"
       },      
       {
+        "label": "build STMF4 IAP",
+        "type": "shell",
+        "command": "make -j8 CORE=STM32F4 MAKE_DIR=IAP/makefiles all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
         "label": "clean firmware",
         "type": "shell",
         "command": "make clean distclean",
@@ -197,6 +228,17 @@
         },
         "problemMatcher": "$gcc"
       },
+      {
+        "label": "clean IAP",
+        "type": "shell",
+        "command": "make MAKE_DIR=IAP/makefiles clean distclean",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+
       {
         "label": "upload firmware",
         "type": "shell",

@@ -39,6 +39,16 @@
             "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32f429.cfg"],
             "svdFile": "${workspaceRoot}\\.vscode\\STM32F40x.svd"
         },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "iapbuild/stm32f4_iap_SBC.bin",
+            "name": "Debug STM32F4 IAP",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32f4.cfg"],
+            "svdFile": "${workspaceRoot}\\.vscode\\STM32F40x.svd"
+        },
             
     ]
 }
