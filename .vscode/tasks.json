@@ -128,7 +128,7 @@
       {
         "label": "build STM SBC firmware",
         "type": "shell",
-        "command": "make -j8 CORE=STM32F4 NETWORK=SBC all",
+        "command": "make -j8 CORE=STM32 MCU=STM32F4 NETWORK=SBC all",
         "osx": {
           "options": {
             "env": {
@@ -159,7 +159,7 @@
       {
         "label": "build STM WiFi firmware",
         "type": "shell",
-        "command": "make -j8 CORE=STM32F4 NETWORK=WIFI all",
+        "command": "make -j8 CORE=STM32 MCU=STM32F4 NETWORK=WIFI all",
         "osx": {
           "options": {
             "env": {
@@ -190,7 +190,7 @@
       {
         "label": "build STMH7 WiFi firmware",
         "type": "shell",
-        "command": "make -j8 CORE=STM32H7 NETWORK=WIFI all",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 NETWORK=WIFI all",
         "osx": {
           "options": {
             "env": {
@@ -241,7 +241,7 @@
       {
         "label": "upload STM32H7 firmware",
         "type": "shell",
-        "command": "make CORE=STM32H7 upload",
+        "command": "make CORE=STM32 MCU=STM32H7 upload",
         "group": {
           "kind": "build",
           "isDefault": true
