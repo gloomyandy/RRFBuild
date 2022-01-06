@@ -18,6 +18,10 @@ cd ../CANlib
 echo "CANlib"
 git push
 git push --tags
+cd ../IAP
+echo "IAP"
+git push
+git push --tags
 cd ../FreeRTOS
 echo "FreeRTOS"
 git push

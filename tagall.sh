@@ -10,4 +10,6 @@ cd ../CANlib
 git tag $1
 cd ../FreeRTOS
 git tag $1
+cd ../IAP
+git tag $1
 cd ..

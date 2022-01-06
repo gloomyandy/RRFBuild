@@ -13,6 +13,9 @@ git checkout $1
 cd ../CANlib
 echo "CANlib"
 git checkout $1
+cd ../IAP
+echo "IAP"
+git checkout $1
 cd ../FreeRTOS
 echo "FreeRTOS"
 git checkout $1

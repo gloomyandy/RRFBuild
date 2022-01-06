@@ -13,6 +13,9 @@ git status
 cd ../CANlib
 echo "CANlib"
 git status
+cd ../IAP
+echo "IAP"
+git status
 cd ../FreeRTOS
 echo "FreeRTOS"
 git status

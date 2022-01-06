@@ -18,6 +18,10 @@ cd ../CANlib
 echo "CANlib"
 git status
 git checkout $1
+cd ../IAP
+echo "IAP"
+git status
+git checkout $1
 cd ../FreeRTOS
 echo "FreeRTOS"
 git status
