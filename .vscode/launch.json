@@ -50,7 +50,7 @@
         },
         {
             "cwd": "${workspaceRoot}",        
-            "executable": "iapbuild/stm32f4_iap_SBC.bin",
+            "executable": "iapbuild/stm32f4_iap_SBC.elf",
             "name": "Debug STM32F4 IAP",
             "request": "launch",
             "type": "cortex-debug",
