@@ -21,17 +21,6 @@
 			"**/STM32L4*/": true,
 			"**/STM32WB*/": true,
 			"releases/": true
-		},
-		"files.associations": {
-			"peripheralpins.h": "c",
-			"stm32h7xx_hal.h": "c",
-			"stm32h7xx_hal_conf.h": "c",
-			"hal_conf_extra.h": "c",
-			"stm32h7xx_hal_conf_default.h": "c",
-			"stm32h7xx_hal_nand.h": "c",
-			"stm32f4xx_ll_rcc.h": "c",
-			"stm32h7xx_ll_rcc.h": "c",
-			"stm32h7xx_ll_pwr.h": "c"
 		}
 	}
 }
