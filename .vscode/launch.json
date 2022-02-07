@@ -58,6 +58,15 @@
             "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32f4.cfg"],
             "svdFile": "${workspaceRoot}\\.vscode\\STM32F40x.svd"
         },
+        {
+            "cwd": "${workspaceRoot}",        
+            "executable": "iapbuild/stm32h7_bootloader_2.elf",
+            "name": "Debug STM32H7 IAPBL",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32h743.cfg"],
+        },
             
     ]
 }
