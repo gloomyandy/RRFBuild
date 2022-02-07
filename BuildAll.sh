@@ -5,6 +5,7 @@
 ./BuildRelease.sh Debug STM32 STM32F4 SBC
 ./BuildRelease.sh Debug STM32 STM32F4 WIFI
 ./BuildIAPRelease.sh Debug STM32 STM32F4 SBC
+./BuildIAPBLRelease.sh Debug STM32 STM32H7 2
 #./BuildRelease.sh Release LPC SBC
 #./BuildRelease.sh Release LPC WIFI
 #./BuildRelease.sh Release LPC ETHERNET false

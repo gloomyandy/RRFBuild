@@ -15,8 +15,8 @@ mkdir -p ${OUTPUT}
 rm -f ${OUTPUT}/${MCU,,}_iap_SBC.*
 rm -f ${OUTPUT}/firmware-${MCU,,}-${NETWORK,,}-${VER,,}.zip
 
-make distclean MAKE_DIR=IAP/makefiles
-make -j8 CORE=${CORE} MCU=${MCU} MAKE_DIR=IAP/makefiles all
+make distclean MAKE_DIR=IAP/makefiles/${MCU}
+make -j8 CORE=${CORE} MCU=${MCU} CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/${MCU} all
 if [ -f ./iapbuild/${MCU,,}_iap_SBC.bin ]; then
     mv ./iapbuild/${MCU,,}_iap_SBC.bin ${OUTPUT}/${MCU,,}_iap_SBC.bin
     mv ./iapbuild/${MCU,,}_iap_SBC.map ${OUTPUT}/${MCU,,}_iap_SBC.map
