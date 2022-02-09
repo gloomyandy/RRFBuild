@@ -21,11 +21,11 @@ drivers.
 
 Timers
 ======
-* TIM1 : Software UART (16bit Baud rate * 4 (overampling))
+* TIM1 : Software UART (16bit Baud rate * 4 (oversampling))
 * TIM2 : Hardware PWM
 * TIM3 : Hardware PWM
 * TIM4 : Hardware PWM
-* TIM5 : Step Timer (32 bit 1MHz)
+* TIM5 : Step Timer (32 bit 750KHz)
 * TIM6 : Unused
 * TIM7 : Software PWM (16 bit 1MHz)
 * TIM8 : Hardware PWM
@@ -35,7 +35,7 @@ Timers
 * TIM12 : Hardware PWM
 * TIM13 : Hardware PWM
 * TIM14 : Hardware PWM
-* WWDG : Watchdog
+* IWDG : Watchdog
 
 PWM outputs
 ===========
@@ -78,7 +78,7 @@ See: https://www.st.com/resource/en/errata_sheet/dm00037591-stm32f405-407xx-and-
 
 Because of this it is not recommended that SPI1 is operated using DMA unless this issue
 has been investigated further and resolved. This probably means that SPI1 should not be
-used for WiFi/SBC commications (which require operation at high speed in slave mode).
+used for WiFi/SBC communications (which require operation at high speed in slave mode).
 
 SDIO
 ====
