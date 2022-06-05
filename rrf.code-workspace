@@ -7,6 +7,7 @@
 	"settings": {
 		"search.exclude": {
 			"**/*.code-search": false,
+			"**/*.d": true,
 			"**/bower_components": false,
 			"**/node_modules": false,
 			"**/STM32F0*/": true,
@@ -21,6 +22,6 @@
 			"**/STM32L4*/": true,
 			"**/STM32WB*/": true,
 			"releases/": true
-		}
+		},
 	}
 }
