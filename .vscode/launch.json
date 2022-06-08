@@ -21,7 +21,7 @@
         },
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/firmware.elf",
+            "executable": "build/firmware-stm32f4.elf",
             "name": "Debug STM32F4 Microcontroller",
             "request": "launch",
             "type": "cortex-debug",
@@ -31,7 +31,7 @@
         },
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/firmware.elf",
+            "executable": "build/firmware-stm32f4.elf",
             "name": "Debug STM32F429 Microcontroller",
             "request": "launch",
             "type": "cortex-debug",
@@ -41,7 +41,7 @@
         },
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/firmware.elf",
+            "executable": "build/firmware-stm32h7.elf",
             "name": "Debug STM32H743 Microcontroller",
             "request": "launch",
             "type": "cortex-debug",
