@@ -17,6 +17,7 @@
             "name": "ARM none eabi GCC",
             "includePath": [
                 "${workspaceFolder}/RepRapFirmware/src/targets/STM32/Hardware",
+                "${workspaceFolder}/RepRapFirmware/src/targets/common",
                 "${workspaceFolder}/RepRapFirmware/src/**",
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/RepRapFirmware/src/targets/STM32",
