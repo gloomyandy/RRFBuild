@@ -1,0 +1,59 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "ARM none eabi GCC",
+            "includePath": [
+                "${workspaceFolder}/RepRapFirmware/src/targets/STM32/Hardware",
+                "${workspaceFolder}/RepRapFirmware/src/**",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/RepRapFirmware/src/targets/STM32",
+                "${workspaceFolder}/RepRapFirmware/src/targets/common/FatFS",
+                "${workspaceFolder}/RepRapFirmware/src/targets/STM32/FatFS",
+                "${workspaceFolder}/CoreN2G/src/STM32/SharedSPI",
+                "${workspaceFolder}/FreeRTOS/src/portable/GCC/ARM_CM7/r0p1"
+            ],
+            "defines": [
+                "__STM32H7__",
+                "STM32",
+                "STM32H7",
+                "STM32H743xx",
+                "STM32H7xx",
+                "RTOS",
+                "FREERTOS_USED",
+                "USBCON",
+                "USBD_USE_CDC",
+                "HAL_RRF=1",
+                "SUPPORT_CAN=1",
+                "ESP8266WIFI",
+                "SUPPORT_TMC22xx",
+                "SUPPORT_TMC51xx"
+            ],
+            "intelliSenseMode": "gcc-arm",
+            "compilerPath": "C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2020-q4-major\\bin\\arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mfpu=fpv4-sp-d16",
+                "-mfloat-abi=hard",
+                "-mfp16-format=ieee",
+                "-mcpu=cortex-m7",
+                "-mthumb",
+                "-nostdlib"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
