@@ -14,11 +14,11 @@
 /CoreLPC/
 /build/
 /iapbuild/
-/CANlib/
-/CoreN2G/
-/DuetWiFiSocketServer/
-/FreeRTOS/
-/IAP/
-/RRFLibraries/
-/RepRapFirmware/
+#/CANlib/
+#/CoreN2G/
+#/DuetWiFiSocketServer/
+#/FreeRTOS/
+#/IAP/
+#/RRFLibraries/
+#/RepRapFirmware/
 
