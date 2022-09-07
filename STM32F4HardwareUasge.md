@@ -44,14 +44,14 @@ PWM outputs
 * RRF supports up to 16 software driven PWM channels, these may be used with any GPIO pin
 
 The current allocation of pins to timers is:
-* TIM2: PA_0, PA_1, PA_2, PA_3, PA_15, PB_3, PB_10, PB_11
+* TIM2: PA_0, PA_1, PA_2, PA_3, PA_5, PA_15, PB_3, PB_10, PB_11
 * TIM3: PB_0, PB_1, PB_4, PB_5, PC_7
-* TIM4: PB_6, PB_7, PD_12, PD_14, PD_15
-* TIM8: PA_5, PB_15, PC_6, PC_8, PC_9
+* TIM4: PB_6, PB_7, PD_12, PD_13, PD_14, PD_15
+* TIM8: PC_6, PC_8, PC_9
 * TIM9: PE_5, PE_6
 * TIM10: PB_8, PF_6
 * TIM11: PB_9, PF_7
-* TIM12: PB_14 PH_6
+* TIM12: PB_14 PB_15, PH_6
 * TIM13: PA_6, PF_8
 * TIM14: PA_7, PF_9
 In the current release there is a fixed mapping between a selected pin and the timer used to
