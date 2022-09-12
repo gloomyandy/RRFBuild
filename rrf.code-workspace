@@ -23,5 +23,11 @@
 			"**/STM32WB*/": true,
 			"releases/": true
 		},
+		"files.associations": {
+			"array": "cpp",
+			"string": "cpp",
+			"string_view": "cpp",
+			"ranges": "cpp"
+		},
 	}
 }

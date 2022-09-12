@@ -31,7 +31,7 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      
+      },
       {
         "label": "build LPC WiFi firmware",
         "type": "shell",
@@ -62,7 +62,7 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      
+      },
       {
         "label": "build LPC Ethernet firmware",
         "type": "shell",
@@ -93,7 +93,7 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      
+      },
       {
         "label": "build LPC NoNet firmware",
         "type": "shell",
@@ -124,7 +124,7 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      
+      },
       {
         "label": "build STM SBC firmware",
         "type": "shell",
@@ -155,7 +155,7 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      
+      },
       {
         "label": "build STM WiFi firmware",
         "type": "shell",
@@ -217,7 +217,7 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },     
+      },
       {
         "label": "build STMF4 IAP",
         "type": "shell",
@@ -248,7 +248,7 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      
+      },
       {
         "label": "build STMH7 IAPBL",
         "type": "shell",
@@ -279,7 +279,7 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      
+      },
       {
         "label": "build STMF4 IAPBL",
         "type": "shell",
@@ -310,7 +310,38 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      
+      },
+      {
+        "label": "build RP2040 Expansion Firmware",
+        "type": "shell",
+        "command": "make -j1 CORE=RP2040 MAKE_DIR=Duet3Expansion/makefiles all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
       {
         "label": "clean firmware",
         "type": "shell",
@@ -331,7 +362,16 @@
         },
         "problemMatcher": "$gcc"
       },
-
+      {
+        "label": "clean Expansion",
+        "type": "shell",
+        "command": "make MAKE_DIR=Duet3Expansion/makefiles clean distclean",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
       {
         "label": "upload firmware",
         "type": "shell",
@@ -352,7 +392,5 @@
         },
         "problemMatcher": "$gcc"
       }
-
-
     ]
   }
