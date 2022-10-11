@@ -314,7 +314,7 @@
       {
         "label": "build RP2040 Expansion Firmware",
         "type": "shell",
-        "command": "make -j1 CORE=RP2040 MAKE_DIR=Duet3Expansion/makefiles all",
+        "command": "make -j8 CORE=RP2040 MAKE_DIR=Duet3Expansion/makefiles all",
         "osx": {
           "options": {
             "env": {

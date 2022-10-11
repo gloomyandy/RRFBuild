@@ -27,7 +27,11 @@
 			"array": "cpp",
 			"string": "cpp",
 			"string_view": "cpp",
-			"ranges": "cpp"
+			"ranges": "cpp",
+			"atomic": "cpp",
+			"cstdint": "cpp",
+			"random": "cpp",
+			"*.tcc": "cpp"
 		},
 	}
 }
