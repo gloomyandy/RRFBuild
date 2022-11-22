@@ -126,7 +126,7 @@
         "problemMatcher": "$gcc"
       },
       {
-        "label": "build STM SBC firmware",
+        "label": "build STMF4 SBC firmware",
         "type": "shell",
         "command": "make -j8 CORE=STM32 MCU=STM32F4 NETWORK=SBC all",
         "osx": {
@@ -157,7 +157,7 @@
         "problemMatcher": "$gcc"
       },
       {
-        "label": "build STM WiFi firmware",
+        "label": "build STMF4 WiFi firmware",
         "type": "shell",
         "command": "make -j8 CORE=STM32 MCU=STM32F4 NETWORK=WIFI all",
         "osx": {
@@ -188,7 +188,7 @@
         "problemMatcher": "$gcc"
       },
       {
-        "label": "build STMH7 WiFi firmware",
+        "label": "build STMH743 WiFi firmware",
         "type": "shell",
         "command": "make -j8 CORE=STM32 MCU=STM32H7 NETWORK=WIFI all",
         "osx": {
@@ -218,6 +218,37 @@
         },
         "problemMatcher": "$gcc"
       },
+      {
+        "label": "build STMH723 WiFi firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 NETWORK=WIFI VARIANT=STM32H723 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },     
       {
         "label": "build STMF4 IAP",
         "type": "shell",
