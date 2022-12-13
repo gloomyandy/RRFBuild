@@ -14,7 +14,7 @@
             "cppStandard": "c++17"
         },
         {
-            "name": "RRF ARM none eabi GCC",
+            "name": "RRF H7 ARM none eabi GCC",
             "includePath": [
                 "${workspaceFolder}/CoreN2G/src/STM32/",
                 "${workspaceFolder}/CoreN2G/src/STM32/**",
@@ -42,6 +42,59 @@
                 "STM32H7",
                 "STM32H743xx",
                 "STM32H7xx",
+                "RTOS",
+                "FREERTOS_USED",
+                "USBCON",
+                "USBD_USE_CDC",
+                "HAL_RRF=1",
+                "SUPPORT_CAN=1",
+                "ESP8266WIFI",
+                "SUPPORT_TMC22xx",
+                "SUPPORT_TMC51xx"
+            ],
+            "intelliSenseMode": "gcc-arm",
+            "compilerPath": "C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2020-q4-major\\bin\\arm-none-eabi-gcc.exe",
+            "compilerArgs": [
+                "-mfpu=fpv4-sp-d16",
+                "-mfloat-abi=hard",
+                "-mfp16-format=ieee",
+                "-mcpu=cortex-m7",
+                "-mthumb",
+                "-nostdlib"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        },        {
+            "name": "RRF F4 ARM none eabi GCC",
+            "includePath": [
+                "${workspaceFolder}/CoreN2G/src/STM32/",
+                "${workspaceFolder}/CoreN2G/src/STM32/**",
+                "${workspaceFolder}/CoreN2G/src/",
+                "${workspaceFolder}/CoreN2G/src/STM32/SharedSPI",
+                "${workspaceFolder}/RepRapFirmware/src/targets",
+                "${workspaceFolder}/RepRapFirmware/src/targets/STM32/Hardware",
+                "${workspaceFolder}/RepRapFirmware/src/targets/common",
+                "${workspaceFolder}/RepRapFirmware/src/targets/STM32",
+                "${workspaceFolder}/RepRapFirmware/src/targets/common/FatFS",
+                "${workspaceFolder}/RepRapFirmware/src/targets/STM32/FatFS",
+                "${workspaceFolder}/RepRapFirmware/src/targets/STM32/**",
+                "${workspaceFolder}/RepRapFirmware/src",
+                "${workspaceFolder}/RepRapFirmware/src/Movement",
+                "${workspaceFolder}/RepRapFirmware/src/Movement/StepperDrivers",
+                "${workspaceFolder}/RRFLibraries/src",
+                "${workspaceFolder}/DuetWiFiSocketServer/src/include",
+                "${workspaceFolder}/CANlib/src",
+                "${workspaceFolder}/FreeRTOS/src/include",
+                "${workspaceFolder}/FreeRTOS/src/portable/GCC/ARM_CM7/r0p1"
+            ],
+            "defines": [
+                "__STM32F4__",
+                "STM32",
+                "STM32F4",
+                "STM32F407xx",
+                "STM32F40_41xxx",
+                "STM32F407_5ZX",
+                "STM32F4xx",
                 "RTOS",
                 "FREERTOS_USED",
                 "USBCON",
