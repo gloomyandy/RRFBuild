@@ -282,7 +282,7 @@
       {
         "label": "upload firmware",
         "type": "shell",
-        "command": "make MAKE_DIR=IAP/makefiles/STM32F4 upload",
+        "command": "make MAKE_DIR=RepRapFirmware/makefiles/STM32F4 upload",
         "group": {
           "kind": "build",
           "isDefault": true
@@ -292,7 +292,7 @@
       {
         "label": "upload STM32H7 firmware",
         "type": "shell",
-        "command": "make MAKE_DIR=IAP/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 upload",
+        "command": "make MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 upload",
         "group": {
           "kind": "build",
           "isDefault": true
