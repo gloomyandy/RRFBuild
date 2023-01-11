@@ -72,6 +72,7 @@
                 "${workspaceFolder}/CoreN2G/src/STM32/**",
                 "${workspaceFolder}/CoreN2G/src/",
                 "${workspaceFolder}/CoreN2G/src/STM32/SharedSPI",
+                "${workspaceFolder}/CoreN2G/src/STM32/MCP2517FD",
                 "${workspaceFolder}/RepRapFirmware/src/Hardware",
                 "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/Hardware",
                 "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32",
