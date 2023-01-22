@@ -10,10 +10,12 @@
 /RADDS_RTOS/
 /SAME70XPLD/
 /.settings/language.settings.xml
+/.vscode/.cortex-debug.*
 /CoreSTM32F4/
 /CoreLPC/
 /build/
 /iapbuild/
+/expbuild/
 #/CANlib/
 #/CoreN2G/
 #/DuetWiFiSocketServer/
