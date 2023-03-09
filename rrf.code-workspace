@@ -31,7 +31,8 @@
 			"atomic": "cpp",
 			"cstdint": "cpp",
 			"random": "cpp",
-			"*.tcc": "cpp"
+			"*.tcc": "cpp",
+			"memory_resource": "cpp"
 		},
 	}
 }
