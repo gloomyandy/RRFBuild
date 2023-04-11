@@ -7,6 +7,7 @@
 ./BuildRelease.sh Debug STM32 STM32F4 "" WIFI
 ./BuildIAPRelease.sh Debug STM32 STM32F4 SBC
 ./BuildIAPBLRelease.sh Debug STM32 STM32H7 2
+./BuildExpRelease.sh Debug RP2040 FLY36RRF "-DUSE_SPICAN" SPICAN
 #./BuildRelease.sh Release LPC SBC
 #./BuildRelease.sh Release LPC WIFI
 #./BuildRelease.sh Release LPC ETHERNET false
