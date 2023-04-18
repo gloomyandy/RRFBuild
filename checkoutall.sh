@@ -19,4 +19,7 @@ git checkout $1
 cd ../FreeRTOS
 echo "FreeRTOS"
 git checkout $1
+cd ../Duet3Expansion
+echo "Duet3Expansion"
+git checkout $1
 cd ..

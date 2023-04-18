@@ -26,4 +26,8 @@ cd ../FreeRTOS
 echo "FreeRTOS"
 git status
 git checkout $1
+cd ../Duet3Expansion
+echo "Duet3Expansion"
+git status
+git checkout $1
 cd ..

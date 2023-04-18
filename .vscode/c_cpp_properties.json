@@ -152,6 +152,7 @@
                 "${workspaceFolder}/CoreN2G/src/RP2040/pico-sdk/src/rp2_common/hardware_pwm/include",
                 "${workspaceFolder}/CoreN2G/src/RP2040/pico-sdk/src/rp2_common/pico_multicore/include",
                 "${workspaceFolder}/CoreN2G/src/RP2040/pico-sdk/src/rp2_common/hardware_spi/include",
+                "${workspaceFolder}/CoreN2G/src/RP2040/pico-sdk/src/rp2_common/hardware_flash/include",
                 "${workspaceFolder}/**"
                  
             ],

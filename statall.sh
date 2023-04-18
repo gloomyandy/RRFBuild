@@ -19,4 +19,7 @@ git status
 cd ../FreeRTOS
 echo "FreeRTOS"
 git status
+cd ../Duet3Expansion
+echo "Duet3Expansion"
+git status
 cd ..

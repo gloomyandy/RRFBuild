@@ -12,4 +12,6 @@ cd ../FreeRTOS
 git tag $1
 cd ../IAP
 git tag $1
+cd ../Duet3Expansion
+git tag $1
 cd ..

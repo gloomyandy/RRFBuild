@@ -26,4 +26,8 @@ cd ../FreeRTOS
 echo "FreeRTOS"
 git push
 git push --tags
+cd ../Duet3Expansion
+echo "Duet3Expansion"
+git push
+git push --tags
 cd ..
