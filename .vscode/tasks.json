@@ -250,6 +250,37 @@
         "problemMatcher": "$gcc"
       },
       {
+        "label": "build Fly36RRF pico Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=FLY36RRF CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
         "label": "clean firmware",
         "type": "shell",
         "command": "make MAKE_DIR=RepRapFirmware/makefiles/STM32F4 clean distclean",
