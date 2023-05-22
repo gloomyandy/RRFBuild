@@ -1,10 +1,11 @@
 #!/bin/sh
-echo $1 $2 $3 $4 $5
+echo $1 $2 $3 $4 $5 $6
 BUILD=${1:-Debug}
 PROCESSOR=${2:-RP2040}
 BOARD=${3:-FLY36RRF}
-CANFLAGS=${4:--DUSE_SPICAN}
-TAG=$5
+BOARD_REV=${4:-0}
+CANFLAGS=${5:--DUSE_SPICAN}
+TAG=$6
 #extract firmware version from header file
 VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`
 
