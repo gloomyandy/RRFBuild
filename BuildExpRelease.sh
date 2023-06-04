@@ -15,7 +15,7 @@ mkdir -p ${OUTPUT}
 rm -f ${OUTPUT}/${BOARD}-${TAG}.*
 
 make distclean MAKE_DIR=Duet3Expansion/makefiles
-make -j8 BUILD=${BUILD} PROCESSOR=${PROCESSOR} BOARD=${BOARD} CANFLAGS=${CANFLAGS} MAKE_DIR=Duet3Expansion/makefiles all
+make -j8 BUILD=${BUILD} PROCESSOR=${PROCESSOR} BOARD=${BOARD} BOARD_REV=${BOARD_REV} CANFLAGS=${CANFLAGS} MAKE_DIR=Duet3Expansion/makefiles all
 if [ -f ./expbuild/Duet3Firmware_${BOARD}.uf2 ]; then
     mv ./expbuild/Duet3Firmware_${BOARD}.uf2 ${OUTPUT}/Duet3Firmware_${BOARD}${TAG}.uf2
     mv ./expbuild/Duet3Firmware_${BOARD}.map ${OUTPUT}/Duet3Firmware_${BOARD}${TAG}.map

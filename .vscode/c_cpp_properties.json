@@ -159,7 +159,7 @@
             "defines": [
                 "__RP2040__",
                 "RP2040",
-                "RPI_PICO",
+                "FLY36RRF",
                 "RTOS",
                 "FREERTOS_USED",
                 "USBCON",
