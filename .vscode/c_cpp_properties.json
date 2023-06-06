@@ -125,6 +125,7 @@
             "name": "EXP ARM none eabi GCC",
             "includePath": [
                 "${workspaceFolder}/Duet3Expansion/src/**",
+                "${workspaceFolder}/Duet3Expansion/src/",
                 "${workspaceFolder}/CoreN2G/src/",
                 "${workspaceFolder}/CoreN2G/src/RP2040/**",
                 "${workspaceFolder}/CoreN2G/src/RP2040/MCP2517FD/",
