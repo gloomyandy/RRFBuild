@@ -8,7 +8,7 @@
 ./BuildIAPRelease.sh Debug STM32 STM32F4 SBC
 ./BuildIAPBLRelease.sh Debug STM32 STM32H7 2
 ./BuildExpRelease.sh Debug RP2040 FLY36RRF 0 "-DUSE_PICOCAN" "-picocan"
-./BuildExpRelease.sh Debug RP2040 FLY36RRF 1 "-DUSE_SPICAN" "-spican"
+./BuildExpRelease.sh Debug RP2040 FLY36RRF 1 "-DUSE_SPICAN"
 ./BuildExpRelease.sh Debug RP2040 FLYSB2040v1_0 0 "-DUSE_PICOCAN" "-picocan"
 #./BuildRelease.sh Release LPC SBC
 #./BuildRelease.sh Release LPC WIFI
