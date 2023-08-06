@@ -10,6 +10,7 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "cwd": "${workspaceRoot}",
             "executable": "build/firmware.elf",
@@ -76,6 +77,15 @@
             "type": "cortex-debug",
             "servertype": "openocd",
             "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32h743.cfg"],
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "build/firmware-stm32h723-wifi.elf",
+            "name": "Debug WiFi STM32H723 Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32h723.cfg"],
         },
         {
             "cwd": "${workspaceRoot}",        

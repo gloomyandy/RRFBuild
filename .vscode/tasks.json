@@ -360,5 +360,15 @@
         },
         "problemMatcher": "$gcc"
       }
+      {
+        "label": "upload STM32H723 firmware",
+        "type": "shell",
+        "command": "make MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=WIFI VARIANT=STM32H723 upload",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      }
     ]
   }
