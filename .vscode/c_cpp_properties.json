@@ -65,7 +65,8 @@
             ],
             "cStandard": "c11",
             "cppStandard": "c++17"
-        },        {
+        },
+        {
             "name": "RRF F4 ARM none eabi GCC",
             "includePath": [
                 "${workspaceFolder}/CoreN2G/src/STM32/",
@@ -120,7 +121,7 @@
             ],
             "cStandard": "c11",
             "cppStandard": "c++17"
-        },        
+        },
         {
             "name": "EXP ARM none eabi GCC",
             "includePath": [
