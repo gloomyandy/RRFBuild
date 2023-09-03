@@ -10,11 +10,4 @@
 ./BuildExpRelease.sh Debug RP2040 FLY36RRF 0 "-DUSE_PICOCAN" "-picocan"
 ./BuildExpRelease.sh Debug RP2040 FLY36RRF 1 "-DUSE_SPICAN"
 ./BuildExpRelease.sh Debug RP2040 FLYSB2040v1_0 0 "-DUSE_PICOCAN" "-picocan"
-#./BuildRelease.sh Release LPC SBC
-#./BuildRelease.sh Release LPC WIFI
-#./BuildRelease.sh Release LPC ETHERNET false
-#./BuildRelease.sh Release LPC NONE
-#./BuildRelease.sh Debug LPC SBC
-#./BuildRelease.sh Debug LPC WIFI
-#./BuildRelease.sh Debug LPC ETHERNET
-#./BuildRelease.sh Debug LPC NONE
+./BuildExpRelease.sh Debug RP2040 PITBv1_0 0 "-DUSE_PICOCAN" "-picocan"
