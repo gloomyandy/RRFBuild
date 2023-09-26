@@ -314,7 +314,7 @@
       {
         "label": "build PITBv1.0 picocan Expansion Firmware",
         "type": "shell",
-        "command": "make -j8 CORE=RP2040 BOARD=PITBv1_0 BOARD_REV=0 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles all",
+        "command": "make -j8 CORE=RP2040 BOARD=PITBV1_0 BOARD_REV=0 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles all",
         "osx": {
           "options": {
             "env": {
