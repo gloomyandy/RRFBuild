@@ -11,3 +11,4 @@
 ./BuildExpRelease.sh Debug RP2040 FLY36RRF 1 "-DUSE_SPICAN"
 ./BuildExpRelease.sh Debug RP2040 FLYSB2040V1_0 0 "-DUSE_PICOCAN" "-picocan"
 ./BuildExpRelease.sh Debug RP2040 PITBV1_0 0 "-DUSE_PICOCAN" "-picocan"
+./BuildExpRelease.sh Debug RP2040 STRIDEMAXV1_0 0 "-DUSE_SPICAN"

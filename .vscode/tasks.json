@@ -341,6 +341,36 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
+      },      {
+        "label": "build StrideMaxv1.0 spican Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=STRIDEMAXV1_0 BOARD_REV=0 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
       },
       {
         "label": "clean firmware",
