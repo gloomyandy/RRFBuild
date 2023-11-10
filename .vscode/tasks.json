@@ -95,6 +95,68 @@
         "problemMatcher": "$gcc"
       },
       {
+        "label": "build STMH723 SBC firmware",
+        "type": "shell",
+        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=SBC VARIANT=STM32H723 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "build STMH743 SBC firmware",
+        "type": "shell",
+        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=SBC VARIANT=STM32H743 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+     {
         "label": "build STMH723 WiFi firmware",
         "type": "shell",
         "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=WIFI VARIANT=STM32H723 all",
@@ -129,6 +191,68 @@
         "label": "build STMF4 IAP",
         "type": "shell",
         "command": "make -j8 CORE=STM32 MCU=STM32F4 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32F4 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "build STMH743 IAP",
+        "type": "shell",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H743 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "build STMH723 IAP",
+        "type": "shell",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 all",
         "osx": {
           "options": {
             "env": {

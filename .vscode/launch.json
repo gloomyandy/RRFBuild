@@ -88,6 +88,15 @@
             "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32h723.cfg"],
         },
         {
+            "cwd": "${workspaceRoot}",
+            "executable": "build/firmware-stm32h723-sbc.elf",
+            "name": "Debug SBC STM32H723 Microcontroller",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32h723.cfg"],
+        },
+        {
             "cwd": "${workspaceRoot}",        
             "executable": "iapbuild/stm32f4_iap_SBC.elf",
             "name": "Debug STM32F4 IAP",
