@@ -376,7 +376,7 @@
       {
         "label": "build Fly36RRF picocan Expansion Firmware",
         "type": "shell",
-        "command": "make -j8 CORE=RP2040 BOARD=FLY36RRF BOARD_REV=0 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles all",
+        "command": "make -j8 CORE=RP2040 BOARD=FLY36RRF BOARD_REV=0 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FLY36RRF all",
         "osx": {
           "options": {
             "env": {
@@ -405,9 +405,70 @@
         "problemMatcher": "$gcc"
       },
       {
-        "label": "build Fly36RRF spican Expansion Firmware",
+        "label": "build Fly36RRF v1 spican Expansion Firmware",
         "type": "shell",
-        "command": "make -j8 CORE=RP2040 BOARD=FLY36RRF BOARD_REV=1 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles all",
+        "command": "make -j8 CORE=RP2040 BOARD=FLY36RRF BOARD_REV=1 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FLY36RRF all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "build SHT36 v3 spican Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=SHT36 BOARD_REV=3 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_SHT36V3 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      {
+        "label": "build MKSTHR3642 picocan Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=MKSTHR3642 BOARD_REV=1 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_MKSTHR3642v1_0 all",
         "osx": {
           "options": {
             "env": {
@@ -438,7 +499,7 @@
       {
         "label": "build PITBv1.0 picocan Expansion Firmware",
         "type": "shell",
-        "command": "make -j8 CORE=RP2040 BOARD=PITBV1_0 BOARD_REV=0 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles all",
+        "command": "make -j8 CORE=RP2040 BOARD=PITBV1_0 BOARD_REV=0 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_PITBV1_0 all",
         "osx": {
           "options": {
             "env": {
@@ -468,7 +529,7 @@
       },      {
         "label": "build StrideMaxv1.0 spican Expansion Firmware",
         "type": "shell",
-        "command": "make -j8 CORE=RP2040 BOARD=STRIDEMAXV1_0 BOARD_REV=0 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles all",
+        "command": "make -j8 CORE=RP2040 BOARD=STRIDEMAXV1_0 BOARD_REV=0 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_STRIDEMAXV1_0 all",
         "osx": {
           "options": {
             "env": {
