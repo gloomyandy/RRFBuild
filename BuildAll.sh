@@ -17,4 +17,5 @@
 ./BuildExpRelease.sh Debug RP2040 SHT36 3 "-DUSE_SPICAN" "SHT36V3"
 ./BuildExpRelease.sh Debug RP2040 MKSTHR3642 1 "-DUSE_PICOCAN" "MKSTHR3642v1_0-picocan"
 ./BuildExpRelease.sh Debug RP2040 PITBV1_0 0 "-DUSE_PICOCAN" "PITBV1_0-picocan"
+./BuildExpRelease.sh Debug RP2040 PITBV2_0 0 "-DUSE_SPICAN" "PITBV2_0"
 ./BuildExpRelease.sh Debug RP2040 STRIDEMAXV1_0 0 "-DUSE_SPICAN" "STRIDEMAXV1_0"
