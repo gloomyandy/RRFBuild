@@ -559,9 +559,9 @@
         "problemMatcher": "$gcc"
       },
       {
-        "label": "build StrideMaxv1.0 spican Expansion Firmware",
+        "label": "build StrideMaxv2.0 spican Expansion Firmware",
         "type": "shell",
-        "command": "make -j8 CORE=RP2040 BOARD=STRIDEMAXV1_0 BOARD_REV=0 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_STRIDEMAXV1_0 all",
+        "command": "make -j8 CORE=RP2040 BOARD=STRIDEMAXV2_0 BOARD_REV=0 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_STRIDEMAXV2_0 all",
         "osx": {
           "options": {
             "env": {
