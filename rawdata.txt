@@ -1,0 +1,1889 @@
+btt_skrpro_v1_1_f4
+48
+F.3 e0temp,t0
+F.4 e1temp,t1
+F.5 e2temp,t2
+F.6 bedtemp,t3
+B.10 xstop
+E.12 ystop
+G.8 zstop
+E.15 e0stop,e0det
+E.10 e1stop,e1det
+G.5 e2stop,e2det
+A.2 probe
+D.12 bed,hbed
+B.1 e0heat,he0
+D.14 e1heat,he1
+B.0 e2heat,he2
+C.8 fan0,fan
+E.5 fan1
+E.6 fan2
+A.1 servo0
+G.4 beep
+A.8 btnenc
+D.11 lcden
+D.10 lcdrs
+G.2 lcdd4
+G.3 lcdd5
+G.6 lcdd6
+G.7 lcdd7
+B.14 lcdmiso
+B.13 lcdsck
+G.10 btnen1
+B.12 lcdss
+F.11 btnen2
+B.15 lcdmosi
+F.12 lcdcd
+F.13 kill
+G.0 wifi1
+G.1 wifi2
+C.7 wifi3
+C.6 wifi4
+F.14 wifi5
+F.15 wifi6
+A.15 xcs
+B.9 zcs
+B.8 ycs
+B.3 e0cs
+G.15 e1cs
+G.12 e2cs
+A.13 status
+board=btt_skrpro_v1_1_f4
+sdcard.internal.type=0
+SPI0.pins={A.5,A.6,B.5}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={C.10,C.11,C.12}
+SPI3.pins={G.14,C.1,F.7}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=6
+stepper.enablePins={F.2,D.7,C.0,C.3,A.3,F.0}
+stepper.stepPins={E.9,E.11,E.13,E.14,D.15,D.13}
+stepper.directionPins={F.1,E.8,C.2,A.0,E.7,G.9}
+stepper.numSmartDrivers=6
+stepper.TmcUartPins={C.13,E.3,E.1,D.4,D.1,D.6}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=F.12
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+btt_gtr_v1_0_f4
+75
+C.1 e0temp,t0
+C.2 e1temp,t1
+C.3 e2temp,t2
+C.0 bedtemp,t3
+A.3 e3temp,tempm1
+F.9 e4temp,tempm2
+F.10 e5temp,tempm3
+F.7 e6temp,tempm4
+F.5 e7temp,tempm5
+F.2 xstop
+C.13 ystop
+E.0 zstop
+G.14 e0stop,e0det
+G.9 e1stop,e1det
+D.3 e2stop,e2det
+I.4 e3stop,m1stop
+F.4 e4stop,m2stop
+F.6 e5stop,m3stop
+I.7 e6stop,m4stop
+F.12 e7stop,m5stop
+H.11 probe
+I.11 ei1
+H.6 ei2
+A.2 bed,hbed
+B.1 e0heat,heat0
+A.1 e1heat,heat1
+B.0 e2heat,heat2
+D.15 e3heat,heatm1
+D.13 e4heat,heatm2
+D.12 e5heat,heatm3
+E.13 e6heat,heatm4
+I.6 e7heat,heatm5
+E.5 fan0
+E.6 fan1
+C.8 fan2
+I.5 fanm1
+E.9 fanm2
+E.11 fanm3
+C.9 fanm4
+E.14 fanm5
+B.11 servo0
+C.11 beep
+A.15 btnenc
+C.10 lcden
+A.8 lcdrs
+G.8 lcdd4
+G.7 lcdd5
+G.6 lcdd6
+G.5 lcdd7
+B.14 lcdmiso
+B.13 lcdsck
+D.10 btnen1
+B.12 lcdss
+H.10 btnen2
+B.15 lcdmosi
+B.10 lcdcd
+F.13 neopixel
+F.11 wifi1
+C.7 wifi3
+C.6 wifi4
+C.5 wifi5
+C.14 xcs
+E.1 ycs
+B.5 zcs
+G.10 e0cs
+D.4 e1cs
+C.12 e2cs
+B.6 miso
+G.15 mosi
+B.3 sck
+I.2 kmosi
+I.1 ksck
+H.2 kcs
+F.13 rgbled
+A.0 status
+board=btt_gtr_v1_0_f4
+sdcard.internal.type=1
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={I.9,B.11,H.11}
+SPI4.pins={I.1,I.2,NoPin}
+SPI5.pins={B.3,B.6,G.15}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=11
+stepper.enablePins={F.1,E.4,B.9,G.13,D.7,D.2,F.8,G.2,F.4,E.8,I.0}
+stepper.stepPins={C.15,E.3,B.8,G.12,D.6,D.1,F.3,D.14,E.12,G.0,H.12}
+stepper.directionPins={F.0,E.2,B.7,G.11,D.5,D.0,G.3,D.11,E.10,G.1,H.15}
+stepper.numSmartDrivers=6
+stepper.TmcUartPins={C.14,E.1,B.5,G.10,D.4,C.12}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=B.10
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+fly_e3_pro_f4
+39
+A.4 e0temp,t0
+A.1 e1temp,t1
+A.3 bedtemp,tb
+C.1 boardtemp,tboard
+A.2 xmin,xstop
+B.10 ymin,ystop
+C.4 zmin,zstop
+D.0 e0min,e0stop
+D.1 e1min,e1stop
+B.0 servo0
+C.5 probe
+A.0 bed,hbed
+A.5 e0heat,he0
+C.6 e1heat,he1
+A.7 fan0,fan
+A.6 fan1
+B.6 fan2
+B.7 fan3
+E.12 beep
+E.11 btnenc
+E.10 lcden
+E.9 lcdd4
+E.8 lcdd5
+E.7 lcdd6
+B.1 lcdd7
+C.9 sdd1
+C.8 sdd0
+C.12 sdsck
+D.2 sdcmd
+C.11 sdd3
+C.10 sdd2
+A.9 tx1
+A.10 rx1
+A.8 status
+B.11 neopixel
+D.11 pson
+E.6 laser
+C.3 poweradc
+D.10 pwr, pwrdet
+board=fly_e3_pro_f4
+sdcard.internal.type=2
+SPI0.pins={NoPin,NoPin,NoPin}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={D.14,D.12,D.13}
+SPI4.pins={E.8,NoPin,B.1}
+SPI5.pins={E.7,E.10,E.9}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=5
+stepper.enablePins={E.5,E.1,B.5,D.6,C.15}
+stepper.stepPins={E.3,B.9,B.3,D.4,C.13}
+stepper.directionPins={E.2,B.8,D.7,D.3,C.0}
+stepper.numSmartDrivers=5
+stepper.TmcUartPins={E.4,E.0,B.4,D.5,C.14}
+power.VInDetectPin=C.3
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+fly_e3_pro_v3_f4
+43
+A.4 e0temp,t0
+A.1 e1temp,t1
+A.3 bedtemp,tb
+C.1 boardtemp,tboard
+A.2 xmin,xstop
+B.10 ymin,ystop
+C.4 zmin,zstop
+D.0 e0min,e0stop
+D.1 e1min,e1stop
+B.0 servo0
+C.5 probe
+A.0 bed,hbed
+A.5 e0heat,he0
+C.6 e1heat,he1
+A.7 fan0,fan
+A.6 fan1
+B.6 fan2
+B.7 fan3
+E.11 beep
+E.12 btnenc
+E.10 lcdd5
+E.6 lcdrs
+E.8 lcdd7
+A.14 lcden
+E.9 lcdd4
+E.7 lcdd6
+A.13 lcdcd
+B.4 lcdmiso
+B.3 lcdsck
+B.2 lcdss
+B.5 lcdmosi
+C.9 sdd1
+C.8 sdd0
+C.12 sdsck
+D.2 sdcmd
+C.11 sdd3
+C.10 sdd2
+A.9 tx1,btnen2
+A.10 rx1,btnen1
+B.11 neopixel
+D.11 pson
+B.1 laser
+D.10 pwr, pwrdet
+board=fly_e3_pro_v3_f4
+sdcard.internal.type=2
+SPI0.pins={NoPin,NoPin,NoPin}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={D.14,D.12,D.13}
+SPI4.pins={E.10,NoPin,E.8}
+SPI5.pins={E.9,NoPin,A.14}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=5
+stepper.enablePins={E.5,E.1,C.2,D.6,C.15}
+stepper.stepPins={E.3,B.9,A.15,D.4,C.13}
+stepper.directionPins={E.2,B.8,D.7,D.3,C.0}
+stepper.numSmartDrivers=5
+stepper.TmcUartPins={E.4,E.0,A.8,D.5,C.14}
+power.VInDetectPin=C.3
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+fly_f407zg_f4
+53
+A.0 e0temp,t0
+C.1 e1temp,t1
+C.0 e2temp,t2
+F.10 e3temp,t3
+F.5 e4temp,t4
+F.4 e5temp,t5
+F.3 bedtemp,tb
+C.3 xmin,xstop
+C.2 xmax,xstopmax
+F.2 ymin,ystop
+F.1 ymax,ystopmax
+F.0 zmin,zstop
+C.15 zmax,zstopmax
+C.14 z3
+A.3 dljc
+E.2 bed,hbed
+F.7 e0heat,he0
+F.6 e1heat,he1
+E.6 e2heat,he2
+E.5 e3heat,he3
+E.4 e4heat,he4
+E.3 e5heat,he5
+F.8 fan0,fan
+F.9 fan1
+A.2 fan2
+A.1 fan3
+E.13 fan4
+B.11 fan5
+E.11 servo0
+B.10 beep
+E.14 lcden
+E.10 lcdd4
+E.8 lcdd6
+E.15 btnenc
+E.12 lcdrs
+E.9 lcdd5
+E.7 lcdd7
+B.14 lcdmiso
+B.13 lcdsck
+C.5 btnen1
+C.4 btnen2
+F.11 lcdss
+B.15 lcdmosi
+B.2 lcdcd
+C.13 sdcd
+C.9 sdd1
+C.8 sdd0
+C.12 sdsck
+D.2 sdcmd
+C.11 sdd3
+C.10 sdd2
+A.9 tx1
+A.10 rx1
+board=fly_f407zg_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={E.10,NoPin,E.14}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={E.8,E.10,E.7}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=9
+stepper.enablePins={E.1,G.12,D.7,D.4,D.0,G.8,G.5,G.2,D.9}
+stepper.stepPins={B.9,B.8,A.8,C.7,C.6,D.15,D.14,D.13,D.12}
+stepper.directionPins={E.0,G.11,D.6,D.3,A.15,G.7,G.4,D.11,D.8}
+stepper.numSmartDrivers=9
+stepper.TmcUartPins={G.13,G.10,D.5,D.1,NoPin,G.6,G.3,D.10,B.12}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=B.2
+sbc.csPin=F.11
+sbc.spiChannel=1
+XXENDXX
+fly_e3_f4
+37
+A.4 e0temp,t0
+A.3 bedtemp,tb
+A.2 xmin,xstop
+A.1 ymin,ystop
+C.5 zmin,zstop
+B.0 servo0
+C.4 probe
+A.0 bed,hbed
+A.5 e0heat,he0
+A.7 fan0,fan
+A.6 fan1
+E.12 beep
+E.11 btnenc
+E.10 lcden
+E.9 lcdd4
+E.8 lcdd5
+E.7 lcdd6
+B.1 lcdd7
+A.15 sdcd
+C.9 sdd1
+C.8 sdd0
+C.12 sdsck
+D.2 sdcmd
+C.11 sdd3
+C.10 sdd2
+B.10 fpc1
+B.11 fpc2
+D.10 fpc3
+D.11 fpc4
+D.12 fpc5
+D.13 fpc6
+D.14 fpc7
+D.15 fpc8
+C.6 fpc9
+D.0 fpc10
+D.1 fpc11
+A.8 status
+board=fly_e3_f4
+sdcard.internal.type=2
+SPI0.pins={NoPin,NoPin,NoPin}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={C.2,C.0,C.1}
+SPI4.pins={E.8,NoPin,B.1}
+SPI5.pins={E.7,E.10,E.9}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=4
+stepper.enablePins={C.15,E.5,E.1,B.5}
+stepper.stepPins={C.13,E.3,B.9,B.3}
+stepper.directionPins={C.14,E.4,E.0,B.4}
+stepper.numSmartDrivers=4
+stepper.TmcUartPins={E.6,E.2,B.8,D.7}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+fly_e3_v2_f4
+37
+C.4 e0temp,t0
+C.5 e1temp,t1
+B.1 bedtemp,tb
+E.7 xmin,xstop
+E.8 ymin,ystop
+E.9 zmin,zstop
+E.6 servo0
+C.2 probe
+B.0 bed,hbed
+C.6 e0heat,he0
+C.7 e1heat,he1
+A.0 fan0,fan
+A.1 fan1
+A.2 fan2
+A.3 fan3
+D.10 beep
+A.9 tx1,btnenc
+A.8 lcden
+A.10 rx1,lcdrs
+E.14 lcdd5
+E.15 lcdd4
+A.14 lcdd6
+A.13 lcdd7
+A.6 lcdmiso
+A.5 lcdsck
+B.11 btnen2
+A.4 lcdss
+B.10 btnen1
+A.7 lcdmosi
+E.13 tfcd,lcdcd
+C.9 sdd1
+C.8 sdd0
+C.12 sdsck
+D.2 sdcmd
+C.11 sdd3
+C.10 sdd2
+A.15 status
+board=fly_e3_v2_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={D.12,D.13,D.11}
+SPI4.pins={E.14,NoPin,A.13}
+SPI5.pins={E.15,NoPin,A.8}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=5
+stepper.enablePins={C.1,C.14,E.3,D.6,D.3}
+stepper.stepPins={E.5,E.4,E.1,E.2,E.0}
+stepper.directionPins={C.0,C.13,B.7,D.5,D.1}
+stepper.numSmartDrivers=5
+stepper.TmcUartPins={C.15,B.6,D.7,D.4,D.0}
+power.VInDetectPin=C.3
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+fly_cdy_v2_f4
+41
+A.3 e0temp,t0
+C.4 e1temp,t1
+C.5 e2temp,t2
+B.1 bedtemp,tb
+C.7 xmin,xstop
+C.6 xmax,xstopmax
+D.11 ymin,ystop
+D.10 ymax,ystopmax
+B.10 zmin,zstop
+B.11 zmax,zstopmax
+E.6 servo0
+C.2 probe
+B.0 bed,hbed
+D.12 e0heat,he0
+D.13 e1heat,he1
+D.14 e2heat,he2
+A.0 fan0,fan
+A.1 fan1
+A.2 fan2
+A.14 lcdd7
+A.13 lcdd6
+E.15 lcdd4
+E.14 lcdd5
+B.2 lcden
+E.13 lcdcd
+A.9 tx1,btnenc
+A.10 rx1,lcdrs
+D.8 btnen1
+D.9 btnen2
+A.4 spi1sdcs,lcdss
+A.5 spi1sck,lcdsck
+A.6 spi1miso,lcdmiso
+A.7 spi1mosi,lcdmosi
+E.7 spi1cs1
+E.8 spi1cs2
+B.3 motsck
+B.4 motmiso
+B.5 motmosi
+D.15 status
+B.9 laser
+C.3 poweradc
+board=fly_cdy_v2_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={E.15,NoPin,B.2}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={A.13,E.15,A.14}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=6
+stepper.enablePins={C.1,C.14,B.8,D.7,D.4,D.0}
+stepper.stepPins={E.5,E.4,E.3,E.2,E.1,E.0}
+stepper.directionPins={C.0,C.13,B.7,D.6,D.3,A.15}
+stepper.numSmartDrivers=6
+stepper.TmcUartPins={C.15,A.8,B.6,D.5,D.1,E.9}
+power.VInDetectPin=C.3
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+fly_cdy_v3_f4
+41
+A.3 e0temp,t0
+C.4 e1temp,t1
+C.5 e2temp,t2
+B.1 bedtemp,tb
+C.7 xmin,xstop
+C.6 xmax,xstopmax
+D.11 ymin,ystop
+D.10 ymax,ystopmax
+B.10 zmin,zstop
+B.11 zmax,zstopmax
+E.6 servo0
+C.2 probe
+B.0 bed,hbed
+D.12 e0heat,he0
+D.13 e1heat,he1
+D.14 e2heat,he2
+A.0 fan0,fan
+A.1 fan1
+A.2 fan2
+A.14 lcdd7
+A.13 lcdd6
+E.15 lcdd4
+E.14 lcdd5
+B.2 lcden
+E.13 lcdcd
+A.9 tx1,btnenc
+A.10 rx1,lcdrs
+D.8 btnen1
+D.9 btnen2
+A.4 spi1sdcs,lcdss
+A.5 spi1sck,lcdsck
+A.6 spi1miso,lcdmiso
+A.7 spi1mosi,lcdmosi
+E.7 spi1cs1
+E.8 spi1cs2
+B.3 motsck
+B.4 motmiso
+B.5 motmosi
+D.15 status
+B.9 laser
+C.3 poweradc
+board=fly_cdy_v3_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={E.15,NoPin,B.2}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={A.13,E.15,A.14}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=6
+stepper.enablePins={C.1,C.14,B.8,D.7,D.4,D.0}
+stepper.stepPins={E.5,E.4,E.3,E.2,E.1,E.0}
+stepper.directionPins={C.0,C.13,B.7,D.6,D.3,A.15}
+stepper.numSmartDrivers=6
+stepper.TmcUartPins={C.15,A.8,B.6,D.5,D.1,E.9}
+power.VInDetectPin=C.3
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+fly_super8_f4
+48
+F.4 adc0,out0
+F.5 adc1,out1
+F.9 adc2,pwmout2,pwm2,out2
+F.10 adc3,out3
+C.0 adc4,out4
+C.1 adc5,out5
+G.12 io0
+G.11 io1
+G.10 io2
+G.9 io3
+D.7 io4
+D.6 io5
+A.8 io6
+F.8 in7,pwmout1,pwm1
+F.3 hvin
+C.6 pwmout0,pwm0,servo
+C.3 probe
+B.0 heat0
+B.1 heat1
+C.7 heat2
+F.7 heat3
+F.6 heat4
+E.5 bedout,bed
+A.0 fan0
+A.1 fan1
+A.2 fan2
+A.3 fan3
+A.15 fan4
+B.11 fan5
+B.10 fan6
+D.12 fan7
+D.14 fan8
+D.15 fan9
+G.13 lcdd7
+C.13 lcdd5
+G.8 lcdrs
+E.13 btnenc
+E.12 beep
+B.2 lcden
+C.14 lcdd4
+G.14 lcdd6
+G.15 lcdcd
+B.6 btnen2
+B.7 btnen1
+A.6 lcdmiso
+A.5 lcdsck
+A.4 lcdss
+A.7 lcdmosi
+board=fly_super8_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={D.3,D.4,D.5}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={C.14,NoPin,B.2}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=8
+stepper.enablePins={F.11,F.14,G.1,E.9,F.2,C.15,G.4,G.7}
+stepper.stepPins={E.2,E.3,E.4,E.14,E.15,E.1,E.0,E.6}
+stepper.directionPins={C.5,F.13,G.0,E.8,E.11,F.0,G.3,G.6}
+stepper.numSmartDrivers=8
+stepper.TmcUartPins={C.4,F.12,F.15,E.7,E.10,F.1,G.2,G.5}
+power.VInDetectPin=C.2
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+fly_gemini_f4
+28
+C.0 e0temp,t0
+C.2 bedtemp,tb
+A.3 xstop
+B.1 ystop
+B.10 zstop
+B.0 servo0
+A.1 probe
+A.2 bed,hbed
+A.0 e0heat,he0
+C.6 fan0,fan
+C.9 sdd1
+C.8 sdd0
+C.12 sdsck
+D.2 sdcmd
+C.11 sdd3
+C.10 sdd2
+A.9 tx1,lcdd4
+A.10 rx1,lcdrs
+A.8 lcdd5
+A.4 btnenc
+A.13 lcden
+B.3 lcdcd
+A.14 btnen2
+A.15 btnen1
+B.14 lcdmiso
+B.13 lcdsck
+B.12 lcdss
+B.15 lcdmosi
+board=fly_gemini_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=4
+stepper.enablePins={B.2,B.6,B.5,B.4}
+stepper.stepPins={C.13,C.14,C.15,C.3}
+stepper.directionPins={C.1,C.4,C.5,C.7}
+stepper.numSmartDrivers=4
+stepper.TmcUartPins={B.11,B.9,B.8,B.7}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=B.3
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+fly_gemini_v1_1_f4
+23
+C.0 e0temp,t0
+C.2 bedtemp,tb
+A.3 xstop
+B.1 ystop
+B.10 zstop
+B.0 servo0
+A.1 probe
+A.2 bed,hbed
+A.0 e0heat,he0
+C.6 fan0,fan
+C.7 fan1
+A.9 tx1,lcdd4
+A.10 rx1,lcdrs
+A.8 lcdd5
+A.4 btnenc
+A.13 lcden
+B.3 lcdcd
+A.14 btnen2
+A.15 btnen1
+B.14 lcdmiso
+B.13 lcdsck
+B.12 lcdss
+B.15 lcdmosi
+board=fly_gemini_v1_1_f4
+sdcard.internal.type=1
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=4
+stepper.enablePins={B.2,D.2,C.12,C.11}
+stepper.stepPins={C.13,C.14,C.15,C.3}
+stepper.directionPins={C.1,C.4,C.5,C.8}
+stepper.numSmartDrivers=4
+stepper.TmcUartPins={B.11,B.9,B.8,B.7}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=C.9
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+fly_gemini_v2_0_f4
+24
+C.0 e0temp,t0
+C.2 bedtemp,tb
+A.3 xstop
+B.1 ystop
+B.10 zstop
+B.0 servo0
+A.1 probe
+A.2 bed,hbed
+A.0 e0heat,he0
+C.6 fan0,fan
+C.7 fan1
+A.9 tx1,lcdd4
+A.10 rx1,lcdrs
+A.8 lcdd5
+B.6 btnenc
+A.13 lcden
+A.9 lcdd4
+C.10 lcdcd
+A.14 btnen1
+A.15 btnen2
+B.14 lcdmiso
+B.13 lcdsck
+B.12 lcdss
+B.15 lcdmosi
+board=fly_gemini_v2_0_f4
+sdcard.internal.type=1
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=4
+stepper.enablePins={B.2,D.2,C.12,C.11}
+stepper.stepPins={C.13,C.14,C.15,C.3}
+stepper.directionPins={C.1,C.4,C.5,C.8}
+stepper.numSmartDrivers=4
+stepper.TmcUartPins={B.11,B.9,B.8,B.7}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=C.9
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+fly_gemini_v3_0_f4
+24
+C.0 e0temp,t0
+C.2 bedtemp,tb
+A.4 xstop
+A.5 ystop
+A.6 zstop
+B.1 e0stop
+B.0 servo0
+A.1 probe
+A.2 bed,hbed
+A.0 e0heat,he0
+C.6 fan0,fan
+C.7 fan1
+A.8 lcdd5
+B.10 btnenc
+A.13 lcden
+A.9 lcdd4
+A.10 lcdrs
+A.7 lcdcd
+A.14 btnen1
+A.15 btnen2
+B.14 lcdmiso
+B.13 lcdsck
+B.12 lcdss
+B.15 lcdmosi
+board=fly_gemini_v3_0_f4
+sdcard.internal.type=255
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=4
+stepper.enablePins={A.3,D.2,C.12,C.11}
+stepper.stepPins={C.13,C.14,C.15,C.3}
+stepper.directionPins={C.1,C.4,C.5,C.8}
+stepper.numSmartDrivers=4
+stepper.TmcUartPins={B.11,C.10,B.7,B.6}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=C.9
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+btt_skr_rrf_e3_v1_1_f4
+35
+A.0 e0temp,th0
+A.1 bedtemp,tb
+A.2 e1temp,th1
+A.3 pt100,th2
+C.0 xstop
+C.1 ystop
+C.2 zstop
+C.3 e0stop,e0det
+B.10 e1stop
+B.11 x2stop
+E.3 io
+B.0 servo0
+C.5 probe
+B.4 bed,hbed
+B.3 e0heat,heat0
+E.4 e1heat
+B.5 fan0,fan
+B.6 fan1
+E.5 fan2
+E.6 fan3
+B.1 lcdd6
+B.2 lcdd4
+E.7 lcden
+E.8 beep
+E.9 btnenc
+E.10 lcdd5
+E.11 lcdd7
+B.7 neopixel
+A.9 tx1,tfttx
+A.10 rx1,tftrx
+B.8 sda1
+B.9 scl1
+E.1 pson
+E.0 pwrdet
+E.2 led,status
+board=btt_skr_rrf_e3_v1_1_f4
+sdcard.internal.type=2
+SPI0.pins={NoPin,NoPin,NoPin}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={E.10,NoPin,E.11}
+SPI5.pins={B.1,B.2,E.11}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=6
+stepper.enablePins={D.7,D.3,D.14,D.10,C.13,E.15}
+stepper.stepPins={D.5,D.0,C.6,D.12,C.15,E.13}
+stepper.directionPins={D.4,A.15,C.7,D.13,A.8,E.12}
+stepper.numSmartDrivers=4
+stepper.TmcUartPins={D.6,D.1,D.15,D.11}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+btt_skr_2_f4
+48
+A.1 bedtemp,tb
+A.2 e0temp,th0
+A.3 e1temp,th1
+C.1 xstop
+C.3 ystop
+C.0 zstop
+C.2 e0stop,e0det
+A.0 e1stop,e1det
+E.5 servo0
+E.4 probe
+D.7 bed,hbed
+B.3 e0heat,heat0
+B.4 e1heat,heat1
+B.7 fan0,fan
+B.6 fan1
+B.5 fan2
+E.13 lcdd7
+E.11 lcdd5
+E.9 lcdrs
+C.5 beep
+B.0 btnenc
+E.10 lcdd4
+E.12 lcdd6
+B.1 lcden
+C.4 lcdcd
+B.2 btnen2
+E.7 btnen1
+A.6 lcdmiso
+A.5 lcdsck
+A.4 lcdss
+A.7 lcdmosi
+E.6 neopixel
+A.9 tx1,tfttx
+A.10 rx1,tftrx
+E.0 xcs
+D.3 ycs
+D.0 zcs
+C.6 e0cs
+D.12 e1cs
+A.14 miso
+E.14 mosi
+E.15 sck
+B.8 scl1
+B.9 sda1
+E.8 pson
+C.15 pwrdet
+A.13 led,status
+C.13 sp
+board=btt_skr_2_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={E.15,A.14,E.14}
+SPI4.pins={C.5,B.1,B.0}
+SPI5.pins={E.10,NoPin,B.1}
+stepper.powerEnablePin=C.13
+stepper.numDrivers=5
+stepper.enablePins={E.3,D.6,D.1,C.7,D.13}
+stepper.stepPins={E.2,D.5,A.15,D.15,D.11}
+stepper.directionPins={E.1,D.4,A.8,D.14,D.10}
+stepper.numSmartDrivers=5
+stepper.TmcUartPins={E.0,D.3,D.0,C.6,D.12}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=C.14
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+btt_octopus_v1_1_f4
+60
+F.3 bedtemp,tb
+F.4 e0temp,th0
+F.5 e1temp,th1
+F.6 e2temp,th2
+F.7 e3temp,th3
+G.6 xstop
+G.9 ystop
+G.10 zstop
+G.11 e0stop,e0det
+G.12 e1stop,e1det
+G.13 e2stop,e2det
+G.14 e3stop,e3det
+G.15 e4stop,e4det
+B.6 servo0
+B.7 probe
+A.1 bed,hbed
+A.2 e0heat,heat0
+A.3 e1heat,heat1
+B.10 e2heat,heat2
+B.11 e3heat,heat3
+A.8 fan0,fan
+E.5 fan1
+D.12 fan2
+D.13 fan3
+D.14 fan4
+D.15 fan5
+E.15 lcdd7
+E.13 lcdd5
+E.10 lcdrs
+E.7 btnenc
+E.8 beep
+E.9 lcden
+E.12 lcdd4
+E.14 lcdd6
+C.15 lcdcd
+B.2 btnen2
+B.1 btnen1
+A.6 lcdmiso
+A.5 lcdsck
+A.4 lcdss
+A.7 lcdmosi
+B.0 neopixel
+A.9 tx1,tfttx
+A.10 rx1,tftrx
+C.4 xcs
+D.11 ycs
+C.6 zcs
+C.7 e0cs
+F.2 e1cs
+E.4 e2cs
+E.1 e3cs
+D.3 e4cs
+A.6 miso
+A.7 mosi
+A.5 sck
+B.8 scl1
+B.9 sda1
+E.11 pson
+C.0 pwrdet
+A.13 led,status
+board=btt_octopus_v1_1_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,C.2,C.3}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={E.8,E.9,E.7}
+SPI5.pins={E.12,NoPin,E.9}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=8
+stepper.enablePins={F.14,F.15,G.5,A.0,G.2,F.1,D.4,E.0}
+stepper.stepPins={F.13,G.0,F.11,G.4,F.9,C.13,E.2,E.6}
+stepper.directionPins={F.12,G.1,G.3,C.1,F.10,F.0,E.3,NoPin}
+stepper.numSmartDrivers=8
+stepper.TmcUartPins={C.4,D.11,C.6,C.7,F.2,E.4,E.1,D.3}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=G.7
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+btt_octopuspro_v1_0_f4
+61
+F.3 bedtemp,tb
+F.4 e0temp,th0
+F.5 e1temp,th1
+F.6 e2temp,th2
+F.7 e3temp,th3
+G.6 xstop
+G.9 ystop
+G.10 zstop
+G.11 e0stop,e0det
+G.12 e1stop,e1det
+G.13 e2stop,e2det
+G.14 e3stop,e3det
+G.15 e4stop,e4det
+B.6 servo0
+B.7 probe
+C.5 probe1
+A.1 bed,hbed
+A.2 e0heat,heat0
+A.3 e1heat,heat1
+B.10 e2heat,heat2
+B.11 e3heat,heat3
+A.8 fan0,fan
+E.5 fan1
+D.12 fan2
+D.13 fan3
+D.14 fan4
+D.15 fan5
+E.15 lcdd7
+E.13 lcdd5
+E.10 lcdrs
+E.7 btnenc
+E.8 beep
+E.9 lcden
+E.12 lcdd4
+E.14 lcdd6
+C.15 lcdcd
+B.2 btnen2
+B.1 btnen1
+A.6 lcdmiso
+A.5 lcdsck
+A.4 lcdss
+A.7 lcdmosi
+B.0 neopixel
+A.9 tx1,tfttx
+A.10 rx1,tftrx
+C.4 xcs
+D.11 ycs
+C.6 zcs
+C.7 e0cs
+F.2 e1cs
+E.4 e2cs
+E.1 e3cs
+D.3 e4cs
+A.6 miso
+A.7 mosi
+A.5 sck
+B.8 scl1
+B.9 sda1
+E.11 pson
+C.0 pwrdet
+A.13 led,status
+board=btt_octopuspro_v1_0_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,C.2,C.3}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={E.8,E.9,E.7}
+SPI5.pins={E.12,NoPin,E.9}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=8
+stepper.enablePins={F.14,F.15,G.5,A.0,G.2,F.1,D.4,E.0}
+stepper.stepPins={F.13,G.0,F.11,G.4,F.9,C.13,E.2,E.6}
+stepper.directionPins={F.12,G.1,G.3,C.1,F.10,F.0,E.3,NoPin}
+stepper.numSmartDrivers=8
+stepper.TmcUartPins={C.4,D.11,C.6,C.7,F.2,E.4,E.1,D.3}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=G.7
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+troodon_v2_f4
+36
+F.3 e0temp,th0
+A.0 bedtemp,tb
+F.2 xstop
+C.15 ystop
+C.13 zstop
+C.14 e0stop,e0det
+F.4 probe,ps1
+G.7 pro_sw,ps
+D.12 bed
+B.9 e0heat
+B.8 fan0,fan
+B.7 fan1
+E.5 fan2
+C.6 fan3
+E.6 fan4
+G.5 beep
+G.4 btnenc
+G.3 lcden
+G.2 lcdrs
+D.15 lcdd4
+D.14 lcdd5
+D.13 lcdd6
+D.11 lcdd7
+B.14 lcdmiso
+B.13 lcdsck
+D.10 btnen1
+B.12 lcdss
+D.9 btnen2
+B.15 lcdmosi
+D.8 lcdcd
+C.7 led,status
+E.13 diag4
+F.9 diag5
+F.15 diag6
+F.1 scl1
+F.0 sda1
+board=troodon_v2_f4
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=7
+stepper.enablePins={A.1,C.1,C.5,E.10,E.15,F.12,G.1}
+stepper.stepPins={A.3,C.2,B.0,E.11,B.10,F.13,E.7}
+stepper.directionPins={A.4,C.3,B.1,E.12,B.11,F.14,E.8}
+stepper.numSmartDrivers=7
+stepper.TmcUartPins={A.2,C.0,C.4,E.9,E.14,F.11,G.0}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+fysetc_spider_king_f4
+43
+C.1 e0temp,t0
+F.9 e1temp,t1
+C.3 e2temp,t2
+C.2 e3temp,t3
+C.0 e4temp,t4
+F.10 bedtemp,t5
+C.5 xstop,x-
+C.4 ystop,y-
+B.6 zstop,z-
+B.5 xstopmax,x+
+F.13 ystopmax,y+
+F.14 zstopmax,z+
+A.0 probe
+E.10 bed,hbed
+B.4 e0heat,he0
+B.0 e1heat,he1
+D.13 e2heat,he2
+C.8 e3heat,he3
+A.15 e4heat,he4
+E.8 fan0,fan
+E.9 fan1
+D.15 fan2
+D.12 fan3
+D.14 fan4
+B.1 tacho0
+B.7 tacho1
+A.1 servo0
+E.7 lcdd7
+G.4 lcdd6
+C.11 lcdd5
+C.10 lcdd4
+D.0 lcdrs
+C.12 lcden
+A.8 btnenc
+C.7 beep
+A.6 lcdmiso
+A.5 lcdsck
+C.6 btnen1
+A.4 lcdss
+C.7 btnen2
+A.7 lcdmosi
+B.10 lcdcd
+D.3 pd3
+board=fysetc_spider_king_f4
+sdcard.internal.type=1
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={C.10,C.11,C.12}
+SPI3.pins={E.12,E.13,E.14}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=10
+stepper.enablePins={E.11,G.10,G.15,D.5,E.6,E.2,G.9,B.2,F.2,G.5}
+stepper.stepPins={G.7,D.11,G.14,D.4,E.5,E.3,G.13,E.1,F.4,F.15}
+stepper.directionPins={G.6,D.10,G.12,D.6,C.13,E.4,G.8,E.0,F.3,G.0}
+stepper.numSmartDrivers=10
+stepper.TmcUartPins={D.2,E.15,D.8,D.7,C.14,C.15,G.3,D.9,F.5,G.11}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=B.11
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+fly_super8_pro_h743
+50
+F.4 adc0,out0
+F.5 adc1,out1
+F.9 adc2,pwmout2,pwm2,out2
+F.10 adc3,out3
+C.0 adc4,out4
+C.1 adc5,out5
+G.12 io0
+G.11 io1
+G.10 io2
+G.9 io3
+D.7 io4
+D.6 io5
+A.8 io6
+F.8 in7,pwmout1,pwm1
+F.3 hvin
+C.6 pwmout0,pwm0,servo
+C.3 probe
+B.0 heat0
+B.1 heat1
+C.7 heat2
+F.7 heat3
+F.6 heat4
+E.5 bedout,bed
+A.0 fan0
+A.1 fan1
+A.2 fan2
+A.3 fan3
+A.15 fan4
+B.11 fan5
+B.10 fan6
+D.12 fan7
+D.14 fan8
+D.15 fan9
+A.9 tx1
+A.10 rx1
+G.13 lcdd7
+C.13 lcdd5
+G.8 lcdrs
+E.13 btnenc
+E.12 beep
+B.2 lcden
+C.14 lcdd4
+G.14 lcdd6
+G.15 lcdcd
+B.6 btnen2
+B.7 btnen1
+A.6 lcdmiso
+A.5 lcdsck
+A.4 lcdss
+A.7 lcdmosi
+board=fly_super8_pro_h743
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={D.3,D.4,D.5}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={C.14,NoPin,B.2}
+SPI6.pins={NoPin,NoPin,NoPin}
+SPI7.pins={NoPin,NoPin,NoPin}
+SPI8.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=8
+stepper.enablePins={F.11,F.14,G.1,E.9,F.2,C.15,G.4,G.7}
+stepper.stepPins={E.2,E.3,E.4,E.14,E.15,E.1,E.0,E.6}
+stepper.directionPins={C.5,F.13,G.0,E.8,E.11,F.0,G.3,G.6}
+stepper.numSmartDrivers=8
+stepper.TmcUartPins={C.4,F.12,F.15,E.7,E.10,F.1,G.2,G.5}
+power.VInDetectPin=C.2
+sbc.TfrReadyPin=G.15
+sbc.csPin=A.4
+sbc.spiChannel=0
+XXENDXX
+btt_skr_se_bx_v2_0_h743
+39
+H.4 e0temp,th0
+A.3 e1temp,th1
+H.5 e2temp,thb
+B.11 xstop
+D.13 xstopmax
+B.12 ystop
+B.13 ystopmax
+D.12 zstop
+D.11 zstopmax
+H.2 probe
+A.4 bed,hbed
+C.4 e0heat,he0
+C.5 e1heat,he1
+A.5 fan0,fan
+A.6 fan1
+A.7 fan2
+A.2 servo0
+C.9 pc9
+F.9 pf9
+C.4 pc4
+G.11 pg11
+G.14 pg14
+C.1 pc1
+F.8 pf8
+F.10 pf10
+C.5 pc5
+G.13 pg13
+D.3 pd3
+F.7 pf7
+D.0 pd0
+D.2 pd2
+D.0 pd5
+E.0 pe0
+E.2 pe2
+E.4 pe4
+A.0 wifitx,tx4
+A.1 wifirx,rx4
+A.9 tfttx,tx1
+A.10 tftrx,rx1
+board=btt_skr_se_bx_v2_0_h743
+sdcard.internal.type=4
+SPI0.pins={NoPin,NoPin,NoPin}
+SPI1.pins={NoPin,NoPin,NoPin}
+SPI2.pins={C.10,C.11,C.12}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+SPI6.pins={E.2,E.5,E.6}
+SPI7.pins={NoPin,NoPin,NoPin}
+SPI8.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=I.11
+stepper.numDrivers=5
+stepper.enablePins={G.14,B.4,G.9,C.15,D.2}
+stepper.stepPins={G.13,B.3,D.7,C.14,A.8}
+stepper.directionPins={G.12,D.3,D.6,C.13,C.9}
+stepper.numSmartDrivers=5
+stepper.TmcUartPins={G.10,D.4,D.5,I.8,C.8}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=H.12
+sbc.csPin=H.10
+sbc.spiChannel=6
+XXENDXX
+btt_skr_3_h743
+35
+A.1 bedtemp,tb
+A.2 e0temp,th0
+A.3 e1temp,th1
+C.1 xstop
+C.3 ystop
+C.0 zstop
+C.2 e0stop,e0det
+A.0 e1stop,e1det
+E.5 servo0
+C.13 probe
+D.7 bed,hbed
+B.3 e0heat,heat0
+B.4 e1heat,heat1
+B.7 fan0,fan
+B.6 fan1
+B.5 fan2
+E.6 neopixel
+E.4 pson
+C.15 pwrdet
+A.13 led,status
+C.5 beep
+B.0 btnenc
+B.1 lcden
+E.8 lcdrs
+E.9 lcdd4
+E.10 lcdd5
+E.11 lcdd6
+E.12 lcdd7
+A.6 lcdmiso
+A.5 lcdsck
+E.7 btnen1
+A.4 lcdss
+B.2 btnen2
+A.7 lcdmosi
+C.4 lcdcd
+board=btt_skr_3_h743
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={E.14,E.15,E.13}
+SPI4.pins={C.5,B.1,B.0}
+SPI5.pins={E.9,NoPin,B.1}
+SPI6.pins={NoPin,NoPin,NoPin}
+SPI7.pins={NoPin,NoPin,NoPin}
+SPI8.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=5
+stepper.enablePins={D.6,D.1,E.0,C.7,D.13}
+stepper.stepPins={D.4,A.15,E.2,D.15,D.11}
+stepper.directionPins={D.3,A.8,E.3,D.14,D.10}
+stepper.numSmartDrivers=5
+stepper.TmcUartPins={D.5,D.0,E.1,C.6,D.12}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=C.14
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+fly_super5_h723
+35
+C.4 adc0
+C.5 adc1
+B.1 adc2
+B.7 io0
+C.7 io1
+C.6 io2
+C.13 io3
+C.14 io4
+C.15 io5
+B.2 neopixel
+E.6 servo0
+C.2 probe
+D.12 heat0
+D.13 heat1
+B.0 bedout,bed
+A.0 fan0
+A.1 fan1
+A.2 fan2
+A.3 fan3
+A.8 beep
+A.13 btnenc
+A.15 lcden
+A.14 lcdrs
+D.0 lcdd4
+D.1 lcdd5
+D.4 lcdd6
+D.3 lcdd7
+B.4 lcdmiso
+B.3 lcdsck
+D.7 btnen2
+B.6 lcdss
+D.6 btnen1
+B.5 lcdmosi
+D.5 lcdcd
+D.15 status
+board=fly_super5_h723
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={D.0,NoPin,A.15}
+SPI6.pins={NoPin,NoPin,NoPin}
+SPI7.pins={NoPin,NoPin,NoPin}
+SPI8.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=5
+stepper.enablePins={B.11,E.13,E.9,C.1,E.3}
+stepper.stepPins={E.14,E.11,E.7,E.4,E.1}
+stepper.directionPins={E.15,E.12,E.8,E.5,E.2}
+stepper.numSmartDrivers=5
+stepper.TmcUartPins={B.10,E.10,A.4,C.0,E.0}
+power.VInDetectPin=C.3
+sbc.TfrReadyPin=D.11
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+fly_super8_pro_h723
+50
+F.4 adc0,out0
+F.5 adc1,out1
+F.9 adc2,pwmout2,pwm2,out2
+F.10 adc3,out3
+C.0 adc4,out4
+C.1 adc5,out5
+G.12 io0
+G.11 io1
+G.10 io2
+G.9 io3
+D.7 io4
+D.6 io5
+A.8 io6
+F.8 in7,pwmout1,pwm1
+F.3 hvin
+C.6 pwmout0,pwm0,servo
+C.3 probe
+B.0 heat0
+B.1 heat1
+C.7 heat2
+F.7 heat3
+F.6 heat4
+E.5 bedout,bed
+A.0 fan0
+A.1 fan1
+A.2 fan2
+A.3 fan3
+A.15 fan4
+B.11 fan5
+B.10 fan6
+D.12 fan7
+D.14 fan8
+D.15 fan9
+A.9 tx1
+A.10 rx1
+G.13 lcdd7
+C.13 lcdd5
+G.8 lcdrs
+E.13 btnenc
+E.12 beep
+B.2 lcden
+C.14 lcdd4
+G.14 lcdd6
+G.15 lcdcd
+B.6 btnen2
+B.7 btnen1
+A.6 lcdmiso
+A.5 lcdsck
+A.4 lcdss
+A.7 lcdmosi
+board=fly_super8_pro_h723
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={D.3,D.4,D.5}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={C.14,NoPin,B.2}
+SPI6.pins={NoPin,NoPin,NoPin}
+SPI7.pins={NoPin,NoPin,NoPin}
+SPI8.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=8
+stepper.enablePins={F.11,F.14,G.1,E.9,F.2,C.15,G.4,G.7}
+stepper.stepPins={E.2,E.3,E.4,E.14,E.15,E.1,E.0,E.6}
+stepper.directionPins={C.5,F.13,G.0,E.8,E.11,F.0,G.3,G.6}
+stepper.numSmartDrivers=8
+stepper.TmcUartPins={C.4,F.12,F.15,E.7,E.10,F.1,G.2,G.5}
+power.VInDetectPin=C.2
+sbc.TfrReadyPin=G15
+sbc.csPin=A.4
+sbc.spiChannel=0
+XXENDXX
+fly_openpnp_tool_h723
+19
+C.6 chamber
+B.10 io0
+C.3 io1
+C.4 io2
+D.14 diag0
+E.7 diag1
+E.12 diag2
+E.14 rgb
+A.3 fan0,fan
+A.2 fan1
+A.1 fan2
+A.0 fan3
+C.9 sdd1
+C.8 sdd0
+C.12 sdsck
+D.2 sdcmd
+C.11 sdd3
+C.10 sdd2
+A.15 status
+board=fly_openpnp_tool_h723
+sdcard.internal.type=2
+SPI0.pins={NoPin,NoPin,NoPin}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+SPI6.pins={A.0,A.0,A.0}
+SPI7.pins={A.0,A.0,A.0}
+SPI8.pins={A.0,A.0,A.0}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=3
+stepper.enablePins={D.15,E.8,E.13}
+stepper.stepPins={D.12,B.0,E.10}
+stepper.directionPins={D.11,C.5,E.9}
+stepper.numSmartDrivers=3
+stepper.TmcUartPins={D.13,B.1,E.11}
+power.VInDetectPin=C.7
+sbc.TfrReadyPin=NoPin
+sbc.csPin=NoPin
+sbc.spiChannel=255
+XXENDXX
+btt_skr_3_h723
+35
+A.1 bedtemp,tb
+A.2 e0temp,th0
+A.3 e1temp,th1
+C.1 xstop
+C.3 ystop
+C.0 zstop
+C.2 e0stop,e0det
+A.0 e1stop,e1det
+E.5 servo0
+C.13 probe
+D.7 bed,hbed
+B.3 e0heat,heat0
+B.4 e1heat,heat1
+B.7 fan0,fan
+B.6 fan1
+B.5 fan2
+E.6 neopixel
+E.4 pson
+C.15 pwrdet
+A.13 led,status
+C.5 beep
+B.0 btnenc
+B.1 lcden
+E.8 lcdrs
+E.9 lcdd4
+E.10 lcdd5
+E.11 lcdd6
+E.12 lcdd7
+A.6 lcdmiso
+A.5 lcdsck
+E.7 btnen1
+A.4 lcdss
+B.2 btnen2
+A.7 lcdmosi
+C.4 lcdcd
+board=btt_skr_3_h723
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={E.14,E.15,E.13}
+SPI4.pins={C.5,B.1,B.0}
+SPI5.pins={E.9,NoPin,B.1}
+SPI6.pins={NoPin,NoPin,NoPin}
+SPI7.pins={NoPin,NoPin,NoPin}
+SPI8.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=5
+stepper.enablePins={D.6,D.1,E.0,C.7,D.13}
+stepper.stepPins={D.4,A.15,E.2,D.15,D.11}
+stepper.directionPins={D.3,A.8,E.3,D.14,D.10}
+stepper.numSmartDrivers=5
+stepper.TmcUartPins={D.5,D.0,E.1,C.6,D.12}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=C.14
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX
+btt_kraken_h723
+54
+B.0 bedtemp
+B.1 e0temp
+C.5 e1temp
+C.4 e2temp
+A.7 e3temp
+C.15 xstop
+F.0 ystop
+F.1 zstop
+F.2 e0stop
+F.3 e1stop
+F.4 e2stop
+F.10 e3stop
+C.0 e4stop
+E.9 servo0
+E.7 servo1
+G.1 probe
+F.5 bed
+F.6 e0heat
+F.7 e1heat
+F.9 e2heat
+F.8 e3heat
+A.0 fan0
+A.1 fan1
+A.2 fan2
+A.3 fan3
+A.4 fan4
+A.5 fan5
+A.6 fan6
+E.8 fan7
+C.1 fan6.tacho
+G.0 fan7.tacho
+F.12 neopixel
+F.11 neopixel1
+D.10 pson
+D.11 inddet
+C.2 adc1
+C.3 adc2
+B.10 scl2
+B.11 sda2
+G.5 beep
+G.4 btnenc
+G.3 lcden
+G.2 lcdrs
+D.15 lcdd4
+D.14 lcdd5
+D.13 lcdd6
+D.12 lcdd7
+E.13 lcdmiso
+E.12 lcdsck
+G.8 btnen1
+E.11 lcdss
+G.7 btnen2
+E.14 lcdmosi
+G.6 lcdcd
+board=btt_kraken_h723
+sdcard.internal.type=5
+SPI0.pins={NoPin,NoPin,NoPin}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={C.10,C.11,C.12}
+SPI3.pins={C.6,C.7,C.8}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+SPI6.pins={E.12,E.13,E.14}
+SPI7.pins={NoPin,NoPin,NoPin}
+SPI8.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=8
+stepper.enablePins={E.6,E.3,E.0,B.7,G.13,G.12,B.5,G.14}
+stepper.stepPins={C.14,E.5,E.2,B.9,G.9,G.11,B.4,G.15}
+stepper.directionPins={C.13,E.4,E.1,B.8,G.10,D.7,B.3,B.6}
+stepper.numSmartDrivers=8
+stepper.TmcUartPins={D.6,D.5,D.4,D.3,D.2,A.15,A.9,A.10}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=G.6
+sbc.csPin=E.11
+sbc.spiChannel=6
+XXENDXX
+btt_octopuspro_v1_1_h723
+63
+F.3 bedtemp,tb
+F.4 e0temp,th0
+F.5 e1temp,th1
+F.6 e2temp,th2
+F.7 e3temp,th3
+G.6 xstop
+G.9 ystop
+G.10 zstop
+G.11 e0stop,e0det
+G.12 e1stop,e1det
+G.13 e2stop,e2det
+G.14 e3stop,e3det
+G.15 e4stop,e4det
+B.6 servo0
+B.7 probe
+C.5 probe1
+A.1 bed,hbed
+A.0 e0heat,heat0
+A.3 e1heat,heat1
+B.0 e2heat,heat2
+B.11 e3heat,heat3
+A.8 fan0,fan
+E.5 fan1
+D.12 fan2
+D.13 fan3
+D.14 fan4
+D.15 fan5
+E.15 lcdd7
+E.13 lcdd5
+E.10 lcdrs
+E.7 btnenc
+E.8 beep
+E.9 lcden
+E.12 lcdd4
+E.14 lcdd6
+C.15 lcdcd
+B.2 btnen2
+B.1 btnen1
+A.6 lcdmiso
+A.5 lcdsck
+A.4 lcdss
+A.7 lcdmosi
+B.10 neopixel
+A.9 tx1,tfttx
+A.10 rx1,tftrx
+D.6 tx2
+D.5 rx2
+C.4 xcs
+D.11 ycs
+C.6 zcs
+C.7 e0cs
+F.2 e1cs
+E.4 e2cs
+E.1 e3cs
+D.3 e4cs
+A.6 miso
+A.7 mosi
+A.5 sck
+B.8 scl1
+B.9 sda1
+E.11 pson
+C.0 pwrdet
+A.13 led,status
+board=btt_octopuspro_v1_1_h723
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,C.2,C.3}
+SPI2.pins={B.3,B.4,B.5}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={E.8,E.9,E.7}
+SPI5.pins={E.12,NoPin,E.9}
+SPI6.pins={NoPin,NoPin,NoPin}
+SPI7.pins={NoPin,NoPin,NoPin}
+SPI8.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.numDrivers=8
+stepper.enablePins={F.14,F.15,G.5,A.2,G.2,F.1,D.4,E.0}
+stepper.stepPins={F.13,G.0,F.11,G.4,F.9,C.13,E.2,E.6}
+stepper.directionPins={F.12,G.1,G.3,C.1,F.10,F.0,E.3,NoPin}
+stepper.numSmartDrivers=8
+stepper.TmcUartPins={C.4,D.11,C.6,C.7,F.2,E.4,E.1,D.3}
+power.VInDetectPin=NoPin
+sbc.TfrReadyPin=D.10
+sbc.csPin=B.12
+sbc.spiChannel=1
+XXENDXX

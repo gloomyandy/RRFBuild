@@ -13,11 +13,14 @@ VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | aw
 OUTPUT=releases/${VER}/${BUILD}
 echo $OUTNAME
 mkdir -p ${OUTPUT}
-rm -f ${OUTPUT}/${OUTNAME}-${VER,,}.*
+mkdir -p ${OUTPUT}/base
+mkdir -p ${OUTPUT}/map
+rm -f ${OUTPUT}/base/${OUTNAME}-${VER,,}.*
+rm -f ${OUTPUT}/map/${OUTNAME}-${VER,,}.*
 
 make distclean
 make -j8 firmware CORE=${CORE} MCU=${MCU} NETWORK=${NETWORK} BUILD=${BUILD} VARIANT=${VARIANT} STARTUP_DELAY=${STARTUP_DELAY}
 if [ -f ./build/${OUTNAME}.bin ]; then
-        mv ./build/${OUTNAME}.bin ${OUTPUT}/$OUTNAME-${VER,,}.bin
-        mv ./build/${OUTNAME}.map ${OUTPUT}/$OUTNAME-${VER,,}.map
+        mv ./build/${OUTNAME}.bin ${OUTPUT}/base/$OUTNAME-${VER,,}.bin
+        mv ./build/${OUTNAME}.map ${OUTPUT}/map/$OUTNAME-${VER,,}.map
 fi 

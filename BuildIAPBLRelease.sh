@@ -10,11 +10,14 @@ VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | aw
 OUTPUT=releases/${VER}/${BUILD}
 
 mkdir -p ${OUTPUT}
-rm -f ${OUTPUT}/${MCU,,}_bootloader_${SDTYPE}.*
+mkdir -p ${OUTPUT}/map
+mkdir -p ${OUTPUT}/base
+rm -f ${OUTPUT}/map/${MCU,,}_bootloader_${SDTYPE}.*
+rm -f ${OUTPUT}/base/${MCU,,}_bootloader_${SDTYPE}.*
 
 make distclean MAKE_DIR=IAP/makefiles/${MCU}
 make -j8 CORE=${CORE} MCU=${MCU} CONFIG=IAP_BOOT_LOADER SDTYPE=${SDTYPE} MAKE_DIR=IAP/makefiles/${MCU} all
 if [ -f ./iapbuild/${MCU,,}_bootloader_${SDTYPE}.bin ]; then
-    mv ./iapbuild/${MCU,,}_bootloader_${SDTYPE}.bin ${OUTPUT}/${MCU,,}_bootloader_${SDTYPE}.bin
-    mv ./iapbuild/${MCU,,}_bootloader_${SDTYPE}.map ${OUTPUT}/${MCU,,}_bootloader_${SDTYPE}.map
+    mv ./iapbuild/${MCU,,}_bootloader_${SDTYPE}.bin ${OUTPUT}/base/${MCU,,}_bootloader_${SDTYPE}.bin
+    mv ./iapbuild/${MCU,,}_bootloader_${SDTYPE}.map ${OUTPUT}/map/${MCU,,}_bootloader_${SDTYPE}.map
 fi 

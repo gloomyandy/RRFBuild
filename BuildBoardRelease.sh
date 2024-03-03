@@ -1,0 +1,30 @@
+#!/bin/sh
+echo $1 $2 $3 $4 $5 $6 $7 $8
+BUILD=${1:-Debug}
+MCU=${2:-STM32F4}
+NETWORK=${3:-WIFI}
+BOARD=$4
+INNAME=${5:-firmware-${MCU,,}-${NETWORK,,}}
+OUTNAME=${6:-firmware-${BOARD,,}-${NETWORK,,}}
+IAP=${7:-${MCU,,}_iap_SBC}
+CRC=${8:-RepRapFirmware/Tools/CrcAppender/win-x86-64/CrcAppender.exe}
+#extract firmware version from header file
+VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`
+
+OUTPUT=releases/${VER}/${BUILD}
+echo $INNAME $OUTNAME
+mkdir -p ${OUTPUT}
+mkdir -p ${OUTPUT}/mainboard
+rm -f ${OUTPUT}/mainboard/${OUTNAME}-${VER,,}.*
+
+if [ -f ${OUTPUT}/base/$INNAME-${VER,,}.bin ]; then
+        cp ${OUTPUT}/base/$INNAME-${VER,,}.bin ${OUTPUT}/mainboard/$OUTNAME-${VER,,}.bin
+        rm -rf ${OUTPUT}/mainboard/rootdir
+        mkdir -p ${OUTPUT}/mainboard/rootdir
+        echo "board = ${BOARD}" > ${OUTPUT}/mainboard/rootdir/rrfboot.txt
+        ${CRC} ${OUTPUT}/mainboard/$OUTNAME-${VER,,}.bin ${OUTPUT}/mainboard/rootdir
+        if [ ${NETWORK} = "SBC" ]; then
+            (cd ${OUTPUT}/mainboard; /c/Windows/SysWOW64/tar.exe -a -c -f ${OUTNAME}-${VER,,}.zip ${OUTNAME}-${VER,,}.bin ${IAP}.bin)
+        fi
+        rm -rf ${OUTPUT}/mainboard/rootdir
+fi 

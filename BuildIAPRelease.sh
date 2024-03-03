@@ -14,13 +14,19 @@ VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | aw
 OUTPUT=releases/${VER}/${BUILD}
 
 mkdir -p ${OUTPUT}
-rm -f ${OUTPUT}/${OUTNAME}.*
-rm -f ${OUTPUT}/${FWNAME}-${VER,,}.zip
+mkdir -p ${OUTPUT}/base
+mkdir -p ${OUTPUT}/map
+mkdir -p ${OUTPUT}/mainboard
+rm -f ${OUTPUT}/mainboard/${OUTNAME}.*
+rm -f ${OUTPUT}/base/${OUTNAME}.*
+rm -f ${OUTPUT}/map/${OUTNAME}.*
+rm -f ${OUTPUT}/base/${FWNAME}-${VER,,}.zip
 
 make distclean MAKE_DIR=IAP/makefiles/${MCU}
 make -j8 CORE=${CORE} MCU=${MCU} VARIANT=${VARIANT} CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/${MCU} all
 if [ -f ./iapbuild/${OUTNAME}.bin ]; then
-    mv ./iapbuild/${OUTNAME}.bin ${OUTPUT}/${OUTNAME}.bin
-    mv ./iapbuild/${OUTNAME}.map ${OUTPUT}/${OUTNAME}.map
-    (cd ${OUTPUT}; /c/Windows/SysWOW64/tar.exe -a -c -f ${FWNAME}-${VER,,}.zip ${FWNAME}-${VER,,}.bin ${OUTNAME}.bin)
+    cp ./iapbuild/${OUTNAME}.bin ${OUTPUT}/mainboard/${OUTNAME}.bin
+    mv ./iapbuild/${OUTNAME}.bin ${OUTPUT}/base/${OUTNAME}.bin
+    mv ./iapbuild/${OUTNAME}.map ${OUTPUT}/map/${OUTNAME}.map
+    (cd ${OUTPUT}/base; /c/Windows/SysWOW64/tar.exe -a -c -f ${FWNAME}-${VER,,}.zip ${FWNAME}-${VER,,}.bin ${OUTNAME}.bin)
 fi 
