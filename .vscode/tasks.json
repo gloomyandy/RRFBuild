@@ -403,6 +403,36 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
+      },      {
+        "label": "build FLYSB2040V1_0 picocan Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=FLYSB2040V1_0 BOARD_REV=0 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FLYSB2040V1_0 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
       },
       {
         "label": "build Fly36RRF v1 spican Expansion Firmware",
@@ -465,7 +495,69 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
+      },
+      {
+        "label": "build FLYSB2040 v3 spican Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=FLYSB2040V3_0 BOARD_REV=3 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FLYSB2040V3_0 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
       },      {
+        "label": "build FLYSB2040 v3 pro spican Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=FLYSB2040V3_0 BOARD_REV=103 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FLYSB2040PROV3_0 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
         "label": "build MKSTHR3642 picocan Expansion Firmware",
         "type": "shell",
         "command": "make -j8 CORE=RP2040 BOARD=MKSTHR3642 BOARD_REV=1 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_MKSTHR3642v1_0 all",
