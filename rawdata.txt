@@ -587,7 +587,7 @@ E.8 spi1cs2
 B.3 motsck
 B.4 motmiso
 B.5 motmosi
-D.15 status
+D.15 status,neopixel
 B.9 laser
 C.3 poweradc
 board=fly_cdy_v3_f4
