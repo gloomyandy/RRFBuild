@@ -69,7 +69,8 @@
 			"ostream": "cpp",
 			"stdexcept": "cpp",
 			"streambuf": "cpp",
-			"typeinfo": "cpp"
+			"typeinfo": "cpp",
+			"iostream": "cpp"
 		},
 	}
 }

@@ -19,11 +19,8 @@ rm -f ${OUTPUT}/mainboard/${OUTNAME}-${VER,,}.*
 
 if [ -f ${OUTPUT}/base/$INNAME-${VER,,}.bin ]; then
         cp ${OUTPUT}/base/$INNAME-${VER,,}.bin ${OUTPUT}/mainboard/$OUTNAME-${VER,,}.bin
-        rm -rf ${OUTPUT}/mainboard/rootdir
-        mkdir -p ${OUTPUT}/mainboard/rootdir
-        echo "board = ${BOARD}" > ${OUTPUT}/mainboard/rootdir/rrfboot.txt
-        ${CRC} ${OUTPUT}/mainboard/$OUTNAME-${VER,,}.bin ${OUTPUT}/mainboard/rootdir
-        if [ ${NETWORK} = "SBC" ]; then
+        ${CRC} ${OUTPUT}/mainboard/$OUTNAME-${VER,,}.bin boards/$BOARD
+        if [ ${NETWORK} != "WIFI" ]; then
             (cd ${OUTPUT}/mainboard; /c/Windows/SysWOW64/tar.exe -a -c -f ${OUTNAME}-${VER,,}.zip ${OUTNAME}-${VER,,}.bin ${IAP}.bin)
         fi
         rm -rf ${OUTPUT}/mainboard/rootdir

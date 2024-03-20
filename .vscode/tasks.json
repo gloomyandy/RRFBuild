@@ -2,133 +2,9 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "build STMF4 SBC firmware",
+        "label": "build STMF4 COMBINED firmware",
         "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32F4 CORE=STM32 MCU=STM32F4 NETWORK=SBC all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build STMF4 WiFi firmware",
-        "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32F4 CORE=STM32 MCU=STM32F4 NETWORK=WIFI all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build STMH743 WiFi firmware",
-        "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=WIFI all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build STMH723 SBC firmware",
-        "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=SBC VARIANT=STM32H723 all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build STMH743 SBC firmware",
-        "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=SBC VARIANT=STM32H743 all",
+        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32F4 CORE=STM32 MCU=STM32F4 NETWORK=COMBINED all",
         "osx": {
           "options": {
             "env": {
@@ -157,9 +33,40 @@
         "problemMatcher": "$gcc"
       },
      {
-        "label": "build STMH723 WiFi firmware",
+        "label": "build STMH743 COMBINED firmware",
         "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=WIFI VARIANT=STM32H723 all",
+        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=COMBINED all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "build STMH723 COMBINED firmware",
+        "type": "shell",
+        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=COMBINED VARIANT=STM32H723 all",
         "osx": {
           "options": {
             "env": {
