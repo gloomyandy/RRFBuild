@@ -5,7 +5,7 @@ CORE=${2:-STM32}
 MCU=${3:-STM32F4}
 VARIANT=$4
 NETWORK=${5:-WIFI}
-OUTNAME=${6:-firmware-${MCU,,}-${NETWORK,,}}
+OUTNAME=${6:-base-${MCU,,}-${NETWORK,,}}
 STARTUP_DELAY=$7
 #extract firmware version from header file
 VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`

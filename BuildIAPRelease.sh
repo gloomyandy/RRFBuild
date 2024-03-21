@@ -28,5 +28,4 @@ if [ -f ./iapbuild/${OUTNAME}.bin ]; then
     cp ./iapbuild/${OUTNAME}.bin ${OUTPUT}/mainboard/${OUTNAME}.bin
     mv ./iapbuild/${OUTNAME}.bin ${OUTPUT}/base/${OUTNAME}.bin
     mv ./iapbuild/${OUTNAME}.map ${OUTPUT}/map/${OUTNAME}.map
-    (cd ${OUTPUT}/base; /c/Windows/SysWOW64/tar.exe -a -c -f ${FWNAME}-${VER,,}.zip ${FWNAME}-${VER,,}.bin ${OUTNAME}.bin)
 fi 
