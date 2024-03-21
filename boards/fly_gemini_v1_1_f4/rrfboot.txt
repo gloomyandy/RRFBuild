@@ -17,3 +17,4 @@ power.VInDetectPin=NoPin
 sbc.TfrReadyPin=C.9
 sbc.csPin=B.12
 sbc.spiChannel=1
+heat.tempSensePins={C.0,C.2}
