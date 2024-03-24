@@ -15,13 +15,12 @@ OUTPUT=releases/${VER}/${BUILD}
 echo $INNAME $OUTNAME
 mkdir -p ${OUTPUT}
 mkdir -p ${OUTPUT}/mainboard
-rm -f ${OUTPUT}/mainboard/${OUTNAME}-${VER,,}.*
+rm -f ${OUTPUT}/mainboard/${OUTNAME}.*
 
-if [ -f ${OUTPUT}/base/$INNAME-${VER,,}.bin ]; then
-        cp ${OUTPUT}/base/$INNAME-${VER,,}.bin ${OUTPUT}/mainboard/$OUTNAME-${VER,,}.bin
-        ${CRC} ${OUTPUT}/mainboard/$OUTNAME-${VER,,}.bin boards/$BOARD
+if [ -f ${OUTPUT}/base/$INNAME.bin ]; then
+        cp ${OUTPUT}/base/$INNAME.bin ${OUTPUT}/mainboard/$OUTNAME.bin
+        ${CRC} ${OUTPUT}/mainboard/$OUTNAME.bin boards/$BOARD
         if [ ${NETWORK} != "WIFI" ]; then
-            (cd ${OUTPUT}/mainboard; /c/Windows/SysWOW64/tar.exe -a -c -f ${OUTNAME}-${VER,,}.zip ${OUTNAME}-${VER,,}.bin ${IAP}.bin)
+            (cd ${OUTPUT}/mainboard; /c/Windows/SysWOW64/tar.exe -a -c -f ${OUTNAME}.zip ${OUTNAME}.bin ${IAP}.bin)
         fi
-        rm -rf ${OUTPUT}/mainboard/rootdir
 fi 

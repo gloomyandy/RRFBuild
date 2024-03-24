@@ -15,12 +15,12 @@ echo $OUTNAME
 mkdir -p ${OUTPUT}
 mkdir -p ${OUTPUT}/base
 mkdir -p ${OUTPUT}/map
-rm -f ${OUTPUT}/base/${OUTNAME}-${VER,,}.*
-rm -f ${OUTPUT}/map/${OUTNAME}-${VER,,}.*
+rm -f ${OUTPUT}/base/${OUTNAME}.*
+rm -f ${OUTPUT}/map/${OUTNAME}.*
 
 make distclean
 make -j8 firmware CORE=${CORE} MCU=${MCU} NETWORK=${NETWORK} BUILD=${BUILD} VARIANT=${VARIANT} STARTUP_DELAY=${STARTUP_DELAY}
 if [ -f ./build/${OUTNAME}.bin ]; then
-        mv ./build/${OUTNAME}.bin ${OUTPUT}/base/$OUTNAME-${VER,,}.bin
-        mv ./build/${OUTNAME}.map ${OUTPUT}/map/$OUTNAME-${VER,,}.map
+        mv ./build/${OUTNAME}.bin ${OUTPUT}/base/$OUTNAME.bin
+        mv ./build/${OUTNAME}.map ${OUTPUT}/map/$OUTNAME.map
 fi 
