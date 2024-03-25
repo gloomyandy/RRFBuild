@@ -1,4 +1,4 @@
-board=fysetc_spider_king_h723
+board=spiderking_h723
 sdcard.internal.type=1
 SPI0.pins={A.5,A.6,A.7}
 SPI1.pins={B.13,B.14,B.15}

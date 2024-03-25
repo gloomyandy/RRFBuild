@@ -1,4 +1,4 @@
-board=btt_skr_se_bx_v2_0_h743
+board=skrsebx2_h743
 sdcard.internal.type=4
 SPI0.pins={NoPin,NoPin,NoPin}
 SPI1.pins={NoPin,NoPin,NoPin}

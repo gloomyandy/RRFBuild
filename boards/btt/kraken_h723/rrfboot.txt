@@ -1,4 +1,4 @@
-board=btt_kraken_h723
+board=kraken_h723
 sdcard.internal.type=5
 SPI0.pins={NoPin,NoPin,NoPin}
 SPI1.pins={B.13,B.14,B.15}

@@ -1,4 +1,4 @@
-board=fly_gemini_v1_1_f4
+board=gemini1_1_f4
 sdcard.internal.type=1
 SPI0.pins={A.5,A.6,A.7}
 SPI1.pins={B.13,B.14,B.15}

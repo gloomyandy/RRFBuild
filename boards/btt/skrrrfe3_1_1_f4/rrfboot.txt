@@ -1,4 +1,4 @@
-board=btt_skr_rrf_e3_v1_1_f4
+board=skrrrfe3_1_1_f4
 sdcard.internal.type=2
 SPI0.pins={NoPin,NoPin,NoPin}
 SPI1.pins={B.13,B.14,B.15}

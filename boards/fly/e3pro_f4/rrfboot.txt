@@ -1,4 +1,4 @@
-board=fly_e3_pro_f4
+board=e3pro_f4
 sdcard.internal.type=2
 SPI0.pins={NoPin,NoPin,NoPin}
 SPI1.pins={B.13,B.14,B.15}
