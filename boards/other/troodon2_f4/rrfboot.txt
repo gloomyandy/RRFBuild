@@ -23,4 +23,5 @@ wifi.espResetPin=G.14
 wifi.csPin=A.15
 wifi.serialRxTxPins={D.6,D.5}
 wifi.spiChannel=2
+wifi.moduleType=esp32
 serial.aux.rxTxPins={NoPin,NoPin}

@@ -20,4 +20,5 @@ wifi.espDataReadyPin=E.10
 wifi.TfrReadyPin=E.12
 wifi.espResetPin=E.11
 wifi.serialRxTxPins={D.9, D.8}
+wifi.moduleType=esp8266
 heat.tempSensePins={B.1,A.3,C.4,D.14}
