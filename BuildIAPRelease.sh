@@ -25,7 +25,6 @@ rm -f ${OUTPUT}/base/${FWNAME}-${VER,,}.zip
 make distclean MAKE_DIR=IAP/makefiles/${MCU}
 make -j8 CORE=${CORE} MCU=${MCU} VARIANT=${VARIANT} CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/${MCU} all
 if [ -f ./iapbuild/${OUTNAME}.bin ]; then
-    cp ./iapbuild/${OUTNAME}.bin ${OUTPUT}/mainboard/${OUTNAME}.bin
     mv ./iapbuild/${OUTNAME}.bin ${OUTPUT}/base/${OUTNAME}.bin
     mv ./iapbuild/${OUTNAME}.map ${OUTPUT}/map/${OUTNAME}.map
 fi 
