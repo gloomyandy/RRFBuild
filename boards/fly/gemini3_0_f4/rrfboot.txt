@@ -7,7 +7,6 @@ SPI3.pins={NoPin,NoPin,NoPin}
 SPI4.pins={NoPin,NoPin,NoPin}
 SPI5.pins={NoPin,NoPin,NoPin}
 stepper.powerEnablePin=NoPin
-stepper.numDrivers=4
 stepper.enablePins={A.3,D.2,C.12,C.11}
 stepper.stepPins={C.13,C.14,C.15,C.3}
 stepper.directionPins={C.1,C.4,C.5,C.8}
