@@ -6409,7 +6409,7 @@ LOAD c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bi
 .iplt           0x1001ee20        0x0
  .iplt          0x1001ee20        0x0 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x1001ee20     0x49ec
+.rodata         0x1001ee20     0x49e8
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata._ZN12CanInterface4InitEhbb.str1.4
                 0x1001ee20       0x25 ./expbuild/./Duet3Expansion/src/CAN/CanInterface.o
@@ -6738,401 +6738,401 @@ LOAD c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bi
                 0x1002143c       0x11 ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
  *fill*         0x1002144d        0x3 
  .rodata._ZN14RtdSensor318659ConfigureERK23CanMessageGenericParserRK9StringRef.str1.4
-                0x10021450       0x5e ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
+                0x10021450       0x5a ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
                                  0x66 (size before relaxing)
- *fill*         0x100214ae        0x2 
+ *fill*         0x100214aa        0x2 
  .rodata._ZTV14RtdSensor31865
-                0x100214b0       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
-                0x100214b0                vtable for RtdSensor31865
+                0x100214ac       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
+                0x100214ac                vtable for RtdSensor31865
  .rodata._ZZN14RtdSensor318654PollEvE12faultDataOut
-                0x100214e0        0x2 ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
- *fill*         0x100214e2        0x2 
+                0x100214dc        0x2 ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
+ *fill*         0x100214de        0x2 
  .rodata._ZZN14RtdSensor318654PollEvE7dataOut
-                0x100214e4        0x4 ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
+                0x100214e0        0x4 ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
  .rodata._ZZNK14RtdSensor3186510TryInitRtdEvE8readData
-                0x100214e8        0x2 ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
- *fill*         0x100214ea        0x2 
+                0x100214e4        0x2 ./expbuild/./Duet3Expansion/src/Heating/Sensors/RtdSensor31865.o
+ *fill*         0x100214e6        0x2 
  .rodata._ZNK14SensorWithPort16AppendPinDetailsERK9StringRef.str1.4
-                0x100214ec        0xc ./expbuild/./Duet3Expansion/src/Heating/Sensors/SensorWithPort.o
+                0x100214e8        0xc ./expbuild/./Duet3Expansion/src/Heating/Sensors/SensorWithPort.o
  .rodata._ZN14SensorWithPort13ConfigurePortERK23CanMessageGenericParserRK9StringRef9PinAccessRb.str1.4
-                0x100214f8       0x1c ./expbuild/./Duet3Expansion/src/Heating/Sensors/SensorWithPort.o
+                0x100214f4       0x1c ./expbuild/./Duet3Expansion/src/Heating/Sensors/SensorWithPort.o
  .rodata._ZTV14SensorWithPort
-                0x10021514       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/SensorWithPort.o
-                0x10021514                vtable for SensorWithPort
+                0x10021510       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/SensorWithPort.o
+                0x10021510                vtable for SensorWithPort
  .rodata._ZNK17TemperatureSensor16CopyBasicDetailsERK9StringRef.str1.4
-                0x10021544       0x61 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TemperatureSensor.o
+                0x10021540       0x61 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TemperatureSensor.o
                                  0x79 (size before relaxing)
- *fill*         0x100215a5        0x3 
+ *fill*         0x100215a1        0x3 
  .rodata._ZN17TemperatureSensor6CreateEjPKcRK9StringRef.str1.4
-                0x100215a8       0xba ./expbuild/./Duet3Expansion/src/Heating/Sensors/TemperatureSensor.o
- *fill*         0x10021662        0x2 
+                0x100215a4       0xba ./expbuild/./Duet3Expansion/src/Heating/Sensors/TemperatureSensor.o
+ *fill*         0x1002165e        0x2 
  .rodata._ZTV17TemperatureSensor
-                0x10021664       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TemperatureSensor.o
-                0x10021664                vtable for TemperatureSensor
+                0x10021660       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TemperatureSensor.o
+                0x10021660                vtable for TemperatureSensor
  .rodata._ZL9tempTable
-                0x10021694       0xc0 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TemperatureSensor.o
+                0x10021690       0xc0 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TemperatureSensor.o
  .rodata._ZN10Thermistor9ConfigureERK23CanMessageGenericParserRK9StringRef.str1.4
-                0x10021754       0x7b ./expbuild/./Duet3Expansion/src/Heating/Sensors/Thermistor.o
- *fill*         0x100217cf        0x1 
+                0x10021750       0x7b ./expbuild/./Duet3Expansion/src/Heating/Sensors/Thermistor.o
+ *fill*         0x100217cb        0x1 
  .rodata._ZN10ThermistorC2Ejb.str1.4
-                0x100217d0       0x13 ./expbuild/./Duet3Expansion/src/Heating/Sensors/Thermistor.o
- *fill*         0x100217e3        0x1 
+                0x100217cc       0x13 ./expbuild/./Duet3Expansion/src/Heating/Sensors/Thermistor.o
+ *fill*         0x100217df        0x1 
  .rodata._ZTV10Thermistor
-                0x100217e4       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/Thermistor.o
-                0x100217e4                vtable for Thermistor
+                0x100217e0       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/Thermistor.o
+                0x100217e0                vtable for Thermistor
  .rodata._ZN23ThermocoupleSensor31855C2Ej.str1.4
-                0x10021814       0x18 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31855.o
+                0x10021810       0x18 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31855.o
  .rodata._ZTV23ThermocoupleSensor31855
-                0x1002182c       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31855.o
-                0x1002182c                vtable for ThermocoupleSensor31855
+                0x10021828       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31855.o
+                0x10021828                vtable for ThermocoupleSensor31855
  .rodata._ZN23ThermocoupleSensor31856C2Ej.str1.4
-                0x1002185c       0x18 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
+                0x10021858       0x18 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
  .rodata._ZN23ThermocoupleSensor318569ConfigureERK23CanMessageGenericParserRK9StringRef.str1.4
-                0x10021874       0x88 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
+                0x10021870       0x88 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
                                  0x90 (size before relaxing)
  .rodata._ZTV23ThermocoupleSensor31856
-                0x100218fc       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
-                0x100218fc                vtable for ThermocoupleSensor31856
+                0x100218f8       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
+                0x100218f8                vtable for ThermocoupleSensor31856
  .rodata._ZZN23ThermocoupleSensor318564PollEvE7dataOut
-                0x1002192c        0x5 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
- *fill*         0x10021931        0x3 
+                0x10021928        0x5 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
+ *fill*         0x1002192d        0x3 
  .rodata._ZZNK23ThermocoupleSensor3185619TryInitThermocoupleEvE8readData
-                0x10021934        0x4 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
+                0x10021930        0x4 ./expbuild/./Duet3Expansion/src/Heating/Sensors/ThermocoupleSensor31856.o
  .rodata._ZN26TmcDriverTemperatureSensorC2Ej.str1.4
-                0x10021938       0x19 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TmcDriverTemperatureSensor.o
- *fill*         0x10021951        0x3 
+                0x10021934       0x19 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TmcDriverTemperatureSensor.o
+ *fill*         0x1002194d        0x3 
  .rodata._ZTV26TmcDriverTemperatureSensor
-                0x10021954       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TmcDriverTemperatureSensor.o
-                0x10021954                vtable for TmcDriverTemperatureSensor
+                0x10021950       0x30 ./expbuild/./Duet3Expansion/src/Heating/Sensors/TmcDriverTemperatureSensor.o
+                0x10021950                vtable for TmcDriverTemperatureSensor
  .rodata._ZN12InputMonitor13SetDriveLevelEmRK9StringRefRh.str1.4
-                0x10021984       0x28 ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
+                0x10021980       0x28 ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
  .rodata._ZN12InputMonitor6CreateERK31CanMessageCreateInputMonitorNewjRK9StringRefRh.str1.4
-                0x100219ac       0x2b ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
- *fill*         0x100219d7        0x1 
+                0x100219a8       0x2b ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
+ *fill*         0x100219d3        0x1 
  .rodata._ZN12InputMonitor6ChangeERK31CanMessageChangeInputMonitorNewRK9StringRefRh.str1.4
-                0x100219d8       0x6e ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
- *fill*         0x10021a46        0x2 
+                0x100219d4       0x6e ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
+ *fill*         0x10021a42        0x2 
  .rodata._ZN12InputMonitor6ChangeERK31CanMessageChangeInputMonitorNewRK9StringRefRh
-                0x10021a48       0x1c ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
+                0x10021a44       0x1c ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
  .rodata.str1.4
-                0x10021a64       0x70 ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
+                0x10021a60       0x70 ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
  .rodata._ZL8PinTable
-                0x10021a64       0xf8 ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
- .rodata        0x10021b5c       0x14 ./expbuild/./Duet3Expansion/src/Movement/DriveMovement.o
+                0x10021a60       0xf8 ./expbuild/./Duet3Expansion/src/InputMonitors/InputMonitor.o
+ .rodata        0x10021b58       0x14 ./expbuild/./Duet3Expansion/src/Movement/DriveMovement.o
  .rodata._ZN4Move4InitEv.str1.4
-                0x10021b70        0x5 ./expbuild/./Duet3Expansion/src/Movement/Move.o
- *fill*         0x10021b75        0x3 
+                0x10021b6c        0x5 ./expbuild/./Duet3Expansion/src/Movement/Move.o
+ *fill*         0x10021b71        0x3 
  .rodata._ZN4Move11DiagnosticsERK9StringRef.str1.4
-                0x10021b78       0xbf ./expbuild/./Duet3Expansion/src/Movement/Move.o
- *fill*         0x10021c37        0x1 
+                0x10021b74       0xbf ./expbuild/./Duet3Expansion/src/Movement/Move.o
+ *fill*         0x10021c33        0x1 
  .rodata._ZN9StepTimer11DiagnosticsERK9StringRef.str1.4
-                0x10021c38       0x96 ./expbuild/./Duet3Expansion/src/Movement/StepTimer.o
+                0x10021c34       0x96 ./expbuild/./Duet3Expansion/src/Movement/StepTimer.o
                                  0xa2 (size before relaxing)
- *fill*         0x10021cce        0x2 
+ *fill*         0x10021cca        0x2 
  .rodata.str1.4
-                0x10021cd0       0x44 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/DriverMode.o
+                0x10021ccc       0x44 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/DriverMode.o
  .rodata._ZL17DriverModeStrings
-                0x10021d14       0x14 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/DriverMode.o
+                0x10021d10       0x14 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/DriverMode.o
  .rodata._ZNK14TmcDriverState17AppendStallConfigERK9StringRef.str1.4
-                0x10021d28       0x30 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+                0x10021d24       0x30 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
  .rodata._ZN14TmcDriverState14GetAnyRegisterERK9StringRefh.str1.4
-                0x10021d58       0x1e ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
- *fill*         0x10021d76        0x2 
+                0x10021d54       0x1e ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+ *fill*         0x10021d72        0x2 
  .rodata._ZN14TmcDriverState18AppendDriverStatusERK9StringRef.str1.4
-                0x10021d78       0x9e ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
- *fill*         0x10021e16        0x2 
+                0x10021d74       0x9e ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+ *fill*         0x10021e12        0x2 
  .rodata._ZN12SmartDrivers4InitEv.str1.4
-                0x10021e18        0x4 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+                0x10021e14        0x4 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
  .rodata._ZN12SmartDrivers17AppendStallConfigEjRK9StringRef.str1.4
-                0x10021e1c        0xf ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
- *fill*         0x10021e2b        0x1 
+                0x10021e18        0xf ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+ *fill*         0x10021e27        0x1 
  .rodata._ZN12SmartDrivers11SetRegisterEj19SmartDriverRegisterm
-                0x10021e2c       0x20 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+                0x10021e28       0x20 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
  .rodata._ZN12SmartDrivers11GetRegisterEj19SmartDriverRegister
-                0x10021e4c       0x30 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+                0x10021e48       0x30 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
  .rodata._ZN12SmartDrivers14GetAnyRegisterEjRK9StringRefh.str1.4
-                0x10021e7c       0x1c ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+                0x10021e78       0x1c ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
  .rodata._ZN14TmcDriverState14ReadRegNumbersE
-                0x10021e98        0x8 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
-                0x10021e98                TmcDriverState::ReadRegNumbers
+                0x10021e94        0x8 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+                0x10021e94                TmcDriverState::ReadRegNumbers
  .rodata._ZN14TmcDriverState15WriteRegNumbersE
-                0x10021ea0        0xa ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
-                0x10021ea0                TmcDriverState::WriteRegNumbers
- *fill*         0x10021eaa        0x2 
+                0x10021e9c        0xa ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+                0x10021e9c                TmcDriverState::WriteRegNumbers
+ *fill*         0x10021ea6        0x2 
  .rodata._ZL9crc_table
-                0x10021eac      0x100 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
+                0x10021ea8      0x100 ./expbuild/./Duet3Expansion/src/Movement/StepperDrivers/TMC22xx.o
  .rodata._ZNK19CartesianKinematics7GetNameEb.str1.4
-                0x10021fac       0x16 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/CartesianKinematics.o
- *fill*         0x10021fc2        0x2 
+                0x10021fa8       0x16 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/CartesianKinematics.o
+ *fill*         0x10021fbe        0x2 
  .rodata._ZTV19CartesianKinematics
-                0x10021fc4       0x28 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/CartesianKinematics.o
-                0x10021fc4                vtable for CartesianKinematics
+                0x10021fc0       0x28 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/CartesianKinematics.o
+                0x10021fc0                vtable for CartesianKinematics
  .rodata._ZTV10Kinematics
-                0x10021fec       0x28 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/Kinematics.o
-                0x10021fec                vtable for Kinematics
+                0x10021fe8       0x28 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/Kinematics.o
+                0x10021fe8                vtable for Kinematics
  .rodata._ZNK21LinearDeltaKinematics7GetNameEb.str1.4
-                0x10022014       0x15 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/LinearDeltaKinematics.o
- *fill*         0x10022029        0x3 
+                0x10022010       0x15 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/LinearDeltaKinematics.o
+ *fill*         0x10022025        0x3 
  .rodata._ZTV21LinearDeltaKinematics
-                0x1002202c       0x28 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/LinearDeltaKinematics.o
-                0x1002202c                vtable for LinearDeltaKinematics
+                0x10022028       0x28 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/LinearDeltaKinematics.o
+                0x10022028                vtable for LinearDeltaKinematics
  .rodata._ZTV20ZLeadscrewKinematics
-                0x10022054       0x28 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/ZLeadscrewKinematics.o
-                0x10022054                vtable for ZLeadscrewKinematics
+                0x10022050       0x28 ./expbuild/./Duet3Expansion/src/Movement/Kinematics/ZLeadscrewKinematics.o
+                0x10022050                vtable for ZLeadscrewKinematics
  .rodata._ZN8Platform4InitEv.str1.4
-                0x1002207c       0x11 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+                0x10022078       0x11 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
                                  0x15 (size before relaxing)
- *fill*         0x1002208d        0x3 
+ *fill*         0x10022089        0x3 
  .rodata._ZN8Platform17ProcessM569Point7ERK17CanMessageGenericRK9StringRef.str1.4
-                0x10022090       0x46 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+                0x1002208c       0x46 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
                                  0x8e (size before relaxing)
- *fill*         0x100220d6        0x2 
+ *fill*         0x100220d2        0x2 
  .rodata._ZN8Platform16DoDiagnosticTestERK24CanMessageDiagnosticTestRK9StringRef.str1.4
-                0x100220d8       0x99 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+                0x100220d4       0x99 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
                                  0xa5 (size before relaxing)
- *fill*         0x10022171        0x3 
+ *fill*         0x1002216d        0x3 
  .rodata._ZN8Platform16DoDiagnosticTestERK24CanMessageDiagnosticTestRK9StringRef
-                0x10022174       0x1c ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+                0x10022170       0x1c ./expbuild/./Duet3Expansion/src/Platform/Platform.o
  .rodata._ZN8Platform29AppendBoardAndFirmwareDetailsERK9StringRef.str1.4
-                0x10022190       0x49 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
- *fill*         0x100221d9        0x3 
+                0x1002218c       0x49 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+ *fill*         0x100221d5        0x3 
  .rodata._ZN8Platform17AppendDiagnosticsERK9StringRef.str1.4
-                0x100221dc       0x35 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
- *fill*         0x10022211        0x3 
+                0x100221d8       0x35 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+ *fill*         0x1002220d        0x3 
  .rodata._ZN8Platform4SpinEv.str1.4
-                0x10022214       0x6f ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+                0x10022210       0x6f ./expbuild/./Duet3Expansion/src/Platform/Platform.o
                                  0x8f (size before relaxing)
- *fill*         0x10022283        0x1 
+ *fill*         0x1002227f        0x1 
  .rodata._ZN8Platform4SpinEv
-                0x10022284       0x20 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+                0x10022280       0x20 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
  .rodata._ZL7IsoDate
-                0x100222a4        0xb ./expbuild/./Duet3Expansion/src/Platform/Platform.o
- *fill*         0x100222af        0x1 
+                0x100222a0        0xb ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+ *fill*         0x100222ab        0x1 
  .rodata._ZL16M569Point7Params
-                0x100222b0        0xc ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+                0x100222ac        0xc ./expbuild/./Duet3Expansion/src/Platform/Platform.o
  .rodata.str1.4
-                0x100222bc       0x70 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+                0x100222b8       0x70 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
  .rodata._ZL8PinTable
-                0x100222bc       0xf8 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
+                0x100222b8       0xf8 ./expbuild/./Duet3Expansion/src/Platform/Platform.o
  .rodata.panic.str1.4
-                0x100223b4       0x19 ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
- *fill*         0x100223cd        0x3 
+                0x100223b0       0x19 ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
+ *fill*         0x100223c9        0x3 
  .rodata._Z7AppMainv.str1.4
-                0x100223d0       0x2b ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
- *fill*         0x100223fb        0x1 
+                0x100223cc       0x2b ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
+ *fill*         0x100223f7        0x1 
  .rodata.UpdateFirmwareTask.str1.4
-                0x100223fc      0x111 ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
+                0x100223f8      0x111 ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
                                 0x125 (size before relaxing)
- *fill*         0x1002250d        0x3 
+ *fill*         0x10022509        0x3 
  .rodata._ZN5Tasks11DiagnosticsERK9StringRef.str1.4
-                0x10022510      0x111 ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
+                0x1002250c      0x111 ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
                                 0x125 (size before relaxing)
- *fill*         0x10022621        0x3 
+ *fill*         0x1002261d        0x3 
  .rodata.str1.4
-                0x10022624       0x40 ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
+                0x10022620       0x40 ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
  .rodata.CSWTCH.112
-                0x10022664       0x1c ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
+                0x10022660       0x1c ./expbuild/./Duet3Expansion/src/Platform/Tasks.o
  .rodata._ZNK12LedStripBase11GetTypeTextEv.str1.4
-                0x10022680        0x8 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripBase.o
+                0x1002267c        0x8 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripBase.o
  .rodata.str1.4
-                0x10022680       0x26 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripBase.o
- *fill*         0x100226a6        0x2 
+                0x1002267c       0x26 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripBase.o
+ *fill*         0x100226a2        0x2 
  .rodata._ZN12LedStripType6_namesE
-                0x100226a8        0xc ./expbuild/./Duet3Expansion/src/LedStrips/LedStripBase.o
-                0x100226a8                LedStripType::_names
+                0x100226a4        0xc ./expbuild/./Duet3Expansion/src/LedStrips/LedStripBase.o
+                0x100226a4                LedStripType::_names
  .rodata._ZN15LedStripManager13HandleM950LedERK17CanMessageGenericRK9StringRefRh.str1.4
-                0x100226b4       0x87 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripManager.o
- *fill*         0x1002273b        0x1 
+                0x100226b0       0x87 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripManager.o
+ *fill*         0x10022737        0x1 
  .rodata._ZN15LedStripManager19HandleLedSetColoursERK17CanMessageGenericRK9StringRef.str1.4
-                0x1002273c       0x25 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripManager.o
- *fill*         0x10022761        0x3 
+                0x10022738       0x25 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripManager.o
+ *fill*         0x1002275d        0x3 
  .rodata._ZL13M950LedParams
-                0x10022764       0x15 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripManager.o
- *fill*         0x10022779        0x3 
+                0x10022760       0x15 ./expbuild/./Duet3Expansion/src/LedStrips/LedStripManager.o
+ *fill*         0x10022775        0x3 
  .rodata._ZL10M150Params
-                0x1002277c       0x1e ./expbuild/./Duet3Expansion/src/LedStrips/LedStripManager.o
- *fill*         0x1002279a        0x2 
+                0x10022778       0x1e ./expbuild/./Duet3Expansion/src/LedStrips/LedStripManager.o
+ *fill*         0x10022796        0x2 
  .rodata._ZN13LocalLedStrip19CommonReportDetailsERK9StringRef.str1.4
-                0x1002279c       0x57 ./expbuild/./Duet3Expansion/src/LedStrips/LocalLedStrip.o
- *fill*         0x100227f3        0x1 
+                0x10022798       0x57 ./expbuild/./Duet3Expansion/src/LedStrips/LocalLedStrip.o
+ *fill*         0x100227ef        0x1 
  .rodata._ZTV13LocalLedStrip
-                0x100227f4       0x20 ./expbuild/./Duet3Expansion/src/LedStrips/LocalLedStrip.o
-                0x100227f4                vtable for LocalLedStrip
+                0x100227f0       0x20 ./expbuild/./Duet3Expansion/src/LedStrips/LocalLedStrip.o
+                0x100227f0                vtable for LocalLedStrip
  .rodata._ZTV16NeoPixelLedStrip
-                0x10022814       0x20 ./expbuild/./Duet3Expansion/src/LedStrips/NeoPixelLedStrip.o
-                0x10022814                vtable for NeoPixelLedStrip
+                0x10022810       0x20 ./expbuild/./Duet3Expansion/src/LedStrips/NeoPixelLedStrip.o
+                0x10022810                vtable for NeoPixelLedStrip
  .rodata.str1.4
-                0x10022834       0x70 ./expbuild/./Duet3Expansion/src/RepRapFirmware.o
+                0x10022830       0x70 ./expbuild/./Duet3Expansion/src/RepRapFirmware.o
  .rodata._ZL8PinTable
-                0x10022834       0xf8 ./expbuild/./Duet3Expansion/src/RepRapFirmware.o
+                0x10022830       0xf8 ./expbuild/./Duet3Expansion/src/RepRapFirmware.o
  .rodata._ZN16FormattedPrinter7PutJsonEPKc
-                0x1002292c       0x8c ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
+                0x10022928       0x8c ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
  .rodata._ZN16FormattedPrinter7PrintLLEx.str1.4
-                0x100229b8       0x57 ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
+                0x100229b4       0x57 ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
                                   0x2 (size before relaxing)
  .rodata._ZN16FormattedPrinter10PrintFloatEdc.str1.4
-                0x100229b8        0x8 ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
+                0x100229b4        0x8 ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
  .rodata._ZN16FormattedPrinter5PrintEPKcSt9__va_list.str1.4
-                0x100229c0        0x7 ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
- *fill*         0x100229c7        0x1 
+                0x100229bc        0x7 ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
+ *fill*         0x100229c3        0x1 
  .rodata._ZN16FormattedPrinter5PrintEPKcSt9__va_list
-                0x100229c8       0x44 ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
+                0x100229c4       0x44 ./expbuild/\libRRFLibraries.a(SafeVsnprintf.o)
  .rodata._ZN13ReadWriteLock13ReleaseReaderEv.str1.4
-                0x10022a0c       0x29 ./expbuild/\libRRFLibraries.a(RTOSIface.o)
- *fill*         0x10022a35        0x3 
+                0x10022a08       0x29 ./expbuild/\libRRFLibraries.a(RTOSIface.o)
+ *fill*         0x10022a31        0x3 
  .rodata.pinMode
-                0x10022a38       0x18 ./expbuild/\libCoreN2G.a(CoreIO.o)
+                0x10022a34       0x18 ./expbuild/\libCoreN2G.a(CoreIO.o)
  .rodata._ZTV9SerialCDC
-                0x10022a50       0x2c ./expbuild/\libCoreN2G.a(SerialCDC_tusb.o)
-                0x10022a50                vtable for SerialCDC
+                0x10022a4c       0x2c ./expbuild/\libCoreN2G.a(SerialCDC_tusb.o)
+                0x10022a4c                vtable for SerialCDC
  .rodata.str1.4
-                0x10022a7c       0x2a ./expbuild/\libCoreN2G.a(TinyUsbInterface.o)
+                0x10022a78       0x2a ./expbuild/\libCoreN2G.a(TinyUsbInterface.o)
                                  0x2e (size before relaxing)
- *fill*         0x10022aa6        0x2 
+ *fill*         0x10022aa2        0x2 
  .rodata._ZZ24tud_descriptor_string_cbE13usbd_desc_str
-                0x10022aa8       0x14 ./expbuild/\libCoreN2G.a(TinyUsbInterface.o)
+                0x10022aa4       0x14 ./expbuild/\libCoreN2G.a(TinyUsbInterface.o)
  .rodata._ZL21desc_fs_configuration
-                0x10022abc       0x4b ./expbuild/\libCoreN2G.a(TinyUsbInterface.o)
- *fill*         0x10022b07        0x1 
+                0x10022ab8       0x4b ./expbuild/\libCoreN2G.a(TinyUsbInterface.o)
+ *fill*         0x10022b03        0x1 
  .rodata._ZL11desc_device
-                0x10022b08       0x12 ./expbuild/\libCoreN2G.a(TinyUsbInterface.o)
- *fill*         0x10022b1a        0x2 
+                0x10022b04       0x12 ./expbuild/\libCoreN2G.a(TinyUsbInterface.o)
+ *fill*         0x10022b16        0x2 
  .rodata._Z15attachInterrupthPDoFv17CallbackParameterE13InterruptModeS_
-                0x10022b1c       0x18 ./expbuild/\libCoreN2G.a(Interrupts.o)
+                0x10022b18       0x18 ./expbuild/\libCoreN2G.a(Interrupts.o)
  .rodata._ZN9CanDevice10ChangeModeE18CAN_OPERATION_MODE.str1.4
-                0x10022b34       0x1d ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
- *fill*         0x10022b51        0x3 
+                0x10022b30       0x1d ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
+ *fill*         0x10022b4d        0x3 
  .rodata._ZN9CanDevice14DoHardwareInitEv.str1.4
-                0x10022b54       0x16 ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
- *fill*         0x10022b6a        0x2 
+                0x10022b50       0x16 ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
+ *fill*         0x10022b66        0x2 
  .rodata._ZN9CanDevice4InitEjjRKNS_6ConfigEPmRK9CanTimingPDoFvh5CanIdtE.str1.4
-                0x10022b6c      0x1f4 ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
+                0x10022b68      0x1f4 ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
  .rodata._ZN9CanDevice14DoAbortMessageENS_14TxBufferNumberE.str1.4
-                0x10022d60       0x4e ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
- *fill*         0x10022dae        0x2 
+                0x10022d5c       0x4e ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
+ *fill*         0x10022daa        0x2 
  .rodata.str1.4
-                0x10022db0       0x1a ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
- *fill*         0x10022dca        0x2 
+                0x10022dac       0x1a ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
+ *fill*         0x10022dc6        0x2 
  .rodata._ZL10BytesToDLC
-                0x10022dcc       0x41 ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
- *fill*         0x10022e0d        0x3 
+                0x10022dc8       0x41 ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
+ *fill*         0x10022e09        0x3 
  .rodata._ZL10DLCtoBytes
-                0x10022e10       0x10 ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
+                0x10022e0c       0x10 ./expbuild/\libCoreN2G.a(SpiCanRP2040.o)
  .rodata.channel_config_set_dreq.part.0.str1.4
-                0x10022e20       0x9d ./expbuild/\libCoreN2G.a(TmcUartInterface.o)
- *fill*         0x10022ebd        0x3 
+                0x10022e1c       0x9d ./expbuild/\libCoreN2G.a(TmcUartInterface.o)
+ *fill*         0x10022eb9        0x3 
  .rodata._ZN16TmcUartInterface10SetDmaDataEPVKhjPVhj.str1.4
-                0x10022ec0       0x5c ./expbuild/\libCoreN2G.a(TmcUartInterface.o)
+                0x10022ebc       0x5c ./expbuild/\libCoreN2G.a(TmcUartInterface.o)
  .rodata._ZL21TMC_Interface_program
-                0x10022f1c        0x6 ./expbuild/\libCoreN2G.a(TmcUartInterface.o)
- *fill*         0x10022f22        0x2 
+                0x10022f18        0x6 ./expbuild/\libCoreN2G.a(TmcUartInterface.o)
+ *fill*         0x10022f1e        0x2 
  .rodata._ZL34TMC_Interface_program_instructions
-                0x10022f24       0x24 ./expbuild/\libCoreN2G.a(TmcUartInterface.o)
+                0x10022f20       0x24 ./expbuild/\libCoreN2G.a(TmcUartInterface.o)
  .rodata.channel_config_set_dreq.part.0.str1.4
-                0x10022f48       0x9d ./expbuild/\libCoreN2G.a(WS2812.o)
+                0x10022f44       0x9d ./expbuild/\libCoreN2G.a(WS2812.o)
  .rodata._ZN6WS28128SendDataEPKmj.str1.4
-                0x10022f48       0x5c ./expbuild/\libCoreN2G.a(WS2812.o)
+                0x10022f44       0x5c ./expbuild/\libCoreN2G.a(WS2812.o)
  .rodata._ZL14ws2812_program
-                0x10022f48        0x6 ./expbuild/\libCoreN2G.a(WS2812.o)
- *fill*         0x10022f4e        0x2 
+                0x10022f44        0x6 ./expbuild/\libCoreN2G.a(WS2812.o)
+ *fill*         0x10022f4a        0x2 
  .rodata._ZL27ws2812_program_instructions
-                0x10022f50        0x8 ./expbuild/\libCoreN2G.a(WS2812.o)
+                0x10022f4c        0x8 ./expbuild/\libCoreN2G.a(WS2812.o)
  .rodata.DRV_CANFDSPI_BitTimeConfigureNominal40MHz
-                0x10022f58       0x4c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
+                0x10022f54       0x4c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
  .rodata.DRV_CANFDSPI_BitTimeConfigureData40MHz
-                0x10022fa4       0x4c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
+                0x10022fa0       0x4c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
  .rodata.DRV_CANFDSPI_BitTimeConfigureNominal20MHz
-                0x10022ff0       0x4c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
+                0x10022fec       0x4c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
  .rodata.DRV_CANFDSPI_BitTimeConfigureData20MHz
-                0x1002303c       0x4c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
+                0x10023038       0x4c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
  .rodata.DRV_CANFDSPI_BitTimeConfigureNominal10MHz
-                0x10023088       0x48 ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
+                0x10023084       0x48 ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
  .rodata.DRV_CANFDSPI_BitTimeConfigureData10MHz
-                0x100230d0       0x48 ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
+                0x100230cc       0x48 ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
  .rodata.CSWTCH.224
-                0x10023118       0x1c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
+                0x10023114       0x1c ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
  .rodata.crc16_table
-                0x10023134      0x200 ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
-                0x10023134                crc16_table
+                0x10023130      0x200 ./expbuild/\libCoreN2G.a(CanFdSpiApi.o)
+                0x10023130                crc16_table
  .rodata._ZNK23CanMessageGenericParser12GetBoolParamEcRb
-                0x10023334       0x54 ./expbuild/\libCANlib.a(CanMessageGenericParser.o)
+                0x10023330       0x54 ./expbuild/\libCANlib.a(CanMessageGenericParser.o)
  .rodata._ZN21function_ref_noexceptIDoFvjjEE11callback_fnIZNK20StandardDriverStatus10AppendTextERK9StringRefjEUljjE_EEvPvjj.str1.4
-                0x10023388       0x5c ./expbuild/\libCANlib.a(RRF3Common.o)
+                0x10023384       0x5c ./expbuild/\libCANlib.a(RRF3Common.o)
                                   0x3 (size before relaxing)
  .rodata._ZNK20StandardDriverStatus10AppendTextERK9StringRefj.str1.4
-                0x10023388        0x3 ./expbuild/\libCANlib.a(RRF3Common.o)
+                0x10023384        0x3 ./expbuild/\libCANlib.a(RRF3Common.o)
  .rodata.str1.4
-                0x10023388      0x187 ./expbuild/\libCANlib.a(RRF3Common.o)
+                0x10023384      0x187 ./expbuild/\libCANlib.a(RRF3Common.o)
                                 0x1ac (size before relaxing)
- *fill*         0x1002350f        0x1 
+ *fill*         0x1002350b        0x1 
  .rodata._ZN20StandardDriverStatus11BitMeaningsE
-                0x10023510       0x48 ./expbuild/\libCANlib.a(RRF3Common.o)
-                0x10023510                StandardDriverStatus::BitMeanings
+                0x1002350c       0x48 ./expbuild/\libCANlib.a(RRF3Common.o)
+                0x1002350c                StandardDriverStatus::BitMeanings
  .rodata.xQueueGenericReset.str1.4
-                0x10023558       0x15 ./expbuild/\libFreeRTOS.a(queue.o)
- *fill*         0x1002356d        0x3 
+                0x10023554       0x15 ./expbuild/\libFreeRTOS.a(queue.o)
+ *fill*         0x10023569        0x3 
  .rodata.prvTaskIsTaskSuspended.str1.4
-                0x10023570       0x15 ./expbuild/\libFreeRTOS.a(tasks.o)
- *fill*         0x10023585        0x3 
+                0x1002356c       0x15 ./expbuild/\libFreeRTOS.a(tasks.o)
+ *fill*         0x10023581        0x3 
  .rodata.xTaskGenericNotify
-                0x10023588       0x14 ./expbuild/\libFreeRTOS.a(tasks.o)
+                0x10023584       0x14 ./expbuild/\libFreeRTOS.a(tasks.o)
  .rodata.eTaskGetExtendedState.str1.4
-                0x1002359c       0x2a ./expbuild/\libFreeRTOS.a(tasks.o)
- *fill*         0x100235c6        0x2 
+                0x10023598       0x2a ./expbuild/\libFreeRTOS.a(tasks.o)
+ *fill*         0x100235c2        0x2 
  .rodata.prvTaskExitError.str1.4
-                0x100235c8       0x29 ./expbuild/\libFreeRTOS.a(port.o)
+                0x100235c4       0x29 ./expbuild/\libFreeRTOS.a(port.o)
  .rodata.hardware_alarm_claim.str1.1
-                0x100235f1       0x22 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(timer.c.obj)
+                0x100235ed       0x22 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(timer.c.obj)
  .rodata.dma_channel_claim.str1.1
-                0x10023613       0x22 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(dma.c.obj)
+                0x1002360f       0x22 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(dma.c.obj)
  .rodata._pio_add_program_at_offset.str1.1
-                0x10023635       0x11 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(pio.c.obj)
+                0x10023631       0x11 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(pio.c.obj)
  .rodata.pio_claim_unused_sm.str1.1
-                0x10023646       0x24 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(pio.c.obj)
+                0x10023642       0x24 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(pio.c.obj)
  .rodata.hard_assertion_failure.str1.1
-                0x1002366a        0xc ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(runtime.c.obj)
- *fill*         0x10023676        0x2 
+                0x10023666        0xc ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(runtime.c.obj)
+ *fill*         0x10023672        0x2 
  .rodata._usbd_driver
-                0x10023678       0x30 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(usbd.c.obj)
+                0x10023674       0x30 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(usbd.c.obj)
  .rodata.dcd_rp2040_irq.str1.1
-                0x100236a8       0x14 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(dcd_rp2040.c.obj)
+                0x100236a4       0x14 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(dcd_rp2040.c.obj)
  .rodata._hw_endpoint_buffer_control_update32.str1.1
-                0x100236bc       0x1f ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(rp2040_usb.c.obj)
+                0x100236b8       0x1f ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(rp2040_usb.c.obj)
  .rodata.hw_endpoint_xfer_continue.str1.1
-                0x100236db       0x29 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(rp2040_usb.c.obj)
+                0x100236d7       0x29 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(rp2040_usb.c.obj)
  .rodata.str1.1
-                0x10023704        0x7 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(rp2040_usb.c.obj)
+                0x10023700        0x7 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(rp2040_usb.c.obj)
  .rodata._ctype_
-                0x1002370b      0x101 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp\libc_nano.a(libc_a-ctype_.o)
-                0x1002370b                _ctype_
-                0x1002380c                        . = ALIGN (0x4)
+                0x10023707      0x101 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp\libc_nano.a(libc_a-ctype_.o)
+                0x10023707                _ctype_
+                0x10023808                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x1002380c                        . = ALIGN (0x4)
+                0x10023808                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x1002380c                        __exidx_start = .
+                0x10023808                        __exidx_start = .
 
-.ARM.exidx      0x1002380c        0x8
+.ARM.exidx      0x10023808        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
  .ARM.exidx.text.__udivmoddi4
-                0x1002380c        0x8 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x10023808        0x8 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp\libgcc.a(_udivmoddi4.o)
  .ARM.exidx.text.__divdi3
-                0x10023814        0x0 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp\libgcc.a(_divdi3.o)
+                0x10023810        0x0 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp\libgcc.a(_divdi3.o)
                                   0x8 (size before relaxing)
-                0x10023814                        __exidx_end = .
+                0x10023810                        __exidx_end = .
 
-.rel.dyn        0x10023814        0x0
- .rel.iplt      0x10023814        0x0 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10023814                        . = ALIGN (0x4)
-                0x10023814                        __binary_info_start = .
+.rel.dyn        0x10023810        0x0
+ .rel.iplt      0x10023810        0x0 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10023810                        . = ALIGN (0x4)
+                0x10023810                        __binary_info_start = .
 
 .binary_info
  *(.binary_info.keep.*)
  *(.binary_info.*)
-                0x10023814                        __binary_info_end = .
-                0x10023814                        . = ALIGN (0x4)
-                0x10023814                        __etext = .
+                0x10023810                        __binary_info_end = .
+                0x10023810                        . = ALIGN (0x4)
+                0x10023810                        __etext = .
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -7141,7 +7141,7 @@ LOAD c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bi
                 0x20000000       0xc0 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(runtime.c.obj)
                 0x20000000                ram_vector_table
 
-.data           0x200000c0     0x6b9c load address 0x10023814
+.data           0x200000c0     0x6b9c load address 0x10023810
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -7537,36 +7537,36 @@ LOAD c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bi
                 0x20006c5c                        __data_end__ = .
 
 .tm_clone_table
-                0x20006c5c        0x0 load address 0x1002a3b0
+                0x20006c5c        0x0 load address 0x1002a3ac
  .tm_clone_table
                 0x20006c5c        0x0 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x20006c5c        0x0 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x20006c5c        0x0 load address 0x1002a3b0
+.igot.plt       0x20006c5c        0x0 load address 0x1002a3ac
  .igot.plt      0x20006c5c        0x0 c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.CanMessage     0x20006c5c      0xf70 load address 0x1002a3b0
+.CanMessage     0x20006c5c      0xf70 load address 0x1002a3ac
  .CanMessage    0x20006c5c      0xf70 ./expbuild/./Duet3Expansion/src/CAN/CanInterface.o
 
 .uninitialized_data
-                0x20007bcc        0x0 load address 0x1002b320
+                0x20007bcc        0x0 load address 0x1002b31c
                 0x20007bcc                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x1002b320
+.scratch_x      0x20040000        0x0 load address 0x1002b31c
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                        . = ALIGN (0x4)
                 0x20040000                        __scratch_x_end__ = .
-                0x1002b320                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x1002b31c                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x1002b320
+.scratch_y      0x20041000        0x0 load address 0x1002b31c
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x1002b320                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x1002b31c                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20007bd0     0x357c
                 0x20007bd0                        . = ALIGN (0x4)
@@ -8183,8 +8183,8 @@ LOAD c:/program files (x86)/arm gnu toolchain arm-none-eabi/12.2 mpacbti-rel1/bi
  *(.stack*)
  .stack         0x20041000      0x800 ./CoreN2G/src/RP2040/Tools/Build-pico-sdk/build/\libpico.a(crt0.S.obj)
 
-.flash_end      0x1002b320        0x0
-                0x1002b320                        __flash_binary_end = .
+.flash_end      0x1002b31c        0x0
+                0x1002b31c                        __flash_binary_end = .
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
