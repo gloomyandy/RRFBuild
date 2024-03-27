@@ -12,11 +12,14 @@ VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | aw
 OUTPUT=releases/${VER}/${BUILD}
 
 mkdir -p ${OUTPUT}
-rm -f ${OUTPUT}/${BOARDNAME}.*
+mkdir -p ${OUTPUT}/expansion
+mkdir -p ${OUTPUT}/map
+rm -f ${OUTPUT}/map/${BOARDNAME}.*
+rm -f ${OUTPUT}/expansion/${BOARDNAME}.*
 
 make distclean MAKE_DIR=Duet3Expansion/makefiles
 make -j8 BUILD=${BUILD} PROCESSOR=${PROCESSOR} BOARD=${BOARD} BOARD_REV=${BOARD_REV} CANFLAGS=${CANFLAGS} MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_${BOARDNAME} all
 if [ -f ./expbuild/Duet3Firmware_${BOARDNAME}.uf2 ]; then
-    mv ./expbuild/Duet3Firmware_${BOARDNAME}.uf2 ${OUTPUT}/Duet3Firmware_${BOARDNAME}.uf2
-    mv ./expbuild/Duet3Firmware_${BOARDNAME}.map ${OUTPUT}/Duet3Firmware_${BOARDNAME}.map
+    mv ./expbuild/Duet3Firmware_${BOARDNAME}.uf2 ${OUTPUT}/expansion/Duet3Firmware_${BOARDNAME}.uf2
+    mv ./expbuild/Duet3Firmware_${BOARDNAME}.map ${OUTPUT}/map/Duet3Firmware_${BOARDNAME}.map
 fi 
