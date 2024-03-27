@@ -21,7 +21,13 @@
 			"**/STM32L1*/": true,
 			"**/STM32L4*/": true,
 			"**/STM32WB*/": true,
-			"releases/": true
+			"build/": true,
+			"esp.idf/": true,
+			"ESP8266_SDK_RTOS/": true,
+			"expbuild/": true,
+			"iapbuild/": true,
+			"releases/": true,
+			"WiFiSocketServerRTOS/": true
 		},
 		"files.associations": {
 			"array": "cpp",
