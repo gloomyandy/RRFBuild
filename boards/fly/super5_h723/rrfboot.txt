@@ -25,3 +25,4 @@ wifi.espResetPin=D.14
 wifi.serialRxTxPins={D.9, D.8}
 wifi.moduleType=esp32
 heat.tempSensePins={C.4,C.5,B.1}
+heat.thermistorSeriesResistor = 2200

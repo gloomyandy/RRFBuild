@@ -22,3 +22,5 @@ wifi.espResetPin=E.15
 wifi.serialRxTxPins={D.9, D.8}
 wifi.moduleType=esp8266
 heat.tempSensePins={A.3,A.4}
+heat.spiTempSensorChannel=3
+heat.spiTempSensorCSPins={C.3,C.7}
