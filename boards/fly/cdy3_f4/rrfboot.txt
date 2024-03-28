@@ -12,6 +12,7 @@ stepper.stepPins={E.5,E.4,E.3,E.2,E.1,E.0}
 stepper.directionPins={C.0,C.13,B.7,D.6,D.3,A.15}
 stepper.numSmartDrivers=6
 stepper.TmcUartPins={C.15,A.8,B.6,D.5,D.1,E.9}
+stepper.spiChannel=2
 power.VInDetectPin=C.3
 sbc.TfrReadyPin=NoPin
 sbc.csPin=NoPin
