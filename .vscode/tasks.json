@@ -4,7 +4,7 @@
       {
         "label": "build STMF4 COMBINED firmware",
         "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32F4 CORE=STM32 MCU=STM32F4 NETWORK=COMBINED all",
+        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32F4 CORE=STM32 MCU=STM32F4 NETWORK=COMBINED OUTPUT_NAME=base_stm32f4 all",
         "osx": {
           "options": {
             "env": {
@@ -35,7 +35,7 @@
      {
         "label": "build STMH743 COMBINED firmware",
         "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=COMBINED all",
+        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=COMBINED OUTPUT_NAME=base_stm32h743 all",
         "osx": {
           "options": {
             "env": {
@@ -66,7 +66,7 @@
       {
         "label": "build STMH723 COMBINED firmware",
         "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=COMBINED VARIANT=STM32H723 all",
+        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=COMBINED VARIANT=STM32H723 OUTPUT_NAME=base_stm32h723 all",
         "osx": {
           "options": {
             "env": {
@@ -97,7 +97,7 @@
       {
         "label": "build STMF4 IAP",
         "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32F4 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32F4 all",
+        "command": "make -j8 CORE=STM32 MCU=STM32F4 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32F4 OUTPUT_NAME=stm32f4_iap_SBC all",
         "osx": {
           "options": {
             "env": {
@@ -128,7 +128,7 @@
       {
         "label": "build STMH743 IAP",
         "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H743 all",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H743 OUTPUT_NAME=stm32h743_iap_SBC all",
         "osx": {
           "options": {
             "env": {
@@ -159,7 +159,7 @@
       {
         "label": "build STMH723 IAP",
         "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 all",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 OUTPUT_NAME=stm32h743_iap_SBC all",
         "osx": {
           "options": {
             "env": {
@@ -190,7 +190,7 @@
       {
         "label": "build STMH7 IAPBL",
         "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 all",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H743 OUTPUT_NAME=stm32h743_botloader_2 all",
         "osx": {
           "options": {
             "env": {
@@ -221,7 +221,7 @@
       {
         "label": "build STMF4 IAPBL",
         "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32F4 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32F4 all",
+        "command": "make -j8 CORE=STM32 MCU=STM32F4 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32F4 OUTPUT_NAME=stm32f4_botloader_2 all",
         "osx": {
           "options": {
             "env": {

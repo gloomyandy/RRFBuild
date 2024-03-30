@@ -1,11 +1,15 @@
 #!/bin/sh
+if [ "$#" -ne 6 ]; then
+  echo "Usage: $0 BUILDTYPE PROCESSOR BOARD BOARD_REV CAN_FLAGS BOARDNAME" >&2
+  exit 1
+fi
 echo $1 $2 $3 $4 $5 $6
-BUILD=${1:-Debug}
-PROCESSOR=${2:-RP2040}
-BOARD=${3:-FLY36RRF}
-BOARD_REV=${4:-0}
-CANFLAGS=${5:--DUSE_SPICAN}
-BOARDNAME=${6:-FLY36RRF}
+BUILD=$1
+PROCESSOR=$2
+BOARD=$3
+BOARD_REV=$4
+CANFLAGS=$5
+BOARDNAME=$6
 #extract firmware version from header file
 VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`
 
