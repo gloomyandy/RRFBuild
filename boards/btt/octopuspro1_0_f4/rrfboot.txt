@@ -22,3 +22,5 @@ wifi.TfrReadyPin=D.10
 wifi.espResetPin=G.7
 wifi.serialRxTxPins={D.9, D.8}
 heat.tempSensePins={F.3,F.4,F.5,F.6,F.7}
+heat.spiTempSensorChannel=0
+heat.spiTempSensorCSPins={F.8}
