@@ -1,4 +1,5 @@
 board=skrpro1_2_f4
+board.longName="BTT SKR Pro V1.2 STM32F4"
 sdcard.internal.type=0
 SPI0.pins={A.5,A.6,B.5}
 SPI1.pins={B.13,B.14,B.15}

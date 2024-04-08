@@ -1,4 +1,5 @@
 board=gemini3_0_f4
+board.longName="Fly Gemini V3.0 STM32F4"
 sdcard.internal.type=255
 SPI0.pins={A.5,A.6,A.7}
 SPI1.pins={B.13,B.14,B.15}

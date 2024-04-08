@@ -1,4 +1,5 @@
 board=skrrrfe3_1_1_f4
+board.longName="BTT SKR RRF E3 V1.1 STM32F4"
 sdcard.internal.type=2
 SPI0.pins={NoPin,NoPin,NoPin}
 SPI1.pins={B.13,B.14,B.15}
