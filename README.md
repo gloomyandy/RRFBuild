@@ -10,4 +10,10 @@ To build RRF you will require additional repositories. These should be cloned in
 * FreeRTOS - RTOS support package https://github.com/gloomyandy/FreeRTOS
 * CANLib - Common files used by CAN and standard build https://github.com/gloomyandy/CANlib
 * DuetWifiSocketServer - WiFi interface https://github.com/gloomyandy/DuetWiFiSocketServer
+* Duet3Expansion - CAN-FD expansion board firmware https://github.com/gloomyandy/Duet3Expansion
+* IAP - Bootloader and SBC update firmware https://github.com/gloomyandy/IAP
+The latest WiFi firmware (version 2) should also be checked out (but uses different tags):
+* ESP32 SDK: https://github.com/gloomyandy/esp-idf/tree/dwss_support_2.1
+* ESP8266 SDK: https://github.com/Duet3D/ESP8266_RTOS_SDK/tree/dwss_support
+* WifiSocketServer: https://github.com/gloomyandy/WiFiSocketServerRTOS/commits/ethernet/
 

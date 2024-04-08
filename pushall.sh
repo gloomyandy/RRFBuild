@@ -30,4 +30,12 @@ cd ../Duet3Expansion
 echo "Duet3Expansion"
 git push
 git push --tags
+cd ../WiFiSocketServerRTOS
+echo "WiFiSocketServerRTOS"
+git push
+git push --tags
+cd ../esp-idf
+echo "esp-idf"
+git push
+git push --tags
 cd ..
