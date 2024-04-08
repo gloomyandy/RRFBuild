@@ -17,7 +17,7 @@
 /iapbuild/
 /expbuild/
 /releases/*/*/*-picocan.*
-/releases/*/*/*/*-picocan.*
+/releases/*/*/*/*picocan.*
 #/CANlib/
 #/CoreN2G/
 #/DuetWiFiSocketServer/
