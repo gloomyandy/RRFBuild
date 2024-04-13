@@ -22,6 +22,7 @@
 			"**/STM32L4*/": true,
 			"**/STM32WB*/": true,
 			"build/": true,
+			"DuetWebControl/": true,
 			"esp-idf/": true,
 			"ESP8266_RTOS_SDK/": true,
 			"expbuild/": true,

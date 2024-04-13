@@ -14,4 +14,6 @@ cd ../IAP
 git tag $1
 cd ../Duet3Expansion
 git tag $1
+cd ../DuetWebServer
+git tag $1
 cd ..

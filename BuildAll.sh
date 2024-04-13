@@ -38,6 +38,9 @@ done
 WIFIVER=`awk 'sub(/.*VERSION_MAIN/,""){print $1}' WiFiSocketServerRTOS/src/Config.h  | awk 'gsub(/"/, "", $1)'`
 mkdir -p ${OUTPUT}/Debug/wifi/${WIFIVER}/
 cp WiFiSocketServerRTOS/releases/${WIFIVER}/*.bin ${OUTPUT}/Debug/wifi/${WIFIVER}/
+./BuildDWC.sh
+./BuildZips.sh Debug
+
 echo "Release dir is ${OUTPUT}"
 echo -n "Number of base files: "
 find ${OUTPUT}/Debug/base/ -name "*.bin" | wc -l
@@ -50,5 +53,11 @@ find ${OUTPUT}/Debug/mainboard/ -name "*.zip" | wc -l
 echo -n "Number of WiFi Modules: "
 find ${OUTPUT}/Debug/wifi/ -name "*.bin" | wc -l
 endTime=$(date +%s)
+echo "Zip file sizes:"
+ls -gho ${OUTPUT}/Debug/*.zip
+echo -n "WiFi Zip file count: "
+/c/Windows/SysWOW64/tar.exe tvfn ${OUTPUT}/Debug/STM32RepRapFirmwareWiFi.zip | wc -l
+echo -n "SBC Zip file count: "
+/c/Windows/SysWOW64/tar.exe tvfn ${OUTPUT}/Debug/STM32RepRapFirmwareSBC.zip | wc -l
 echo -n "Build time: "
 date -d@$(expr $endTime - $beginTime) -u +%H:%M:%S
