@@ -30,8 +30,8 @@ cd ../Duet3Expansion
 echo "Duet3Expansion"
 git status
 git checkout $1
-cd ../DuetWebServer
-echo "DuetWebServer"
+cd ../DuetWebControl
+echo "DuetWebControl"
 git status
 git checkout $1
 cd ..

@@ -30,8 +30,8 @@ cd ../Duet3Expansion
 echo "Duet3Expansion"
 git push
 git push --tags
-cd ../DuetWebServer
-echo "DuetWebServer"
+cd ../DuetWebControl
+echo "DuetWebControl"
 git push
 git push --tags
 cd ../WiFiSocketServerRTOS
