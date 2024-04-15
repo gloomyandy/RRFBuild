@@ -14,7 +14,7 @@ STARTUP_DELAY=$8
 #extract firmware version from header file
 VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`
 
-OUTPUT=releases/${VER}/${BUILD}
+OUTPUT=releases/${VER}
 
 mkdir -p ${OUTPUT}
 mkdir -p ${OUTPUT}/base

@@ -16,7 +16,7 @@ CRC=${9:-RepRapFirmware/Tools/CrcAppender/win-x86-64/CrcAppender.exe}
 #extract firmware version from header file
 VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`
 
-OUTPUT=releases/${VER}/${BUILD}
+OUTPUT=releases/${VER}
 echo $INNAME $OUTNAME
 mkdir -p ${OUTPUT}
 mkdir -p ${OUTPUT}/mainboard/${DIR}
