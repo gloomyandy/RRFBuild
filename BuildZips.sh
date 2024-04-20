@@ -23,11 +23,16 @@ rm ziptmp/*_picocan.uf2
 (cd ziptmp; /c/Windows/SysWOW64/tar.exe -a -c -f ../${OUTPUT}/STM32RepRapFirmwareSBC.zip *)
 
 # Add in the wifi firmware
-cp ${OUTPUT}/wifi/*/* ziptmp
+cp ${OUTPUT}/wifi/* ziptmp
 # prepare DWC
-if [ -f DuetWebControl/dist/DuetWebControl-SD.zip ]; then
+if [ -f DuetWebControl-SD.zip ]; then
+  cp DuetWebControl-SD.zip ziptmp
+  (cd ziptmp; /c/Windows/SysWOW64/tar.exe xvf DuetWebControl-SD.zip; rm DuetWebControl-SD.zip)
+elif [ -f DuetWebControl/dist/DuetWebControl-SD.zip ]; then
   cp DuetWebControl/dist/DuetWebControl-SD.zip ziptmp
   (cd ziptmp; /c/Windows/SysWOW64/tar.exe xvf DuetWebControl-SD.zip; rm DuetWebControl-SD.zip)
+else
+  echo "DWC files are missing"
 fi
 # now zip it all up
 (cd ziptmp; /c/Windows/SysWOW64/tar.exe -a -c -f ../${OUTPUT}/STM32RepRapFirmwareWiFi.zip *)

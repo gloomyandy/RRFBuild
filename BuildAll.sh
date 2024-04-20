@@ -15,7 +15,8 @@ rm -rf $OUTPUT
 ./BuildExpRelease.sh Debug RP2040 FLYSB2040V1_0 0 "-DUSE_PICOCAN" "FLYSB2040V1_0_picocan"
 ./BuildExpRelease.sh Debug RP2040 FLYSB2040V3_0 300 "-DUSE_SPICAN" "SB2040MAX3"
 ./BuildExpRelease.sh Debug RP2040 FLYSB2040V3_0 301 "-DUSE_SPICAN" "SB2040PROMAX3"
-./BuildExpRelease.sh Debug RP2040 SHT36 3 "-DUSE_SPICAN" "SHT36V3"
+./BuildExpRelease.sh Debug RP2040 SHT36 300 "-DUSE_SPICAN" "SHT36V3"
+./BuildExpRelease.sh Debug RP2040 SHT36 301 "-DUSE_SPICAN" "SHT36MAX3"
 ./BuildExpRelease.sh Debug RP2040 MKSTHR3642 1 "-DUSE_PICOCAN" "MKSTHR3642v1_0_picocan"
 ./BuildExpRelease.sh Debug RP2040 PITBV1_0 0 "-DUSE_PICOCAN" "PITBV1_0_picocan"
 ./BuildExpRelease.sh Debug RP2040 PITBV2_0 0 "-DUSE_SPICAN" "PITBV2_0"
@@ -36,28 +37,28 @@ for oem in boards/*; do
     done
 done
 WIFIVER=`awk 'sub(/.*VERSION_MAIN/,""){print $1}' WiFiSocketServerRTOS/src/Config.h  | awk 'gsub(/"/, "", $1)'`
-mkdir -p ${OUTPUT}/Debug/wifi/${WIFIVER}/
-cp WiFiSocketServerRTOS/releases/${WIFIVER}/*.bin ${OUTPUT}/Debug/wifi/${WIFIVER}/
+mkdir -p ${OUTPUT}/wifi/
+cp WiFiSocketServerRTOS/releases/${WIFIVER}/*.bin ${OUTPUT}/wifi
 ./BuildDWC.sh
 ./BuildZips.sh Debug
 
 echo "Release dir is ${OUTPUT}"
 echo -n "Number of base files: "
-find ${OUTPUT}/Debug/base/ -name "*.bin" | wc -l
+find ${OUTPUT}/base/ -name "*.bin" | wc -l
 echo -n "Number of expansion boards: "
-find ${OUTPUT}/Debug/expansion/ -name "*.*" | wc -l
+find ${OUTPUT}/expansion/ -name "*.*" | wc -l
 echo -n "Number of board configurations: "
 find boards -name "rrfboot.txt" | wc -l
 echo -n "Number of boards created: "
-find ${OUTPUT}/Debug/mainboard/ -name "*.zip" | wc -l
+find ${OUTPUT}/mainboard/ -name "*.zip" | wc -l
 echo -n "Number of WiFi Modules: "
-find ${OUTPUT}/Debug/wifi/ -name "*.bin" | wc -l
+find ${OUTPUT}/wifi/ -name "*.bin" | wc -l
 endTime=$(date +%s)
 echo "Zip file sizes:"
-ls -gho ${OUTPUT}/Debug/*.zip
+ls -gho ${OUTPUT}/*.zip
 echo -n "WiFi Zip file count: "
-/c/Windows/SysWOW64/tar.exe tvfn ${OUTPUT}/Debug/STM32RepRapFirmwareWiFi.zip | wc -l
+/c/Windows/SysWOW64/tar.exe tvfn ${OUTPUT}/STM32RepRapFirmwareWiFi.zip | wc -l
 echo -n "SBC Zip file count: "
-/c/Windows/SysWOW64/tar.exe tvfn ${OUTPUT}/Debug/STM32RepRapFirmwareSBC.zip | wc -l
+/c/Windows/SysWOW64/tar.exe tvfn ${OUTPUT}/STM32RepRapFirmwareSBC.zip | wc -l
 echo -n "Build time: "
 date -d@$(expr $endTime - $beginTime) -u +%H:%M:%S
