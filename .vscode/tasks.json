@@ -373,9 +373,40 @@
         "problemMatcher": "$gcc"
       },
       {
-        "label": "build SHT36 v3 spican Expansion Firmware",
+        "label": "build SHT36 v3 prototype spican Expansion Firmware",
         "type": "shell",
-        "command": "make -j8 CORE=RP2040 BOARD=SHT36 BOARD_REV=3 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_SHT36V3 all",
+        "command": "make -j8 CORE=RP2040 BOARD=SHT36 BOARD_REV=300 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_SHT36V3 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "build SHT36 MAX v3 spican Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=SHT36 BOARD_REV=301 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_SHT36V3 all",
         "osx": {
           "options": {
             "env": {
