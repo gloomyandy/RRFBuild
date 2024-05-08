@@ -5,7 +5,7 @@
 // Documentation: https://docs.platformio.org/page/plus/debugging.html
 // Configuration: https://docs.platformio.org/page/projectconf/section_env_debug.html
 //         "svdFile": "${workspaceRoot}\\.vscode\\STM32F40x.svd"
-// Note to write flash system to flas use something like:
+// Note to write flash system to flash use something like:
 // mon flash write_bank 0 build/base-stm32f4.bin 0x8000
 {
     "version": "0.2.0",
