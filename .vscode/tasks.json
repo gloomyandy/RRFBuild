@@ -126,7 +126,7 @@
         "problemMatcher": "$gcc"
       },
       {
-        "label": "build octopus pro h743 firmware",
+        "label": "build super8pro h743 firmware",
         "type": "shell",
         "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H743 COMBINED fly super8pro_h743",
         "osx": {
