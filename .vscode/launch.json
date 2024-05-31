@@ -23,7 +23,7 @@
         },
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/base-stm32f4.elf",
+            "executable": "build/base_stm32f4.elf",
             "name": "Debug WiFi STM32F4 Microcontroller",
             "request": "launch",
             "type": "cortex-debug",
@@ -33,7 +33,7 @@
         },
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/base-stm32f4.elf",
+            "executable": "build/base_stm32f4.elf",
             "name": "Debug WiFi STM32F429 Microcontroller",
             "request": "launch",
             "type": "cortex-debug",
@@ -43,7 +43,7 @@
         },
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/base-stm32h7.elf",
+            "executable": "build/base_stm32h7.elf",
             "name": "Debug WiFi STM32H743 Microcontroller",
             "request": "launch",
             "type": "cortex-debug",
@@ -52,7 +52,7 @@
         },
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/base-stm32h723.elf",
+            "executable": "build/base_stm32h723.elf",
             "name": "Debug WiFi STM32H723 Microcontroller",
             "request": "launch",
             "type": "cortex-debug",
