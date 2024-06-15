@@ -1,0 +1,27 @@
+board=prox10_h723
+board.longName="Fly Pro X10 STM32H723"
+sdcard.internal.type=2
+SPI0.pins={A.5,A.6,A.7}
+SPI1.pins={B.13,B.14,B.15}
+SPI2.pins={NoPin,NoPin,NoPin}
+SPI3.pins={NoPin,NoPin,NoPin}
+SPI4.pins={NoPin,NoPin,NoPin}
+SPI5.pins={NoPin,NoPin,NoPin}
+SPI6.pins={NoPin,NoPin,NoPin}
+SPI7.pins={NoPin,NoPin,NoPin}
+SPI8.pins={NoPin,NoPin,NoPin}
+stepper.powerEnablePin=NoPin
+stepper.enablePins={G.10,E.13,G.0,F.13,B.2,C.0,F.4,G.0,C.13,G.15}
+stepper.stepPins={E.7,E.8,E.9,E.10,E.11,E.2,E.3,E.4,E.1,E.0}
+stepper.directionPins={G.11,E.14,G.1,F.14,F.11,F.10,F.2,C.15,B.7,G.14}
+stepper.numSmartDrivers=10
+stepper.TmcUartPins={G.12,E.15,E.12,F.15,F.12,F.5,F.1,G.14,B.6,G.13}
+stepper.spiChannel=1
+power.VInDetectPin=C.2
+wifi.espDataReadyPin=D.13
+wifi.TfrReadyPin=D.11
+wifi.espResetPin=D.10
+wifi.serialRxTxPins={D.9, D.8}
+wifi.moduleType=esp32
+heat.tempSensePins={C.5,C.4,A.4,B.0,C.1}
+
