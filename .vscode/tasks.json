@@ -216,7 +216,39 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      {
+      },
+      {
+        "label": "build scylla1 h723 firmware",
+        "type": "shell",
+        "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H723 COMBINED btt scylla1_h723",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
         "label": "build super5 pro h723 firmware",
         "type": "shell",
         "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H723 COMBINED fly super5_h723",
