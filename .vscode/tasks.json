@@ -220,7 +220,7 @@
       {
         "label": "build scylla1 h723 firmware",
         "type": "shell",
-        "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H723 COMBINED btt scylla1_h723",
+        "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H723 COMBINED btt scylla1_0_h723",
         "osx": {
           "options": {
             "env": {

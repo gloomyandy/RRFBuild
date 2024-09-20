@@ -32,3 +32,4 @@ sbc.spiChannel=1
 sbc.sbcMode=0
 can.writePin=D.1
 can.readPin=D.0
+serial.aux2.rxTxPins={D.9, D.8}
