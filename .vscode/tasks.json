@@ -126,6 +126,37 @@
         "problemMatcher": "$gcc"
       },
       {
+        "label": "build octopus pro f4 firmware",
+        "type": "shell",
+        "command": "bash ./testbuild.sh Debug STM32 STM32F4 STM32F4 COMBINED btt octopuspro1_0_f4",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
         "label": "build super8 f4 firmware",
         "type": "shell",
         "command": "bash ./testbuild.sh Debug STM32 STM32F4 STM32F4 COMBINED fly super8_f4",

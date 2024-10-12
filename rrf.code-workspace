@@ -27,6 +27,7 @@
 			"ESP8266_RTOS_SDK/": true,
 			"expbuild/": true,
 			"iapbuild/": true,
+			"LibTinyusb/": true,
 			"releases/": true,
 			"WiFiSocketServerRTOS/": true
 		},
@@ -78,7 +79,8 @@
 			"streambuf": "cpp",
 			"typeinfo": "cpp",
 			"iostream": "cpp",
-			"chrono": "cpp"
+			"chrono": "cpp",
+			"regex": "cpp"
 		},
 	}
 }

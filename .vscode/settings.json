@@ -8,5 +8,9 @@
         "CoreSTM32F4/": true,
         "CoreLPC/": true
     },
-    "search.useIgnoreFiles": false
+    "search.useIgnoreFiles": false,
+    "C_Cpp.files.exclude": {
+        "**/.vscode": true,
+        "**/.vs": true
+    }
 }
