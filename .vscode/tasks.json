@@ -526,7 +526,8 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      {
+      },
+      {
         "label": "build FLYSB2040V1_0 picocan Expansion Firmware",
         "type": "shell",
         "command": "make -j8 CORE=RP2040 BOARD=FLYSB2040V1_0 BOARD_REV=0 CANFLAGS=-DUSE_PICOCAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FLYSB2040V1_0 all",
@@ -680,7 +681,8 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      {
+      },
+      {
         "label": "build FLYSB2040 v3 pro spican Expansion Firmware",
         "type": "shell",
         "command": "make -j8 CORE=RP2040 BOARD=FLYSB2040V3_0 BOARD_REV=103 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FLYSB2040PROV3_0 all",
@@ -808,6 +810,37 @@
         "label": "build StrideMaxv2.0 spican Expansion Firmware",
         "type": "shell",
         "command": "make -j8 CORE=RP2040 BOARD=STRIDEMAXV2_0 BOARD_REV=0 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_STRIDEMAXV2_0 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "build FYSETCSB2040V2 picocan Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=FYSETCSB2040V2 BOARD_REV=0 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FSSB2040V2 all",
         "osx": {
           "options": {
             "env": {

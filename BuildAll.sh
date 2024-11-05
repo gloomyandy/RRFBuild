@@ -21,6 +21,7 @@ rm -rf $OUTPUT
 ./BuildExpRelease.sh Debug RP2040 PITBV1_0 0 "-DUSE_PICOCAN" "PITBV1_0_picocan"
 ./BuildExpRelease.sh Debug RP2040 PITBV2_0 0 "-DUSE_SPICAN" "PITBV2_0"
 ./BuildExpRelease.sh Debug RP2040 STRIDEMAXV2_0 0 "-DUSE_SPICAN" "STRIDEMAXV2_0"
+./BuildExpRelease.sh Debug RP2040 FYSETCSB2040V2 0 "-DUSE_SPICAN" "FSSB2040V2"
 for oem in boards/*; do
     for board in ${oem}/*_h743; do
         ./BuildBoardRelease.sh Debug STM32H7 COMBINED $(basename $oem) $(basename $board) base_stm32h743 firmware_$(basename $board) stm32h743_iap_SBC
