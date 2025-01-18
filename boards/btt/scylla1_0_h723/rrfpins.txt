@@ -25,7 +25,7 @@ B.10 scl
 B.11 sda
 D.8 tx3
 D.9 rx3
-A.9 tx1,RS485A
-A.10 rx1,RS485B
+A.9 tx1,rs485a
+A.10 rx1,rs485b
 D.5 relayctr,relay
 B.7 extin0,ioin
