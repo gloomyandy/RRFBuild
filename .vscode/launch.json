@@ -43,7 +43,7 @@
         },
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/base_stm32h7.elf",
+            "executable": "build/base_stm32h743.elf",
             "name": "Debug WiFi STM32H743 Microcontroller",
             "request": "launch",
             "type": "cortex-debug",
@@ -71,12 +71,21 @@
         },
         {
             "cwd": "${workspaceRoot}",        
-            "executable": "iapbuild/stm32h7_bootloader_2.elf",
-            "name": "Debug STM32H7 IAPBL",
+            "executable": "iapbuild/stm32h743_bootloader_2.elf",
+            "name": "Debug STM32H743 IAPBL",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "openocd",
             "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32h743.cfg"],
+        },
+        {
+            "cwd": "${workspaceRoot}",        
+            "executable": "iapbuild/stm32h723_bootloader_2_can.elf",
+            "name": "Debug STM32H723 IAPBL",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32h723.cfg"],
         },
             
     ]

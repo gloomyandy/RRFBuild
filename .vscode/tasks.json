@@ -404,9 +404,70 @@
         "problemMatcher": "$gcc"
       },
       {
-        "label": "build STMH7 IAPBL",
+        "label": "build STMH743 IAPBL",
         "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H743 OUTPUT_NAME=stm32h743_botloader_2 all",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H743 OUTPUT_NAME=stm32h743_bootloader_2 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
+        "label": "build STMH723 IAPBL",
+        "type": "shell",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 OUTPUT_NAME=stm32h723_bootloader_2 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      {
+        "label": "build STMH723 IAPBLSDCAN",
+        "type": "shell",
+        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER USE_CAN=1 USE_SD=1 SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 OUTPUT_NAME=stm32h723_bootloader_2_can all",
         "osx": {
           "options": {
             "env": {
@@ -623,7 +684,7 @@
       {
         "label": "build SHT36 MAX v3 spican Expansion Firmware",
         "type": "shell",
-        "command": "make -j8 CORE=RP2040 BOARD=SHT36 BOARD_REV=301 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_SHT36V3 all",
+        "command": "make -j8 CORE=RP2040 BOARD=SHT36 BOARD_REV=301 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_SHT36MAX3 all",
         "osx": {
           "options": {
             "env": {
