@@ -1,7 +1,7 @@
 board=afclite1_h723
 board.longName="AFC LITE V1 STM32H723"
 leds.diagnosticOn=0
-sdcard.internal.type=2
+sdcard.internal.type=255
 SPI0.pins={NoPin,NoPin,NoPin}
 SPI1.pins={NoPin,NoPin,NoPin}
 SPI2.pins={NoPin,NoPin,NoPin}
@@ -25,3 +25,4 @@ sbc.spiChannel=255
 stepper.spiChannel=2
 can.writePin=B.9
 can.readPin=B.8
+can.exp.address=119

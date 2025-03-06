@@ -29,20 +29,8 @@ if [ -d boards/${DIR}/${BOARD} ]; then
 
   USE_CAN=1
   OUTNAME=bootloader_${BOARD}
-  make distclean MAKE_DIR=IAP/makefiles/${MCU}
+  #make distclean MAKE_DIR=IAP/makefiles/${MCU}
   make -j8 CORE=${CORE} MCU=${MCU} CONFIG=IAP_BOOT_LOADER USE_SD=${USE_SD} USE_CAN=${USE_CAN} SDTYPE=${SDTYPE} LED_PIN=${LED} CAN_READ=${CANREAD} CAN_WRITE=${CANWRITE} CAN_ADDRESS=${CAN_ADDRESS} BOARD_NAME=${BOARD} MAKE_DIR=IAP/makefiles/${MCU} VARIANT=${VARIANT} OUTPUT_NAME=${OUTNAME} all
 else
   echo "Board" $DIR " " $BOARD " not found"
 fi
-
-if [ -f ./iapbuild/${OUTNAME}.bin ]; then
-  OUTPUT=releases/${VER}
-  mkdir -p ${OUTPUT}
-  mkdir -p ${OUTPUT}/map
-  mkdir -p ${OUTPUT}/bootloader
-  rm -f ${OUTPUT}/map/${OUTNAME}.*
-  rm -f ${OUTPUT}/bootloader/${OUTNAME}.*
-
-  mv ./iapbuild/${OUTNAME}.bin ${OUTPUT}/bootloader/${OUTNAME}.bin
-  mv ./iapbuild/${OUTNAME}.map ${OUTPUT}/map/${OUTNAME}.map
-fi 

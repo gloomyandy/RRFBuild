@@ -24,3 +24,4 @@ sbc.TfrReadyPin=NoPin
 sbc.csPin=NoPin
 sbc.spiChannel=255
 stepper.spiChannel=2
+can.exp.address=119

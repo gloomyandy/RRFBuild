@@ -8,8 +8,6 @@ rm -rf $OUTPUT
 ./BuildRelease.sh Debug STM32 STM32F4 "" COMBINED base_stm32f4
 ./BuildIAPRelease.sh Debug STM32 STM32H7 STM32H723 COMBINED stm32h723_iap_SBC
 ./BuildIAPRelease.sh Debug STM32 STM32H7 STM32H743 COMBINED stm32h743_iap_SBC
-./BuildIAPRelease.sh Debug STM32 STM32F4 "" COMBINED stm32f4_iap_SBC
-./BuildIAPBLRelease.sh Debug STM32 STM32H7 STM32H743 2 stm32h743_bootloader_2
 ./BuildExpRelease.sh Debug RP2040 FLY36RRF 0 "-DUSE_PICOCAN" "FLY36RRF_picocan"
 ./BuildExpRelease.sh Debug RP2040 FLY36RRF 1 "-DUSE_SPICAN" "FLY36RRF"
 ./BuildExpRelease.sh Debug RP2040 FLYSB2040V1_0 0 "-DUSE_PICOCAN" "FLYSB2040V1_0_picocan"
@@ -24,17 +22,25 @@ rm -rf $OUTPUT
 ./BuildExpRelease.sh Debug RP2040 FYSETCSB2040V2 0 "-DUSE_SPICAN" "FSSB2040V2"
 for oem in boards/*; do
     for board in ${oem}/*_h743; do
-        ./BuildBoardRelease.sh Debug STM32H7 COMBINED $(basename $oem) $(basename $board) base_stm32h743 firmware_$(basename $board) stm32h743_iap_SBC
+        if [[ "$(basename $board)" != "*_h743" ]]; then
+            ./BuildBoardRelease.sh Debug STM32H7 COMBINED $(basename $oem) $(basename $board) base_stm32h743 firmware_$(basename $board) stm32h743_iap_SBC
+            ./BuildIAPBLRelease.sh DEBUG STM32 STM32H7 STM32H743 $(basename $oem) $(basename $board)
+        fi
     done
 done
 for oem in boards/*; do
     for board in ${oem}/*_h723; do
-        ./BuildBoardRelease.sh Debug STM32H723 COMBINED $(basename $oem) $(basename $board) base_stm32h723 firmware_$(basename $board) stm32h723_iap_SBC
+        if [[ "$(basename $board)" != "*_h723" ]]; then
+            ./BuildBoardRelease.sh Debug STM32H723 COMBINED $(basename $oem) $(basename $board) base_stm32h723 firmware_$(basename $board) stm32h723_iap_SBC
+            ./BuildIAPBLRelease.sh DEBUG STM32 STM32H7 STM32H723 $(basename $oem) $(basename $board)
+        fi
     done
 done
 for oem in boards/*; do
     for board in ${oem}/*_f4; do
-    ./BuildBoardRelease.sh Debug STM32F4 COMBINED $(basename $oem) $(basename $board) base_stm32f4 firmware_$(basename $board) stm32f4_iap_SBC
+       if [[ "$(basename $board)" != "*_f4" ]]; then
+           ./BuildBoardRelease.sh Debug STM32F4 COMBINED $(basename $oem) $(basename $board) base_stm32f4 firmware_$(basename $board) stm32f4_iap_SBC
+       fi
     done
 done
 WIFIVER=`awk 'sub(/.*VERSION_MAIN/,""){print $1}' WiFiSocketServerRTOS/src/Config.h  | awk 'gsub(/"/, "", $1)'`
@@ -48,6 +54,8 @@ echo -n "Number of base files: "
 find ${OUTPUT}/base/ -name "*.bin" | wc -l
 echo -n "Number of expansion boards: "
 find ${OUTPUT}/expansion/ -name "*.*" | wc -l
+echo -n "Number of bootloaders: "
+find ${OUTPUT}/bootloader/ -name "*.*" | wc -l
 echo -n "Number of board configurations: "
 find boards -name "rrfboot.txt" | wc -l
 echo -n "Number of boards created: "

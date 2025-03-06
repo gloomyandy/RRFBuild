@@ -464,7 +464,39 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      {
+      },
+      {
+        "label": "build fly super5_h723 IAPBL",
+        "type": "shell",
+        "command": "bash ./testbuildiapbl.sh DEBUG STM32 STM32H7 STM32H723 fly super5_h723",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
         "label": "build STMH723 IAPBLSDCAN",
         "type": "shell",
         "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER USE_CAN=1 USE_SD=1 SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 OUTPUT_NAME=stm32h723_bootloader_2_can all",

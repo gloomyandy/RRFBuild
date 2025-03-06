@@ -87,6 +87,15 @@
             "servertype": "openocd",
             "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32h723.cfg"],
         },
+        {
+            "cwd": "${workspaceRoot}",        
+            "executable": "iapbuild/stm32h723_bootloader_2.elf",
+            "name": "Debug STM32H723 Combined 2 IAPBL",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-stm32h723.cfg"],
+        },
             
     ]
 }
