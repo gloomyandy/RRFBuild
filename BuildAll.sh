@@ -8,6 +8,7 @@ rm -rf $OUTPUT
 ./BuildRelease.sh Debug STM32 STM32F4 "" COMBINED base_stm32f4
 ./BuildIAPRelease.sh Debug STM32 STM32H7 STM32H723 COMBINED stm32h723_iap_SBC
 ./BuildIAPRelease.sh Debug STM32 STM32H7 STM32H743 COMBINED stm32h743_iap_SBC
+./BuildIAPRelease.sh Debug STM32 STM32F4 "" COMBINED stm32f4_iap_SBC
 ./BuildExpRelease.sh Debug RP2040 FLY36RRF 0 "-DUSE_PICOCAN" "FLY36RRF_picocan"
 ./BuildExpRelease.sh Debug RP2040 FLY36RRF 1 "-DUSE_SPICAN" "FLY36RRF"
 ./BuildExpRelease.sh Debug RP2040 FLYSB2040V1_0 0 "-DUSE_PICOCAN" "FLYSB2040V1_0_picocan"
