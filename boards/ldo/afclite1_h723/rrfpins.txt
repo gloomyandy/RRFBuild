@@ -18,7 +18,7 @@ E.11 sw10
 E.12 sw11
 E.13 sw12
 E.14 n1,neopixel1
-E.12 n2,neopixel2
+E.15 n2,neopixel2
 B.10 n3,neopixel3
 B.11 n4,neopixel4
 D.13 dc24
