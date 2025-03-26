@@ -2,99 +2,6 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "build STMF4 COMBINED firmware",
-        "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32F4 CORE=STM32 MCU=STM32F4 NETWORK=COMBINED OUTPUT_NAME=base_stm32f4 all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-     {
-        "label": "build STMH743 COMBINED firmware",
-        "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=COMBINED OUTPUT_NAME=base_stm32h743 all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build STMH723 COMBINED firmware",
-        "type": "shell",
-        "command": "make -j8 MAKE_DIR=RepRapFirmware/makefiles/STM32H7 CORE=STM32 MCU=STM32H7 NETWORK=COMBINED VARIANT=STM32H723 OUTPUT_NAME=base_stm32h723 all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
         "label": "build skr2 f4 firmware",
         "type": "shell",
         "command": "bash ./testbuild.sh Debug STM32 STM32F4 STM32F4 COMBINED btt skr2_f4",
@@ -155,7 +62,8 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      {
+      },      
+      {
         "label": "build gemini 1.0 f4 firmware",
         "type": "shell",
         "command": "bash ./testbuild.sh Debug STM32 STM32F4 STM32F4 COMBINED fly gemini1_0_f4",
@@ -406,68 +314,6 @@
         "label": "build STMH723 IAP",
         "type": "shell",
         "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 OUTPUT_NAME=stm32h743_iap_SBC all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build STMH743 IAPBL",
-        "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H743 OUTPUT_NAME=stm32h743_bootloader_2 all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build STMH723 IAPBL",
-        "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 OUTPUT_NAME=stm32h723_bootloader_2 all",
         "osx": {
           "options": {
             "env": {
@@ -747,6 +593,37 @@
         "label": "build SHT36 MAX v3 spican Expansion Firmware",
         "type": "shell",
         "command": "make -j8 CORE=RP2040 BOARD=SHT36 BOARD_REV=301 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_SHT36MAX3 all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
+        "label": "build FLY M2 spican Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2040 BOARD=FLYM2 BOARD_REV=1 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FLYM2 all",
         "osx": {
           "options": {
             "env": {
