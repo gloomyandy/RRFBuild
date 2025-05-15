@@ -18,6 +18,7 @@ stepper.directionPins={D.3,C.11,E.3,D.14}
 stepper.numSmartDrivers=4
 stepper.TmcUartPins={D.5,D.0,E.1,C.6}
 stepper.TmcDiagPins={D.2,C.10,E.4,C.8}
+stepper.DriverType={tmcauto,tmcauto,tmcauto,tmcauto}
 ;power.VInDetectPin=NoPin
 sbc.TfrReadyPin=NoPin
 sbc.csPin=NoPin
