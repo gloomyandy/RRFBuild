@@ -4,74 +4,6 @@
         <name>DuetAPI</name>
     </assembly>
     <members>
-        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute">
-            <summary>
-                Specifies that the method or property will ensure that the listed field and property members have
-                not-<see langword="null"/> values.
-            </summary>
-        </member>
-        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.Members">
-            <summary>
-                Gets field or property member names.
-            </summary>
-        </member>
-        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String)">
-            <summary>
-                Initializes the attribute with a field or property member.
-            </summary>
-            <param name="member">
-                The field or property member that is promised to be not-null.
-            </param>
-        </member>
-        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.#ctor(System.String[])">
-            <summary>
-                Initializes the attribute with the list of field and property members.
-            </summary>
-            <param name="members">
-                The list of field and property members that are promised to be not-null.
-            </param>
-        </member>
-        <member name="T:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute">
-            <summary>
-                Specifies that the method or property will ensure that the listed field and property members have
-                non-<see langword="null"/> values when returning with the specified return value condition.
-            </summary>
-        </member>
-        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.ReturnValue">
-            <summary>
-                Gets the return value condition.
-            </summary>
-        </member>
-        <member name="P:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.Members">
-            <summary>
-                Gets field or property member names.
-            </summary>
-        </member>
-        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String)">
-            <summary>
-                Initializes the attribute with the specified return value condition and a field or property member.
-            </summary>
-            <param name="returnValue">
-                The return value condition. If the method returns this value,
-                the associated parameter will not be <see langword="null"/>.
-            </param>
-            <param name="member">
-                The field or property member that is promised to be not-<see langword="null"/>.
-            </param>
-        </member>
-        <member name="M:System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.#ctor(System.Boolean,System.String[])">
-            <summary>
-                Initializes the attribute with the specified return value condition and list
-                of field and property members.
-            </summary>
-            <param name="returnValue">
-                The return value condition. If the method returns this value,
-                the associated parameter will not be <see langword="null"/>.
-            </param>
-            <param name="members">
-                The list of field and property members that are promised to be not-null.
-            </param>
-        </member>
         <member name="T:DuetAPI.CodeChannel">
             <summary>
             Enumeration of supported input channel names
@@ -1807,16 +1739,6 @@
             </summary>
         </member>
         <member name="P:DuetAPI.Commands.CommandContext.NullableInt64">
-            <summary>
-            Defines the source generated JSON serialization contract metadata for a given type.
-            </summary>
-        </member>
-        <member name="P:DuetAPI.Commands.CommandContext.SByte">
-            <summary>
-            Defines the source generated JSON serialization contract metadata for a given type.
-            </summary>
-        </member>
-        <member name="P:DuetAPI.Commands.CommandContext.NullableSByte">
             <summary>
             Defines the source generated JSON serialization contract metadata for a given type.
             </summary>
@@ -4611,159 +4533,12 @@
         </member>
         <member name="P:DuetAPI.ObjectModel.ClosedLoopCurrentFraction.Avg">
             <summary>
-            Average fraction
+            Average fraction of the configured motor current used
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.ClosedLoopCurrentFraction.Max">
             <summary>
-            Maximum fraction
-            </summary>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.ClosedLoopCurrentFraction.Assign(DuetAPI.ObjectModel.IStaticModelObject)">
-            <summary>
-            Assign the properties from another instance.
-            This is required to update model properties which do not have a setter
-            </summary>
-            <param name="from">Other instance</param>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.ClosedLoopCurrentFraction.Clone">
-            <summary>
-            Clone this instance
-            </summary>
-            <remarks>This method is auto-generated</remarks>
-            <returns>Cloned instance</returns>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.ClosedLoopCurrentFraction.UpdateFromJson(System.Text.Json.JsonElement,System.Boolean)">
-            <summary>
-            Update this instance from a given JSON element
-            </summary>
-            <remarks>This method is auto-generated</remarks>
-            <param name="jsonElement">Element to update this intance from</param>
-            <param name="ignoreSbcProperties">Whether SBC properties are ignored</param>
-            <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.ClosedLoopCurrentFraction.UpdateFromJsonReader(System.Text.Json.Utf8JsonReader@,System.Boolean)">
-            <summary>
-            Update this instance from a given JSON element
-            </summary>
-            <remarks>This method is auto-generated</remarks>
-            <param name="reader">Reader to update this intance from</param>
-            <param name="ignoreSbcProperties">Whether SBC properties are igturns>
-            <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
-        </member>
-        <member name="T:DuetAPI.ObjectModel.DirectDisplayScreenST7567">
-            <summary>
-            Direct-connected display screen with a ST7567 controller
-            </summary>
-        </member>
-        <member name="P:DuetAPI.ObjectModel.DirectDisplayScreenST7567.Contrast">
-            <summary>
-            Configured contrast
-            </summary>
-        </member>
-        <member name="P:DuetAPI.ObjectModel.DirectDisplayScreenST7567.ResistorRatio">
-            <summary>
-            Configured resistor ratio
-            </summary>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.DirectDisplayScreenST7567.Assign(DuetAPI.ObjectModel.IDynamicModelObject)">
-            <summary>
-            Assign the properties from another instance.
-            This is required to update model properties which do not have a setter
-            </summary>
-            <param name="from">Other instance</param>
-            <returns>Updated instance</returns>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.DirectDisplayScreenST7567.Clone">
-            <summary>
-            Clone this instance
-            </summary>
-            <remarks>This method is auto-generated</remarks>
-            <returns>Cloned instance</returns>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.DirectDisplayScreenST7567.GeneratedUpdateFromJson(System.Text.Json.JsonElement,System.Boolean)">
-            <summary>
-            Update this instance from a given JSON element
-            </summary>
-            <remarks>This method is auto-generated</remarks>
-            <param name="jsonElement">Element to update this intance from</param>
-            <param name="ignoreSbcProperties">Whether SBC properties are ignored</param>
-            <returns>Updated instance</returns>
-            <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.DirectDisplayScreenST7567.GeneratedUpdateFromJsonReader(System.Text.Json.Utf8JsonReader@,System.Boolean)">
-            <summary>
-            Update this instance from a given JSON element
-            </summary>
-            <remarks>This method is auto-generated</remarks>
-            <param name="reader">Reader to update this intance from</param>
-            <param name="ignoreSbcProperties">Whether SBC properties are ignored</param>
-            <returns>Updated instance</returns>
-            <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
-        </member>
-        <member name="T:DuetAPI.ObjectModel.Driver">
-            <summary>
-            Information about a driver
-            </summary>
-        </member>
-        <member name="P:DuetAPI.ObjectModel.Driver.ClosedLoop">
-            <summary>
-            Closed-loop settings (if applicable)
-            </summary>
-        </member>
-        <member name="P:DuetAPI.ObjectModel.Driver.Status">
-            <summary>
-            Driver status register value
-            The lowest 8 bits of these have the same bit positions as in the TMC2209 DRV_STATUS register.
-            The TMC5160 DRV_STATUS is different so the bits are translated to this. Similarly for TMC2660.
-            Only the lowest 16 bits are passed in driver event messages
-            </summary>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.Driver.Assign(DuetAPI.ObjectModel.IStaticModelObject)">
-            <summary>
-            Assign the properties from another instance.
-            This is required to update model properties which do not have a setter
-            </summary>
-            <param name="from">Other instance</param>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.Driver.Clone">
-            <summary>
-            Clone this instance
-            </summary>
-            <remarks>This method is auto-generated</remarks>
-            <returns>Cloned instance</returns>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.Driver.UpdateFromJson(System.Text.Json.JsonElement,System.Boolean)">
-            <summary>
-            Update this instance from a given JSON element
-            </summary>
-            <remarks>This method is auto-generated</remarks>
-            <param name="jsonElement">Element to update this intance from</param>
-            <param name="ignoreSbcProperties">Whether SBC properties are ignored</param>
-            <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
-        </member>
-        <member name="M:DuetAPI.ObjectModel.Driver.UpdateFromJsonReader(System.Text.Json.Utf8JsonReader@,System.Boolean)">
-            <summary>
-            Update this instance from a given JSON element
-            </summary>
-            <remarks>This method is auto-generated</remarks>
-            <param name="reader">Reader to update this intance from</param>
-            <param name="ignoreSbcProperties">Whether SBC properties are ignored</param>
-            <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
-        </member>
-        <member name="T:DuetAPI.ObjectModel.ClosedLoopCurrentFraction">
-            <summary>
-            Information about the current fraction of the closed-loop configuration
-            </summary>
-        </member>
-        <member name="P:DuetAPI.ObjectModel.ClosedLoopCurrentFraction.Avg">
-            <summary>
-            Average fraction
-            </summary>
-        </member>
-        <member name="P:DuetAPI.ObjectModel.ClosedLoopCurrentFraction.Max">
-            <summary>
-            Maximum fraction
+            Maximum fraction of the configured motor current used
             </summary>
         </member>
         <member name="M:DuetAPI.ObjectModel.ClosedLoopCurrentFraction.Assign(DuetAPI.ObjectModel.IStaticModelObject)">
@@ -4805,12 +4580,12 @@
         </member>
         <member name="P:DuetAPI.ObjectModel.ClosedLoopPositionError.Max">
             <summary>
-            Maximum position error
+            Maximum position error in full steps of the motor
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.ClosedLoopPositionError.Rms">
             <summary>
-            RMS of the position error
+            RMS of the position error in full steps of the motor
             </summary>
         </member>
         <member name="M:DuetAPI.ObjectModel.ClosedLoopPositionError.Assign(DuetAPI.ObjectModel.IStaticModelObject)">
@@ -4852,12 +4627,12 @@
         </member>
         <member name="P:DuetAPI.ObjectModel.DriverClosedLoop.CurrentFraction">
             <summary>
-            Current fraction
+            Current fraction f the configured motor current used
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.DriverClosedLoop.PositionError">
             <summary>
-            Position error
+            Position error in full steps of the motor
             </summary>
         </member>
         <member name="M:DuetAPI.ObjectModel.DriverClosedLoop.Assign(DuetAPI.ObjectModel.IStaticModelObject)">
@@ -5295,6 +5070,16 @@
         <member name="P:DuetAPI.ObjectModel.Heater.Current">
             <summary>
             Current temperature of the heater (in C)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.Heater.ExtrPwmBoost">
+            <summary>
+            Current feedforward PWM boost applied to the heater
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.Heater.ExtrTempBoost">
+            <summary>
+            Current temperature boost applied to the heater
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.Heater.Max">
@@ -6125,6 +5910,11 @@
             Holds information about a G-code file
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.GCodeFileInfo.CustomInfo">
+            <summary>
+            User-defined key-value pairs
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.GCodeFileInfo.Filament">
             <summary>
             Filament consumption per extruder drive (in mm)
@@ -6516,7 +6306,12 @@
         </member>
         <member name="P:DuetAPI.ObjectModel.TimesLeft.Slicer">
             <summary>
-            Time left based on the slicer reports (see M73, in s or null)
+            Time left based on the slicer reports (see M73 R, in s or null)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.TimesLeft.ToPause">
+            <summary>
+            Time left before the next colour change is expected (see M73 C, in s or null) 
             </summary>
         </member>
         <member name="M:DuetAPI.ObjectModel.TimesLeft.Assign(DuetAPI.ObjectModel.IStaticModelObject)">
@@ -6716,6 +6511,13 @@
         <member name="P:DuetAPI.ObjectModel.Limits.PortsPerHeater">
             <summary>
             Maximum number of output ports per heater or null if unknown
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.Limits.ReportedAxes">
+            <summary>
+            Maximum number of axes reported when the move key is requested.
+            If the number of reported axes is greater than or equal to this value, a client
+            may need to request move.axes explicitly in order to get the full move.axes array
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.Limits.RestorePoints">
@@ -6977,6 +6779,16 @@
             Percentage applied to the motor current during standstill (0..100 or null if not supported)
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.Axis.PhaseStep">
+            <summary>
+            Whether or not this axis uses phase stepping
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.Axis.PrintingJerk">
+            <summary>
+            Motor jerk during the current print only (in mm/s)
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.Axis.ReducedAcceleration">
             <summary>
             Reduced accelerations used by Z probing and stall homing moves (in mm/s^2)
@@ -6990,6 +6802,11 @@
         <member name="P:DuetAPI.ObjectModel.Axis.StepsPerMm">
             <summary>
             Number of microsteps per mm
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.Axis.StepPos">
+            <summary>
+            Current step position of the axis (in steps)
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.Axis.UserPosition">
@@ -7169,6 +6986,11 @@
             Percentage applied to the motor current during standstill (0..100 or null if not supported)
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.Extruder.PhaseStep">
+            <summary>
+            Whether or not this axis uses phase stepping
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.Extruder.Position">
             <summary>
             Extruder position (in mm)
@@ -7177,6 +6999,11 @@
         <member name="P:DuetAPI.ObjectModel.Extruder.PressureAdvance">
             <summary>
             Pressure advance
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.Extruder.PrintingJerk">
+            <summary>
+            Motor jerk during the current print only (in mm/s)
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.Extruder.RawPosition">
@@ -7298,20 +7125,9 @@
             Input shaper delays (in s)
             </summary>
         </member>
-        <member name="P:DuetAPI.ObjectModel.InputShaping.Durations">
-            <summary>
-            Input shaper durations (in s)
-            </summary>
-        </member>
         <member name="P:DuetAPI.ObjectModel.InputShaping.Frequency">
             <summary>
             Frequency (in Hz)
-            </summary>
-        </member>
-        <member name="P:DuetAPI.ObjectModel.InputShaping.ReductionLimit">
-            <summary>
-            Minimum fraction of the original acceleration or feed rate to which the acceleration or
-            feed rate may be reduced in order to apply input shaping
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.InputShaping.Type">
@@ -7892,6 +7708,31 @@
             Kinematics class for polar kinematics
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.PolarKinematics.RadiusHomed">
+            <summary>
+            Homed radius (in mm)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.PolarKinematics.RadiusMax">
+            <summary>
+            Maximum radius (in mm)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.PolarKinematics.RadiusMin">
+            <summary>
+            Minimum radius (in mm)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.PolarKinematics.TTAccMax">
+            <summary>
+            Maximum turntable acceleration (in mm/s^2)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.PolarKinematics.TTSpeedMax">
+            <summary>
+            Maximum turntable speed (in mm/s)
+            </summary>
+        </member>
         <member name="M:DuetAPI.ObjectModel.PolarKinematics.Assign(DuetAPI.ObjectModel.IDynamicModelObject)">
             <summary>
             Assign the properties from another instance.
@@ -7930,6 +7771,46 @@
         <member name="T:DuetAPI.ObjectModel.ScaraKinematics">
             <summary>
             Kinematics class for SCARA kinematics
+            </summary>
+        </member>
+        <member name="F:DuetAPI.ObjectModel.ScaraKinematics.Crosstalk">
+            <summary>
+            Proximal to distal, proximal to Z and distal to Z crosstalk
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ScaraKinematics.DistalLength">
+            <summary>
+            Distal arm length (in mm)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ScaraKinematics.MinRadius">
+            <summary>
+            Requested minimum radius (in mm)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ScaraKinematics.ProximalLength">
+            <summary>
+            Proximal arm length (in mm)
+            </summary>
+        </member>
+        <member name="F:DuetAPI.ObjectModel.ScaraKinematics.PsiLimits">
+            <summary>
+            Psi limits (in degrees)
+            </summary>
+        </member>
+        <member name="F:DuetAPI.ObjectModel.ScaraKinematics.ThetaLimits">
+            <summary>
+            Theta limits (in degrees)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ScaraKinematics.XOffset">
+            <summary>
+            X offset (in mm)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ScaraKinematics.YOffset">
+            <summary>
+            Y offset (in mm)
             </summary>
         </member>
         <member name="M:DuetAPI.ObjectModel.ScaraKinematics.Assign(DuetAPI.ObjectModel.IDynamicModelObject)">
@@ -8178,6 +8059,11 @@
             Information about the move subsystem
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.Move.AccelerationTime">
+            <summary>
+            Value of the M201 T parameter. Only present in builds that support S-curve acceleration
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.Move.Axes">
             <summary>
             List of the configured axes
@@ -8265,6 +8151,11 @@
             Maximum acceleration allowed while travelling (in mm/s^2)
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.Move.UsingSCurve">
+            <summary>
+            Indicates if S-curve acceleration is used. Only present in builds that support it
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.Move.VirtualEPos">
             <summary>
             Virtual total extruder position
@@ -8289,23 +8180,35 @@
             <remarks>This method is auto-generated</remarks>
             <returns>Cloned instance</returns>
         </member>
-        <member name="M:DuetAPI.ObjectModel.Move.UpdateFromJson(System.Text.Json.JsonElement,System.Boolean)">
+        <member name="M:DuetAPI.ObjectModel.Move.UpdateFromJson(System.Text.Json.JsonElement,System.Boolean,System.Boolean)">
             <summary>
             Update this instance from a given JSON element
             </summary>
             <remarks>This method is auto-generated</remarks>
             <param name="jsonElement">Element to update this intance from</param>
             <param name="ignoreSbcProperties">Whether SBC properties are ignored</param>
+            <param name="last">Whether Move.Axes is final</param>
             <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
         </member>
-        <member name="M:DuetAPI.ObjectModel.Move.UpdateFromJsonReader(System.Text.Json.Utf8JsonReader@,System.Boolean)">
+        <member name="M:DuetAPI.ObjectModel.Move.UpdateFromJson(System.Text.Json.JsonElement,System.Boolean)">
+            <summary>Wrapper function</summary>
+            <param name="jsonElement">JSON element</param>
+            <param name="ignoreSbcProperties">Ignore SBC properties</param>
+        </member>
+        <member name="M:DuetAPI.ObjectModel.Move.UpdateFromJsonReader(System.Text.Json.Utf8JsonReader@,System.Boolean,System.Boolean)">
             <summary>
             Update this instance from a given JSON element
             </summary>
             <remarks>This method is auto-generated</remarks>
             <param name="reader">Reader to update this intance from</param>
             <param name="ignoreSbcProperties">Whether SBC properties are ignored</param>
+            <param name="last">Whether Move.Axes is final</param>
             <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
+        </member>
+        <member name="M:DuetAPI.ObjectModel.Move.UpdateFromJsonReader(System.Text.Json.Utf8JsonReader@,System.Boolean)">
+            <summary>Wrapper function for JSON updates</summary>
+            <param name="reader">JSON reader</param>
+            <param name="ignoreSbcProperties">Ignore SBC properties</param>
         </member>
         <member name="T:DuetAPI.ObjectModel.MoveCalibration">
             <summary>
@@ -8874,6 +8777,11 @@
             This is only reported by ESP-based boards in standalone mode
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.NetworkInterface.RSSI">
+            <summary>
+            Received signal strength indicator of the WiFi adapter (only WiFi, in dBm, or null if unknown)
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.NetworkInterface.Signal">
             <summary>
             Signal of the WiFi adapter (only WiFi, in dBm, or null if unknown)
@@ -9211,7 +9119,7 @@
             <param name="key">Property name to update</param>
             <param name="reader">JSON reader</param>
             <param name="offset">Index offset</param>
-            <param name="last">Whether this is the last update</param>
+            <param name="last">Whether this is the last update. May be used to flag whether move.axes is about to be updated, too</param>
             <returns>Whether the key could be updated</returns>
         </member>
         <member name="M:DuetAPI.ObjectModel.ObjectModel.UpdateFromJson(System.Text.Json.JsonElement)">
@@ -9255,7 +9163,7 @@
             If an event handler is assigned, potential JsonExceptions are suppressed and the event is called instead
             </summary>
         </member>
-        <member name="M:DuetAPI.ObjectModel.ObjectModel.DeserializationFailed(System.Object,System.Type,System.Text.Json.JsonElement,System.Text.Json.JsonException)">
+        <member name="M:DuetAPI.ObjectModel.ObjectModel.DeserializationFailed(System.Object,System.Type,System.Text.Json.JsonElement,System.Exception)">
             <summary>
             Internal function to be called when the deserialization of a sub-property failed
             </summary>
@@ -9938,6 +9846,11 @@
             Defines the source generated JSON serialization contract metadata for a given type.
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.ObjectModelContext.ProbeTouchMode">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.ObjectModelContext.ProbeType">
             <summary>
             Defines the source generated JSON serialization contract metadata for a given type.
@@ -10009,6 +9922,16 @@
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.ObjectModelContext.SpindleState">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ObjectModelContext.SpindleType">
+            <summary>
+            Defines the source generated JSON serialization contract metadata for a given type.
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ObjectModelContext.NullableSpindleType">
             <summary>
             Defines the source generated JSON serialization contract metadata for a given type.
             </summary>
@@ -11064,9 +10987,19 @@
             C value of this sensor
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.AnalogSensor.HighReading">
+            <summary>
+            High sensor reading (only linear analog sensors, otherwise null)
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.AnalogSensor.LastReading">
             <summary>
             Last sensor reading (in C) or null if invalid
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.AnalogSensor.LowReading">
+            <summary>
+            Low sensor reading (only linear analog sensors, otherwise null)
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.AnalogSensor.Name">
@@ -11378,7 +11311,8 @@
         </member>
         <member name="P:DuetAPI.ObjectModel.Duet3DFilamentMonitor.Position">
             <summary>
-            Position of the sensor (in mm)
+            Reported sensor position of this filament monitor.
+            The maximum value depends on the type of the sensor, e.g. 0..1023 for a Duet3D MFM.
             </summary>
         </member>
         <member name="P:DuetAPI.ObjectModel.Duet3DFilamentMonitor.TotalExtrusion">
@@ -11902,6 +11836,11 @@
             Configured properties of this filament monitor
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.PulsedFilamentMonitor.Position">
+            <summary>
+            Current position of the filament monitor (in mm)
+            </summary>
+        </member>
         <member name="M:DuetAPI.ObjectModel.PulsedFilamentMonitor.Assign(DuetAPI.ObjectModel.IDynamicModelObject)">
             <summary>
             Assign the properties from another instance.
@@ -12250,6 +12189,11 @@
             Allowed tolerance deviation between two measures (in mm)
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.Probe.TouchMode">
+            <summary>
+            Touch mode options (if supported, otherwise null)
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.Probe.TravelSpeed">
             <summary>
             Travel speed when probing multiple points (in mm/min)
@@ -12295,6 +12239,63 @@
             <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
         </member>
         <member name="M:DuetAPI.ObjectModel.Probe.UpdateFromJsonReader(System.Text.Json.Utf8JsonReader@,System.Boolean)">
+            <summary>
+            Update this instance from a given JSON element
+            </summary>
+            <remarks>This method is auto-generated</remarks>
+            <param name="reader">Reader to update this intance from</param>
+            <param name="ignoreSbcProperties">Whether SBC properties are ignored</param>
+            <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
+        </member>
+        <member name="T:DuetAPI.ObjectModel.ProbeTouchMode">
+            <summary>
+            Information about a configured probe
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ProbeTouchMode.Active">
+            <summary>
+            Indicates if the touch probe is enabled
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ProbeTouchMode.Speed">
+            <summary>
+            Speed while probing in touch mode (in mm/s)
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ProbeTouchMode.Threshold">
+            <summary>
+            Threshold value of the touch probe
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.ProbeTouchMode.TriggerHeight">
+            <summary>
+            Height of the trigger point of the touch probe (in mm)
+            </summary>
+        </member>
+        <member name="M:DuetAPI.ObjectModel.ProbeTouchMode.Assign(DuetAPI.ObjectModel.IStaticModelObject)">
+            <summary>
+            Assign the properties from another instance.
+            This is required to update model properties which do not have a setter
+            </summary>
+            <param name="from">Other instance</param>
+        </member>
+        <member name="M:DuetAPI.ObjectModel.ProbeTouchMode.Clone">
+            <summary>
+            Clone this instance
+            </summary>
+            <remarks>This method is auto-generated</remarks>
+            <returns>Cloned instance</returns>
+        </member>
+        <member name="M:DuetAPI.ObjectModel.ProbeTouchMode.UpdateFromJson(System.Text.Json.JsonElement,System.Boolean)">
+            <summary>
+            Update this instance from a given JSON element
+            </summary>
+            <remarks>This method is auto-generated</remarks>
+            <param name="jsonElement">Element to update this intance from</param>
+            <param name="ignoreSbcProperties">Whether SBC properties are ignored</param>
+            <exception cref="T:System.Text.Json.JsonException">Failed to deserialize data</exception>
+        </member>
+        <member name="M:DuetAPI.ObjectModel.ProbeTouchMode.UpdateFromJsonReader(System.Text.Json.Utf8JsonReader@,System.Boolean)">
             <summary>
             Update this instance from a given JSON element
             </summary>
@@ -12588,6 +12589,11 @@
             Current state
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.Spindle.Type">
+            <summary>
+            Spindle type
+            </summary>
+        </member>
         <member name="M:DuetAPI.ObjectModel.Spindle.Assign(DuetAPI.ObjectModel.IStaticModelObject)">
             <summary>
             Assign the properties from another instance.
@@ -12643,6 +12649,21 @@
         <member name="F:DuetAPI.ObjectModel.SpindleState.Reverse">
             <summary>
             Spindle is going in reverse
+            </summary>
+        </member>
+        <member name="T:DuetAPI.ObjectModel.SpindleType">
+            <summary>
+            Spindle type
+            </summary>
+        </member>
+        <member name="F:DuetAPI.ObjectModel.SpindleType.EnaDir">
+            <summary>
+            Enable and direction
+            </summary>
+        </member>
+        <member name="F:DuetAPI.ObjectModel.SpindleType.FwdRev">
+            <summary>
+            Forward and reverse
             </summary>
         </member>
         <member name="T:DuetAPI.ObjectModel.BeepRequest">
@@ -13335,6 +13356,21 @@
             Feedforward coefficients to apply to the mapped heaters during extrusions
             </summary>
         </member>
+        <member name="P:DuetAPI.ObjectModel.Tool.FeedForwardAdvance">
+            <summary>
+            Time advance for applying feedforward in milliseconds
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.Tool.FeedForwardPwm">
+            <summary>
+            Feedforward coefficients to apply to the mapped heaters during extrusions
+            </summary>
+        </member>
+        <member name="P:DuetAPI.ObjectModel.Tool.FeedForwardTemp">
+            <summary>
+            Temperature increase per mm/dec extrusion speed
+            </summary>
+        </member>
         <member name="P:DuetAPI.ObjectModel.Tool.FilamentExtruder">
             <summary>
             Extruder drive index for resolving the tool filament (index or -1)
@@ -13698,7 +13734,7 @@
             Helper class to generate RRF-style file lists
             </summary>
         </member>
-        <member name="M:DuetAPI.Utility.FileLists.GetFilesUtf8(System.String,System.String,System.Int32,System.Boolean,System.Int32)">
+        <member name="M:DuetAPI.Utility.FileLists.GetFilesUtf8(System.String,System.String,System.Int32,System.Boolean,System.Int32,System.Int32)">
             <summary>
             Get a /rr_files or M20 files response
             </summary>
@@ -13707,9 +13743,10 @@
             <param name="startAt">First item to send</param>
             <param name="flagDirs">Prefix directories with an asterisk</param>
             <param name="maxSize">Maximum size of the file list in bytes or -1 if unset</param>
+            <param name="maxItems">Maximum number of items to send or -1 if unset</param>
             <returns>UTF8-encoded JSON file list</returns>
         </member>
-        <member name="M:DuetAPI.Utility.FileLists.GetFiles(System.String,System.String,System.Int32,System.Boolean,System.Int32)">
+        <member name="M:DuetAPI.Utility.FileLists.GetFiles(System.String,System.String,System.Int32,System.Boolean,System.Int32,System.Int32)">
             <summary>
             Get a /rr_files or M20 files response
             </summary>
@@ -13718,19 +13755,21 @@
             <param name="startAt">First item to send</param>
             <param name="flagDirs">Prefix directories with an asterisk</param>
             <param name="maxSize">Maximum size of the file list in bytes or -1 if unset</param>
+            <param name="maxItems">Maximum number of items to send or -1 if unset</param>
             <returns>JSON file list</returns>
         </member>
-        <member name="M:DuetAPI.Utility.FileLists.GetFileListUtf8(System.String,System.String,System.Int32,System.Int32)">
+        <member name="M:DuetAPI.Utility.FileLists.GetFileListUtf8(System.String,System.String,System.Int32,System.Int32,System.Int32)">
             <summary>
-            Get a /rr_filelist or M20 files response
+            Get a /rr_filelist, M20 files response, or a directory file enumeration
             </summary>
             <param name="directory">RRF path to the directory</param>
             <param name="physicalDirectory">Physical directory</param>
             <param name="startAt">First file index to return. Set startAt to -1 to omit error handling and the JSON object container</param>
             <param name="maxSize">Maximum size of the file list in bytes or -1 if unset</param>
+            <param name="maxItems">Maximum number of items to send or -1 if unset</param>
             <returns>UTF8-encoded JSON list</returns>
         </member>
-        <member name="M:DuetAPI.Utility.FileLists.GetFileList(System.String,System.String,System.Int32,System.Int32)">
+        <member name="M:DuetAPI.Utility.FileLists.GetFileList(System.String,System.String,System.Int32,System.Int32,System.Int32)">
             <summary>
             Get a /rr_filelist or M20 files response
             </summary>
@@ -13738,6 +13777,7 @@
             <param name="physicalDirectory">Physical directory</param>
             <param name="startAt">First file index to return. Set startAt to -1 to omit error handling and the JSON object container</param>
             <param name="maxSize">Maximum size of the file list in bytes or -1 if unset</param>
+            <param name="maxItems">Maximum number of items to send or -1 if unset</param>
             <returns>JSON list</returns>
         </member>
         <member name="T:DuetAPI.Utility.Heightmap">
@@ -13871,6 +13911,16 @@
             <summary>
             Default JSON (de-)serialization options
             </summary>
+        </member>
+        <member name="M:DuetAPI.Utility.JsonHelper.ReceiveUtf8Json(System.Net.Sockets.Socket,System.Threading.CancellationToken)">
+            <summary>
+            Receive a serialized JSON object from a socket in UTF-8 format
+            </summary>
+            <param name="socket">Socket to read from</param>
+            <param name="cancellationToken">Cancellation token</param>
+            <returns>Plain JSON</returns>
+            <exception cref="T:System.OperationCanceledException">Operation has been cancelled</exception>
+            <exception cref="T:System.Net.Sockets.SocketException">Connection has been closed</exception>
         </member>
         <member name="T:DuetAPI.Utility.JsonOptionalShortDateTimeConverter">
             <summary>
