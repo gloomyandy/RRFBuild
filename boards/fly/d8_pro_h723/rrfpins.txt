@@ -1,0 +1,39 @@
+A.1 fan0
+A.2 fan1
+A.3 fan2
+A.4 neopixel1
+A.5 e2stop
+A.6 e1stop
+A.9 btnen2
+A.10 btnen1
+A.13 lcdrs
+A.14 lcden
+D.8 ystop
+D.9 xstop
+D.10 e0stop
+D.11 zstop
+D.12 e0heat, heat0, he0
+D.13 e1heat, heat1, he1
+D.14 e2heat, heat2, he2
+D.15 neopixel
+C.0 probe
+C.2 e0temp, t0
+C.3 e1temp, t1
+C.4 e2temp, t2
+B.0 bedtemp, tb
+C.6 fan3
+C.7 fan4
+C.8 fan5
+B.0 bedtemp, tb
+B.2 btnenc
+B.11 lcdbeep, beep
+A.0 lcdd7
+E.6 servo, servo0
+E.13 tfcd, lcdcd
+B.10 lcdd5
+E.15 lcdd4
+B.15 wifimosi
+B.14 wifimiso
+B.13 wifisck
+B.12 wifics
+E.14 wifitfr
