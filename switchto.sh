@@ -5,7 +5,7 @@ git checkout $1
 cd CoreN2G
 echo "CoreN2G"
 git status
-git checkout $1
+git checkout --recurse-submodules $1
 cd ../RepRapFirmware
 echo "RepRapFirmware"
 git status
