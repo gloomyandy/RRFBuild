@@ -16,6 +16,7 @@ rm -rf $OUTPUT
 ./BuildExpRelease.sh Debug RP2040 FLYSB2040V3_0 301 "-DUSE_SPICAN" "SB2040PROMAX3"
 ./BuildExpRelease.sh Debug RP2040 SHT36 300 "-DUSE_SPICAN" "SHT36V3"
 ./BuildExpRelease.sh Debug RP2040 SHT36 301 "-DUSE_SPICAN" "SHT36MAX3"
+./BuildExpRelease.sh Debug RP2350 SHT36 401 "-DUSE_SPICAN" "SHT36MAX4"
 ./BuildExpRelease.sh Debug RP2040 FLYM2 0 "-DUSE_SPICAN" "FLYM2"
 ./BuildExpRelease.sh Debug RP2040 MKSTHR3642 1 "-DUSE_PICOCAN" "MKSTHR3642v1_0_picocan"
 ./BuildExpRelease.sh Debug RP2040 PITBV1_0 0 "-DUSE_PICOCAN" "PITBV1_0_picocan"
