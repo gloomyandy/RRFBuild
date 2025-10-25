@@ -12,7 +12,7 @@
 			"**/MQTT_C/docs/": true,
 			"**/node_modules": false,
 			"**/pico-sdk/lib/": true,
-			"**/STM32/system/Drivers/": true,
+			"**/STM32/system/Drivers/": fasle,
 			"**/STM32F0*/": true,
 			"**/STM32F1*/": true,
 			"**/STM32F2*/": true,
@@ -107,7 +107,9 @@
 			"thread": "cpp",
 			"variant": "cpp",
 			"cstdbool": "cpp",
-			"*.ipp": "cpp"
+			"*.ipp": "cpp",
+			"stm32h7xx_ll_gpio.h": "c",
+			"stm32f4xx_ll_gpio.h": "c"
 		},
 	}
 }

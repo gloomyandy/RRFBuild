@@ -124,10 +124,42 @@
           "isDefault": true
         },
         "problemMatcher": "$gcc"
-      },      {
+      },      
+      {
         "label": "build super8pro h743 firmware",
         "type": "shell",
         "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H743 COMBINED fly super8pro_h743",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
+        "label": "build super8pro h723 firmware",
+        "type": "shell",
+        "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H723 COMBINED fly super8pro_h723",
         "osx": {
           "options": {
             "env": {
