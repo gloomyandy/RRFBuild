@@ -1,4 +1,5 @@
 #!/bin/sh
+DoBuild() {
 beginTime=$(date +%s)
 VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`
 OUTPUT=releases/${VER}/
@@ -73,3 +74,8 @@ echo -n "SBC Zip file count: "
 /c/Windows/SysWOW64/tar.exe tvfn ${OUTPUT}/STM32RepRapFirmwareSBC.zip | wc -l
 echo -n "Build time: "
 date -d@$(expr $endTime - $beginTime) -u +%H:%M:%S
+}
+
+set -e
+export SHELLOPTS
+DoBuild 2>&1 | tee buildlog.txt
