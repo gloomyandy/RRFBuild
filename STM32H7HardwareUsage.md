@@ -89,13 +89,17 @@ DMA
 * DMA1_Stream6 : SPI1
 * DMA1_Stream7 : SPI1
 * DMA2_Stream0 : ADC3
-* DMA2_Stream1 : unused
-* DMA2_Stream2 : unused
+* DMA2_Stream1 : SPI5 RX
+* DMA2_Stream2 : SPI5 TX
 * DMA2_Stream3 : unused
 * DMA2_Stream4 : ADC1
 * DMA2_Stream5 : TIM1/GPIO (Soft UART/NeoPixels)
 * DMA2_Stream6 : unused
 * DMA2_Stream7 : unused
+
+BDMA
+====
+Unused, possible future use for SPI6?
 
 CRC Unit
 ========

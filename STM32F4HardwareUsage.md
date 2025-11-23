@@ -99,7 +99,7 @@ DMA
 * DMA2_Stream3 : SDIO RX
 * DMA2_Stream4 : ADC1
 * DMA2_Stream5 : TIM1/GPIO (Soft UART/NeoPixels)
-* DMA2_Stream6 : SDIO TX
+* DMA2_Stream6 : unused
 * DMA2_Stream7 : unused
 
 CRC Unit
