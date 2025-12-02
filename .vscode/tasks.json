@@ -652,6 +652,37 @@
         "problemMatcher": "$gcc"
       },      
       {
+        "label": "build RP2350 TEST spican Expansion Firmware",
+        "type": "shell",
+        "command": "make -j8 CORE=RP2350 BOARD=RP2350TEST BOARD_REV=1 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_RP2350Test all",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },      
+      {
         "label": "build FLY M2 spican Expansion Firmware",
         "type": "shell",
         "command": "make -j8 CORE=RP2040 BOARD=FLYM2 BOARD_REV=1 CANFLAGS=-DUSE_SPICAN MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_FLYM2 all",
