@@ -125,6 +125,23 @@
             ]
 
         },
+        {
+            "cwd": "${userHome}/.pico-sdk/openocd/0.12.0+dev/scripts",
+            "executable": "${workspaceFolder}/expbuild/Duet3Firmware_RP2350Test.elf",
+            "name": "Debug Pico RP2350 RP2350Test",
+            "request": "launch",
+            "type": "cortex-debug",
+            "device": "RP2350",
+            "servertype": "openocd",
+            "serverpath": "${userHome}/.pico-sdk/openocd/0.12.0+dev/openocd.exe",
+            "gdbPath": "C:/Users/andy/.pico-sdk/toolchain/14_2_Rel1/bin/arm-none-eabi-gdb.exe",
+            "configFiles": ["${workspaceRoot}\\.vscode\\openocd-pico2.cfg"],
+            "svdFile": "${userHome}/.pico-sdk/sdk/2.1.1/src/rp2350/hardware_regs/RP2350.svd"
+            "openOCDLaunchCommands": [
+                "adapter speed 2000"
+            ]
+
+        },
             
     ]
 }
