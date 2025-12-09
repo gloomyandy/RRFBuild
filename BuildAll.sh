@@ -2,6 +2,7 @@
 DoBuild() {
 beginTime=$(date +%s)
 VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`
+echo "Building RRF Version:" $VER
 OUTPUT=releases/${VER}/
 rm -rf $OUTPUT
 ./BuildRelease.sh Debug STM32 STM32H7 STM32H743 COMBINED base_stm32h743
@@ -46,9 +47,16 @@ for oem in boards/*; do
        fi
     done
 done
-WIFIVER=`awk 'sub(/.*VERSION_MAIN/,""){print $1}' WiFiSocketServerRTOS/src/Config.h  | awk 'gsub(/"/, "", $1)'`
+
+# Try and force the use of particular WiFi version based on RRF version
+case "$VER" in
+    "3.6."*) WIFIVER=2.2.1 ;;
+    *) WIFIVER=`awk 'sub(/.*VERSION_MAIN/,""){print $1}' WiFiSocketServerRTOS/src/Config.h  | awk 'gsub(/"/, "", $1)'` ;;
+esac
+echo "WiFi Version:" $WIFIVER
 mkdir -p ${OUTPUT}/wifi/
 cp WiFiSocketServerRTOS/releases/${WIFIVER}/*.bin ${OUTPUT}/wifi
+
 ./BuildDWC.sh
 ./BuildZips.sh Debug
 
