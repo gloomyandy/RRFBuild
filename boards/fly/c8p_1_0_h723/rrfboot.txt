@@ -1,5 +1,5 @@
-board=c8_1_0_f4
-board.longName="Fly C8 V1.0 STM32F4"
+board=c8p_1_0_h723
+board.longName="Fly C8 Pro V1.0 STM32H723"
 sdcard.internal.type=255
 SPI0.pins={NoPin,NoPin,NoPin}
 SPI1.pins={B.13,B.14,B.15}
