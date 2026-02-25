@@ -1,0 +1,34 @@
+A.0 fan0
+A.1 fan1
+A.2 fan2
+A.3 laser
+A.4 zmax, zstopmax
+A.5 zstop,zmin
+A.9 btnen2
+A.10 btnen1
+A.13 lcdrs
+A.14 lcden
+B.0 bed
+B.1 btnenc
+B.10 beep
+B.11 lcdd7
+C.0 probe
+C.2 e0temp
+C.3 e1temp
+C.4 e2temp
+C.5 bedtemp
+C.6 fan3
+C.7 fan4
+C.8 fan5
+D.8 xmax, xstopmax
+D.9 xstop,xmin
+D.10 ymax, ystopmax
+D.11 ystop, ymin
+D.12 e0heat
+D.13 e1heat
+D.14 e2heat
+D.15 neopixel
+E.6 servo
+E.12 lcdcd
+E.14 lcdd5
+E.15 lcdd4
