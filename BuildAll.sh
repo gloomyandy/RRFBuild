@@ -25,6 +25,7 @@ rm -rf $OUTPUT
 ./BuildExpRelease.sh Debug RP2040 PITBV2_0 0 "-DUSE_SPICAN" "PITBV2_0"
 ./BuildExpRelease.sh Debug RP2040 STRIDEMAXV2_0 0 "-DUSE_SPICAN" "STRIDEMAXV2_0"
 ./BuildExpRelease.sh Debug RP2040 FYSETCSB2040V2 0 "-DUSE_SPICAN" "FSSB2040V2"
+./BuildExpRelease.sh Debug RP2350 MNBN17 1 "-DUSE_SPICAN" "MNBN17R1_5"
 for oem in boards/*; do
     for board in ${oem}/*_h743; do
         if [[ "$(basename $board)" != "*_h743" ]]; then
