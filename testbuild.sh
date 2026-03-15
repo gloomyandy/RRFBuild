@@ -5,7 +5,6 @@ if [ "$#" -lt 7 ]; then
   exit 1
 fi
 
-echo $1 $2 $3 $4 $5 $6 $7 $8 $9
 BUILD=$1
 CORE=$2
 MCU=$3
@@ -17,7 +16,7 @@ STARTUP_DELAY=${8:--DSTARTUP_DELAY=10000}
 CRC=${9:-RepRapFirmware/Tools/CrcAppender/win-x86-64/CrcAppender.exe}
 
 OUTPUT="firmware_${BOARD}.bin"
-
+arm-none-eabi-gcc --version
 make -j8 firmware CORE=${CORE} MCU=${MCU} NETWORK=${NETWORK} BUILD=${BUILD} VARIANT=${VARIANT} STARTUP_DELAY=${STARTUP_DELAY} OUTPUT_NAME=base_${VARIANT,,}
 if [ -f ./build/base_${VARIANT,,}.bin ]; then
     cp ./build/base_${VARIANT,,}.bin build/${OUTPUT}
