@@ -55,7 +55,7 @@
                 "SUPPORT_TMC51xx"
             ],
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2020-q4-major\\bin\\arm-none-eabi-gcc.exe",
+            "compilerPath": "C:\\Program Files\\Arm\\GNU Toolchain mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
             "compilerArgs": [
                 "-mfpu=fpv4-sp-d16",
                 "-mfloat-abi=hard",
@@ -111,7 +111,7 @@
                 "SUPPORT_TMC51xx"
             ],
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2020-q4-major\\bin\\arm-none-eabi-gcc.exe",
+            "compilerPath": "C:\\Program Files\\Arm\\GNU Toolchain mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
             "compilerArgs": [
                 "-mfpu=fpv4-sp-d16",
                 "-mfloat-abi=hard",
@@ -163,7 +163,7 @@
                 "USE_SD=1"
            ],
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2020-q4-major\\bin\\arm-none-eabi-gcc.exe",
+            "compilerPath": "C:\\Program Files\\Arm\\GNU Toolchain mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
             "compilerArgs": [
                 "-mfpu=fpv4-sp-d16",
                 "-mfloat-abi=hard",
@@ -227,7 +227,7 @@
                 "SUPPORT_TMC22xx"
             ],
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2020-q4-major\\bin\\arm-none-eabi-gcc.exe",
+            "compilerPath": "C:\\Program Files\\Arm\\GNU Toolchain mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
             "compilerArgs": [
                 "-mfpu=fpv4-sp-d16",
                 "-mfloat-abi=hard",
