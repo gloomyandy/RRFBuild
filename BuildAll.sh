@@ -7,7 +7,6 @@ OUTPUT=releases/${VER}/
 rm -rf $OUTPUT
 ./BuildRelease.sh Debug STM32 STM32H7 STM32H743 COMBINED base_stm32h743
 ./BuildRelease.sh Debug STM32 STM32H7 STM32H723 COMBINED base_stm32h723
-./BuildRelease.sh Debug STM32 STM32F4 "" COMBINED base_stm32f4
 ./BuildIAPRelease.sh Debug STM32 STM32H7 STM32H723 COMBINED stm32h723_iap_SBC
 ./BuildIAPRelease.sh Debug STM32 STM32H7 STM32H743 COMBINED stm32h743_iap_SBC
 ./BuildIAPRelease.sh Debug STM32 STM32F4 "" COMBINED stm32f4_iap_SBC
@@ -40,13 +39,6 @@ for oem in boards/*; do
             ./BuildBoardRelease.sh Debug STM32H723 COMBINED $(basename $oem) $(basename $board) base_stm32h723 firmware_$(basename $board) stm32h723_iap_SBC
             ./BuildIAPBLRelease.sh DEBUG STM32 STM32H7 STM32H723 $(basename $oem) $(basename $board)
         fi
-    done
-done
-for oem in boards/*; do
-    for board in ${oem}/*_f4; do
-       if [[ "$(basename $board)" != "*_f4" ]]; then
-           ./BuildBoardRelease.sh Debug STM32F4 COMBINED $(basename $oem) $(basename $board) base_stm32f4 firmware_$(basename $board) stm32f4_iap_SBC
-       fi
     done
 done
 
