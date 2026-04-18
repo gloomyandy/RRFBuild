@@ -1,7 +1,7 @@
 #!/bin/sh
 echo $1 $2 $3 $4 $5 $6 $7 $8 $9
 if [ "$#" -lt 7 ]; then
-  echo "Usage: $0 BUILDTYPE CORE MCU MCU_VARIANT NETWORK OEM BOARDNAME OEM [BOOT_DELAY] [CRC]" >&2
+  echo "Usage: $0 BUILDTYPE CORE MCU MCU_VARIANT NETWORK OEM BOARDNAME [BOOT_DELAY] [CRC]" >&2
   exit 1
 fi
 

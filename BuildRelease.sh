@@ -1,6 +1,6 @@
 #!/bin/sh
 if [ "$#" -lt 6 ]; then
-  echo "Usage: $0 BUILDTYPE CORE MCU MCU_VARIANT NETWORK BOARDNAME OUTNAME [BOOT_DELAY]" >&2
+  echo "Usage: $0 BUILDTYPE CORE MCU MCU_VARIANT NETWORK OUTNAME [BOOT_DELAY]" >&2
   exit 1
 fi
 
