@@ -1,4 +1,5 @@
 CORE ?= STM32
 MCU ?= STM32F4
-MAKE_DIR ?= RepRapFirmware/makefiles/$(MCU)
+PROJECT ?= RepRapFirmware
+MAKE_DIR ?= Makefiles/$(PROJECT)/$(MCU)
 include $(MAKE_DIR)/makefile
