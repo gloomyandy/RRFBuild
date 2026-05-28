@@ -21,8 +21,8 @@ mkdir -p ${OUTPUT}/map
 rm -f ${OUTPUT}/map/${BOARDNAME}.*
 rm -f ${OUTPUT}/expansion/${BOARDNAME}.*
 
-make distclean MAKE_DIR=Duet3Expansion/makefiles
-make -j8 PROJECT=Duet3Expansion MCU=RPXXXX BUILD=${BUILD} PROCESSOR=${PROCESSOR} BOARD=${BOARD} BOARD_REV=${BOARD_REV} CANFLAGS=${CANFLAGS} MAKE_DIR=Duet3Expansion/makefiles OUTPUT_NAME=Duet3Firmware_${BOARDNAME} all
+make distclean PROJECT=Duet3Expansion MCU=RPXXXX
+make -j8 PROJECT=Duet3Expansion MCU=RPXXXX BUILD=${BUILD} PROCESSOR=${PROCESSOR} BOARD=${BOARD} BOARD_REV=${BOARD_REV} CANFLAGS=${CANFLAGS} OUTPUT_NAME=Duet3Firmware_${BOARDNAME} all
 if [ -f ./expbuild/Duet3Firmware_${BOARDNAME}.uf2 ]; then
     mv ./expbuild/Duet3Firmware_${BOARDNAME}.uf2 ${OUTPUT}/expansion/Duet3Firmware_${BOARDNAME}.uf2
     mv ./expbuild/Duet3Firmware_${BOARDNAME}.map ${OUTPUT}/map/Duet3Firmware_${BOARDNAME}.map
