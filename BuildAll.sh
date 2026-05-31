@@ -50,7 +50,9 @@ done
 
 # Try and force the use of particular WiFi version based on RRF version
 case "$VER" in
-    "3.6."*) WIFIVER=2.2.1 ;;
+    "3.6.0"*) WIFIVER=2.2.1 ;;
+    "3.6.1"*) WIFIVER=2.2.1 ;;
+    "3.6.2"*) WIFIVER=2.2.1 ;;
     *) WIFIVER=`awk 'sub(/.*VERSION_MAIN/,""){print $1}' WiFiSocketServerRTOS/src/Config.h  | awk 'gsub(/"/, "", $1)'` ;;
 esac
 echo "WiFi Version:" $WIFIVER
@@ -86,4 +88,6 @@ date -d@$(expr $endTime - $beginTime) -u +%H:%M:%S
 
 set -e
 export SHELLOPTS
+# Force specific GCC for this build
+export GCC_PATH="C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin/"
 DoBuild 2>&1 | tee buildlog.txt
