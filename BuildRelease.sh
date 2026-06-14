@@ -17,6 +17,8 @@ VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | aw
 
 OUTPUT=releases/${VER}
 echo $OUTNAME
+echo $GCC_PATH
+
 mkdir -p ${OUTPUT}
 mkdir -p ${OUTPUT}/base
 mkdir -p ${OUTPUT}/map
