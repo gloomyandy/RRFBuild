@@ -138,11 +138,11 @@ FLAGS += $(DEBUG_FLAGS)
 #FLAGS += -MMD -MP 
 
 CFLAGS   = $(FLAGS) -std=gnu99 -O2 -Dnoexcept= 
-CXXFLAGS = $(FLAGS) -std=gnu++17 -O3 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
-CXXFLAGS_RRFL = $(FLAGS) -std=gnu++17 -O2 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
-CXXFLAGS_CORE = $(FLAGS) -std=gnu++17 -O3 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
-CXXFLAGS_RTOS = $(FLAGS) -std=gnu++17 -O3 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
-CXXFLAGS_CANLIB = $(FLAGS) -std=gnu++17 -O2 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
+CXXFLAGS = $(FLAGS) -std=c++20 -O3 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
+CXXFLAGS_RRFL = $(FLAGS) -std=c++20 -O2 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
+CXXFLAGS_CORE = $(FLAGS) -std=c++20 -O3 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
+CXXFLAGS_RTOS = $(FLAGS) -std=c++20 -O3 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
+CXXFLAGS_CANLIB = $(FLAGS) -std=c++20 -O2 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register -Wsuggest-override
 
 #$(info  - SDK Include: $(SDK_INCLUDES))
 

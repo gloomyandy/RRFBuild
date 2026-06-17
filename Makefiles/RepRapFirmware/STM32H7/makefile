@@ -123,10 +123,10 @@ endif
 $(info - Output name: $(OUTPUT_NAME))
 
 CFLAGS   = $(FLAGS) -std=gnu11 -fgnu89-inline -Dnoexcept=
-CXXFLAGS = $(FLAGS) -std=gnu++17 -fno-threadsafe-statics -fexceptions -fno-rtti -Wno-register
-CXXFLAGS_RRFL = $(FLAGS) -std=gnu++17 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register
-CXXFLAGS_CORE = $(FLAGS) -std=gnu++17 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register
-CXXFLAGS_CANLIB = $(FLAGS) -std=gnu++17 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register
+CXXFLAGS = $(FLAGS) -std=c++20 -fno-threadsafe-statics -fexceptions -fno-rtti -Wno-register
+CXXFLAGS_RRFL = $(FLAGS) -std=c++20 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register
+CXXFLAGS_CORE = $(FLAGS) -std=c++20 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register
+CXXFLAGS_CANLIB = $(FLAGS) -std=c++20 -fno-threadsafe-statics -fno-exceptions -fno-rtti -Wno-register
 
 
 #all Includes (RRF + Core)
