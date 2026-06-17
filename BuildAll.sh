@@ -82,5 +82,8 @@ date -d@$(expr $endTime - $beginTime) -u +%H:%M:%S
 set -e
 export SHELLOPTS
 # Force specific GCC for this build
-export GCC_PATH="C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin/"
+case "$VER" in
+    "3.6"*) export GCC_PATH="C:/Program Files (x86)/Arm GNU Toolchain arm-none-eabi/13.2 Rel1/bin/" ;;
+    *)  ;;
+esac
 DoBuild 2>&1 | tee buildlog.txt
