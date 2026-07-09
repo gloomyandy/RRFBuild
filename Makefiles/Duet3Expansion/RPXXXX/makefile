@@ -61,6 +61,11 @@ ifeq ($(PROCESSOR),RP2350)
 	MCU_DIR = rp2350
 	LDNAME = rp2350_flash
 endif
+ifeq ($(BOARD),MNBN17)
+	# The closed-loop control loop needs 200MHz to sustain its default 12.5kHz rate; the QSPI flash
+	# clock (sys/2) stays within the flash rating. See BOARD_OVERCLOCK_SYS_KHZ in CoreN2G PicoInit.
+	FLAGS  += -DBOARD_OVERCLOCK_SYS_KHZ=200000
+endif
 
 
 ifeq ($(BUILD),Debug)
