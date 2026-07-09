@@ -1,7 +1,7 @@
 #---EXP---
 EXP_SRC_BASE  = $(EXP_DIR)/src
 
-EXP_SRC_DIRS = CAN ClosedLoop CommandProcessing Config Fans FilamentMonitors GPIO Hardware/RP2040 Hardware Heating Heating/Sensors InputMonitors 
+EXP_SRC_DIRS = CAN ClosedLoop ClosedLoop/Encoders CommandProcessing Config Fans FilamentMonitors GPIO Hardware/RP2040 Hardware Heating Heating/Sensors InputMonitors 
 EXP_SRC_DIRS += Movement Movement/StepperDrivers Movement/Kinematics Hardware/Drivers Platform LedStrips libc
 #Find the c and cpp source files
 EXP_SRC = $(addprefix $(EXP_SRC_BASE)/, $(EXP_SRC_DIRS)) $(EXP_SRC_BASE)
