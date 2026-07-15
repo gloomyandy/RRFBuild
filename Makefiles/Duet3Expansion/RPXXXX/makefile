@@ -108,10 +108,10 @@ ifeq ($(PROCESSOR),RP2040)
 		 -Wl,--wrap=sin -Wl,--wrap=sincos -Wl,--wrap=sincosf -Wl,--wrap=sinf -Wl,--wrap=sinh -Wl,--wrap=sinhf -Wl,--wrap=sqrt\
 		 -Wl,--wrap=sqrtf -Wl,--wrap=tan -Wl,--wrap=tanf -Wl,--wrap=tanh -Wl,--wrap=tanhf -Wl,--wrap=trunc -Wl,--wrap=truncf
 endif
-ifeq ($(PROCESSOR),RP2040)
+ifeq ($(PROCESSOR),RP2350)
 	LINK_WRAP = -Wl,--wrap=acos -Wl,--wrap=acosf -Wl,--wrap=acosh -Wl,--wrap=acoshf -Wl,--wrap=__aeabi_cdcmpeq -Wl,--wrap=__aeabi_cdcmple\
-		 -Wl,--wrap=__aeabi_cdrcmple -Wl,--wrap=__aeabi_d2f -Wl,--wrap=__aeabi_d2iz -Wl,--wrap=__aeabi_d2lz -Wl,--wrap=__aeabi_d2uiz\
-		 -Wl,--wrap=__aeabi_d2ulz -Wl,--wrap=__aeabi_dadd -Wl,--wrap=__aeabi_dcmpeq -Wl,--wrap=__aeabi_dcmpge -Wl,--wrap=__aeabi_dcmpgt\
+		 -Wl,--wrap=__aeabi_cdrcmple -Wl,--wrap=__aeabi_d2f -Wl,--wrap=__aeabi_d2iz -Wl,--wrap=__aeabi_d2uiz\
+		 -Wl,--wrap=__aeabi_dadd -Wl,--wrap=__aeabi_dcmpeq -Wl,--wrap=__aeabi_dcmpge -Wl,--wrap=__aeabi_dcmpgt\
 		 -Wl,--wrap=__aeabi_dcmple -Wl,--wrap=__aeabi_dcmplt -Wl,--wrap=__aeabi_dcmpun -Wl,--wrap=__aeabi_ddiv -Wl,--wrap=__aeabi_dmul\
 		 -Wl,--wrap=__aeabi_drsub -Wl,--wrap=__aeabi_dsub -Wl,--wrap=__aeabi_i2d -Wl,--wrap=__aeabi_l2d -Wl,--wrap=__aeabi_ui2d\
 		 -Wl,--wrap=__aeabi_ul2d -Wl,--wrap=asin -Wl,--wrap=asinf -Wl,--wrap=asinh -Wl,--wrap=asinhf -Wl,--wrap=atan -Wl,--wrap=atan2\
@@ -124,7 +124,7 @@ ifeq ($(PROCESSOR),RP2040)
 		 -Wl,--wrap=logf -Wl,--wrap=pow -Wl,--wrap=powf -Wl,--wrap=powint -Wl,--wrap=powintf -Wl,--wrap=remainder -Wl,--wrap=remainderf\
 		 -Wl,--wrap=remquo -Wl,--wrap=remquof -Wl,--wrap=round -Wl,--wrap=roundf -Wl,--wrap=sin -Wl,--wrap=sincos -Wl,--wrap=sincosf\
 		 -Wl,--wrap=sinf -Wl,--wrap=sinh -Wl,--wrap=sinhf -Wl,--wrap=sqrt -Wl,--wrap=tan -Wl,--wrap=tanf -Wl,--wrap=tanh\
-		 -Wl,--wrap=tanhf -Wl,--wrap=trunc -Wl,--wrap=truncf -Wl,--wrap=memcpy
+		 -Wl,--wrap=tanhf -Wl,--wrap=trunc -Wl,--wrap=truncf
 endif
 
 #Path to the linker Script
@@ -191,7 +191,7 @@ $(BUILD_DIR)/$(OUTPUT_NAME).elf: $(BUILD_DIR)/libCoreN2G.a $(BUILD_DIR)/libFreeR
 	@echo "\nCreating $(OUTPUT_NAME).bin"
 	$(V)$(MKDIR) $(dir $@)
 	$(V)$(CXX) -L$(BUILD_DIR)/ -L$(COREN2G_DIR)/src/RP2040/lib/$(MCU_DIR)/ -Os --specs=nano.specs -Wl,--gc-sections -Wl,--fatal-warnings\
-		-Wl,--no-warn-rwx-segment -fno-exceptions -mcpu=cortex-m0plus -T$(LINKER_SCRIPT) $(LINK_WRAP) \
+		-Wl,--no-warn-rwx-segment -fno-exceptions $(PROCFLAGS) -T$(LINKER_SCRIPT) $(LINK_WRAP) \
 		-Wl,--undefined=runtime_init_install_ram_vector_table\
 		-Wl,--undefined=__pre_init_runtime_init_clocks\
 		-Wl,--undefined=__pre_init_runtime_init_bootrom_reset\
