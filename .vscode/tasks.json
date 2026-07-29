@@ -281,6 +281,37 @@
         "problemMatcher": "$gcc"
       },
       {
+        "label": "build e3pro-H7Ultra h723 firmware",
+        "type": "shell",
+        "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H723 COMBINED fly e3ultra_h723",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
         "label": "build c8pro h723 firmware",
         "type": "shell",
         "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H723 COMBINED fly c8p_1_0_h723",

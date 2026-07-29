@@ -21,13 +21,13 @@ drivers.
 
 Timers
 ======
-* TIM1 : Software UART (16bit Baud rate * 4 (oversampling)) and Neopixels
+* TIM1 : Hardware PWM
 * TIM2 : Hardware PWM
-* TIM3 : Hardware PWM
+* TIM3 : Step Timer (Extended to 32 bit 750KHz) and CAN-FD Timestamps
 * TIM4 : Hardware PWM
-* TIM5 : Step Timer (32 bit 750KHz)
-* TIM6 : Unused
-* TIM7 : Software PWM (16 bit 1MHz)
+* TIM5 : Hardware PWM
+* TIM6 : Software UART (16 bit. Baud rate * 4 (oversampling)) and Neopixels
+* TIM7 : Software PWM (16 bit. 1MHz)
 * TIM8 : Hardware PWM
 * TIM12 : Hardware PWM
 * TIM13 : Hardware PWM
@@ -35,11 +35,13 @@ Timers
 * TIM15 : Hardware PWM
 * TIM16 : Hardware PWM
 * TIM17 : Hardware PWM
+* TIM23 (STM32H723): Unused
+* TIM24 (STM32H723): Unused
 * IWDG : Watchdog
 
 PWM outputs
 ===========
-* Hardware PWM is provided using the STM32F4 timers
+* Hardware PWM is provided using the STM32 timers
 * Each timer can drive up to 4 GPIO pins, all pins sharing a timer must use the same base frequency
 * RRF supports up to 16 software driven PWM channels, these may be used with any GPIO pin
 
@@ -48,9 +50,7 @@ can be found here:
 CoreN2G\src\STM32\variants\STM32H723\PeripheralPins.c
 CoreN2G\src\STM32\variants\STM32H743\PeripheralPins.c
 
-In the current release there is a fixed mapping between a selected pin and the timer used to
-drive it via PWM. Future versions may relax this and allow the selection of timer based on
-pin and selected frequency.
+The selection of a timer is based on pin and selected frequency.
 
 SPI
 ===
@@ -107,7 +107,7 @@ CRC Unit
 
 USARTs
 ======
-RRF currently uses only two serial devices, AUX and the WiFi interface. These are
+RRF currently uses only three serial devices, AUX, AUX2 and the WiFi interface. These are
 mapped based upon the selected pins to an actual hardware UART device. In versions 
 prior to V3.3-beta3 the only hardware UARTS enabled were 1, 3 and 6. In v3.3-beta3
 and later UARTS 1-6 are all available.
