@@ -2,130 +2,6 @@
     "version": "2.0.0",
     "tasks": [
       {
-        "label": "build skr2 f4 firmware",
-        "type": "shell",
-        "command": "bash ./testbuild.sh Debug STM32 STM32F4 STM32F4 COMBINED btt skr2_f4",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build octopus pro f4 firmware",
-        "type": "shell",
-        "command": "bash ./testbuild.sh Debug STM32 STM32F4 STM32F4 COMBINED btt octopuspro1_0_f4",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },      
-      {
-        "label": "build gemini 1.0 f4 firmware",
-        "type": "shell",
-        "command": "bash ./testbuild.sh Debug STM32 STM32F4 STM32F4 COMBINED fly gemini1_0_f4",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build super8 f4 firmware",
-        "type": "shell",
-        "command": "bash ./testbuild.sh Debug STM32 STM32F4 STM32F4 COMBINED fly super8_f4",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },      
-      {
         "label": "build super8pro h743 firmware",
         "type": "shell",
         "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H743 COMBINED fly super8pro_h743",
@@ -281,6 +157,37 @@
         "problemMatcher": "$gcc"
       },
       {
+        "label": "build release super5 pro h723 firmware",
+        "type": "shell",
+        "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H723 COMBINED fly super5_h723 0",
+        "osx": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "linux": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "windows": {
+          "options": {
+            "env": {
+              "PATH": "${env:PATH}"
+            }
+          }
+        },
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": "$gcc"
+      },
+      {
         "label": "build e3pro-H7Ultra h723 firmware",
         "type": "shell",
         "command": "bash ./testbuild.sh Debug STM32 STM32H7 STM32H723 COMBINED fly e3ultra_h723",
@@ -343,40 +250,9 @@
         "problemMatcher": "$gcc"
       },
       {
-        "label": "build STMF4 IAP",
-        "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32F4 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32F4 OUTPUT_NAME=stm32f4_iap_SBC all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
         "label": "build STMH743 IAP",
         "type": "shell",
-        "command": "make -j8 PROJECT=IAP CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H743 OUTPUT_NAME=stm32h743_iap_SBC all",
+        "command": "make -j8 PROJECT=IAP CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER VARIANT=STM32H743 OUTPUT_NAME=stm32h743_iap_SBC all",
         "osx": {
           "options": {
             "env": {
@@ -407,7 +283,7 @@
       {
         "label": "build STMH723 IAP",
         "type": "shell",
-        "command": "make -j8 PROJECT=IAP CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 OUTPUT_NAME=stm32h743_iap_SBC all",
+        "command": "make -j8 PROJECT=IAP CORE=STM32 MCU=STM32H7 CONFIG=IAP_SPI_LOADER VARIANT=STM32H723 OUTPUT_NAME=stm32h743_iap_SBC all",
         "osx": {
           "options": {
             "env": {
@@ -439,68 +315,6 @@
         "label": "build fly super5_h723 IAPBL",
         "type": "shell",
         "command": "bash ./testbuildiapbl.sh DEBUG STM32 STM32H7 STM32H723 fly super5_h723",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build STMH723 IAPBLSDCAN",
-        "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32H7 CONFIG=IAP_BOOT_LOADER USE_CAN=1 USE_SD=1 SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32H7 VARIANT=STM32H723 OUTPUT_NAME=stm32h723_bootloader_2_can all",
-        "osx": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "linux": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "windows": {
-          "options": {
-            "env": {
-              "PATH": "${env:PATH}"
-            }
-          }
-        },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": "$gcc"
-      },
-      {
-        "label": "build STMF4 IAPBL",
-        "type": "shell",
-        "command": "make -j8 CORE=STM32 MCU=STM32F4 CONFIG=IAP_BOOT_LOADER SDTYPE=2 MAKE_DIR=IAP/makefiles/STM32F4 OUTPUT_NAME=stm32f4_botloader_2 all",
         "osx": {
           "options": {
             "env": {

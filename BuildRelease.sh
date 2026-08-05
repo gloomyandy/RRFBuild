@@ -11,7 +11,7 @@ MCU=$3
 VARIANT=$4
 NETWORK=$5
 OUTNAME=$6
-STARTUP_DELAY=$7
+STARTUP_DELAY=${7:-0}
 #extract firmware version from header file
 VER=`awk 'sub(/.*MAIN_VERSION/,""){print $1}' RepRapFirmware/src/Version.h  | awk 'gsub(/"/, "", $1)'`
 

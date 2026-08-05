@@ -21,10 +21,10 @@
                 "${workspaceFolder}/CoreN2G/src/",
                 "${workspaceFolder}/CoreN2G/src/STM32/SharedSPI",
                 "${workspaceFolder}/RepRapFirmware/src/Hardware",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/Hardware",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/Libraries/Fatfs",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/**",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC/Hardware",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC/Libraries/Fatfs",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC/**",
                 "${workspaceFolder}/RepRapFirmware/src",
                 "${workspaceFolder}/RepRapFirmware/src/Libraries",
                 "${workspaceFolder}/RepRapFirmware/src/Movement",
@@ -52,10 +52,12 @@
                 "SUPPORT_CAN=1",
                 "ESP8266WIFI",
                 "SUPPORT_TMC22xx",
-                "SUPPORT_TMC51xx"
+                "SUPPORT_TMC51xx",
+                "TG_BTC=1",
+                "TGBTC=1"
             ],
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "C:\\Program Files\\Arm\\GNU Toolchain mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+            "compilerPath": "C:\\Arm\\arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
             "compilerArgs": [
                 "-mfpu=fpv4-sp-d16",
                 "-mfloat-abi=hard",
@@ -65,7 +67,7 @@
                 "-nostdlib"
             ],
             "cStandard": "c11",
-            "cppStandard": "c++17"
+            "cppStandard": "c++20"
         },
         {
             "name": "RRF F4 ARM none eabi GCC",
@@ -76,10 +78,10 @@
                 "${workspaceFolder}/CoreN2G/src/STM32/SharedSPI",
                 "${workspaceFolder}/CoreN2G/src/STM32/MCP2517FD",
                 "${workspaceFolder}/RepRapFirmware/src/Hardware",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/Hardware",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/Libraries/Fatfs",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/**",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC/Hardware",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC/Libraries/Fatfs",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC/**",
                 "${workspaceFolder}/RepRapFirmware/src",
                 "${workspaceFolder}/RepRapFirmware/src/Movement",
                 "${workspaceFolder}/RepRapFirmware/src/Movement/StepperDrivers",
@@ -121,7 +123,7 @@
                 "-nostdlib"
             ],
             "cStandard": "c11",
-            "cppStandard": "c++17"
+            "cppStandard": "c++20"
         },
         {
             "name": "IAP H7 ARM none eabi GCC",
@@ -132,10 +134,10 @@
                 "${workspaceFolder}/CoreN2G/src/STM32/SharedSPI",
                 "${workspaceFolder}/IAP/src",
                 "${workspaceFolder}/RepRapFirmware/src/Hardware",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/Hardware",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/Libraries/Fatfs",
-                "${workspaceFolder}/RepRapFirmware/src/Hardware/STM32/**",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC/Hardware",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC/Libraries/Fatfs",
+                "${workspaceFolder}/RepRapFirmware/src/Hardware/TGBTC/**",
                  "${workspaceFolder}/RepRapFirmware/src",
                 "${workspaceFolder}/RepRapFirmware/src/Libraries/Fatfs",
                 "${workspaceFolder}/RRFLibraries/src",
@@ -163,7 +165,7 @@
                 "USE_SD=1"
            ],
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "C:\\Program Files\\Arm\\GNU Toolchain mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+            "compilerPath": "C:\\Arm\\arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
             "compilerArgs": [
                 "-mfpu=fpv4-sp-d16",
                 "-mfloat-abi=hard",
@@ -173,7 +175,7 @@
                 "-nostdlib"
             ],
             "cStandard": "c11",
-            "cppStandard": "c++17"
+            "cppStandard": "c++20"
         },
         {
             "name": "EXP ARM none eabi GCC",
@@ -227,7 +229,7 @@
                 "SUPPORT_TMC22xx"
             ],
             "intelliSenseMode": "gcc-arm",
-            "compilerPath": "C:\\Program Files\\Arm\\GNU Toolchain mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
+            "compilerPath": "C:\\Arm\\arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe",
             "compilerArgs": [
                 "-mfpu=fpv4-sp-d16",
                 "-mfloat-abi=hard",
@@ -237,7 +239,7 @@
                 "-nostdlib"
             ],
             "cStandard": "c11",
-            "cppStandard": "c++17"
+            "cppStandard": "c++20"
         }
     ],
     "version": 4

@@ -1,25 +1,25 @@
 #---RepRapFirmware---
 RRF_SRC_BASE  = $(REPRAPFIRMWARE_DIR)/src
 
-RRF_SRC_DIRS = FilamentMonitors GCodes GCodes/GCodeBuffer Heating 
+RRF_SRC_DIRS = FilamentMonitors GCodes GCodes/GCodeBuffer Heating
 RRF_SRC_DIRS += Movement Movement/BedProbing Movement/Kinematics Movement/HeightControl
 RRF_SRC_DIRS += Storage Libraries/sha1 Comms Platform PrintMonitor Accelerometers
 RRF_SRC_DIRS += Heating/Sensors Fans ObjectModel Endstops Hardware Hardware/Spi Tools
 RRF_SRC_DIRS += Display Display/Lcd Display/Lcd/Fonts Display/Lcd/ST7567 Display/Lcd/ST7920 GPIO bossa
 RRF_SRC_DIRS += CAN ClosedLoop InputMonitors LedStrips
 #STM RRF Addons
-RRF_SRC_DIRS += Hardware/STM32 Hardware/STM32/Libraries/Fatfs
-RRF_SRC_DIRS += Hardware/STM32/Hardware
+RRF_SRC_DIRS += Hardware/TGBTC Hardware/TGBTC/Libraries/Fatfs
+RRF_SRC_DIRS += Hardware/TGBTC/Hardware
 
 #networking support?
 ifeq ($(NETWORK), ETHERNET)
 	$(info Ethernet is not supported on STM32H7:)
 else ifeq ($(NETWORK), COMBINED) 
-	RRF_SRC_DIRS += Networking Networking/ESP8266WiFi Hardware/STM32/Networking/ESP8266WiFi
+	RRF_SRC_DIRS += Networking Networking/ESP8266WiFi Hardware/TGBTC/Networking/ESP8266WiFi
 	RRF_SRC_DIRS += Networking/MQTT Networking/MQTT/MQTT_C/src
 	RRF_SRC_DIRS += Sbc
 else ifeq ($(NETWORK), WIFI) 
-	RRF_SRC_DIRS += Networking Networking/ESP8266WiFi Hardware/STM32/Networking/ESP8266WiFi
+	RRF_SRC_DIRS += Networking Networking/ESP8266WiFi Hardware/TGBTC/Networking/ESP8266WiFi
 	RRF_SRC_DIRS += Networking/MQTT Networking/MQTT/MQTT_C/src
 else ifeq ($(NETWORK), SBC)
 	RRF_SRC_DIRS += Sbc Networking
@@ -29,9 +29,9 @@ else
 endif
 
 ifeq ($(TMC22XX), true)
-	RRF_SRC_DIRS += Hardware/STM32/Movement/StepperDrivers
+	RRF_SRC_DIRS += Hardware/TGBTC/Movement/StepperDrivers
 else ifeq ($(TMC51XX), true)
-	RRF_SRC_DIRS += Hardware/STM32/Movement/StepperDrivers
+	RRF_SRC_DIRS += Hardware/TGBTC/Movement/StepperDrivers
 endif
 
 #Find the c and cpp source files

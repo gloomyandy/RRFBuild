@@ -12,9 +12,9 @@ VARIANT=$4
 NETWORK=$5
 OEM=$6
 BOARD=$7
-STARTUP_DELAY=${8:--DSTARTUP_DELAY=10000}
+STARTUP_DELAY=${8:-10000}
 CRC=${9:-RepRapFirmware/Tools/CrcAppender/win-x86-64/CrcAppender.exe}
-
+echo "SD ${STARTUP_DELAY}"
 OUTPUT="firmware_${BOARD}.bin"
 arm-none-eabi-gcc --version
 make -j8 firmware CORE=${CORE} MCU=${MCU} NETWORK=${NETWORK} BUILD=${BUILD} VARIANT=${VARIANT} STARTUP_DELAY=${STARTUP_DELAY} OUTPUT_NAME=base_${VARIANT,,}

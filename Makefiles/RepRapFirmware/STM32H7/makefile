@@ -20,7 +20,7 @@ USETINYUSB ?= true
 
 GCC_PATH ?=
 
-STARTUP_DELAY ?= -DSTARTUP_DELAY=10000
+STARTUP_DELAY ?= 10000
 
 #Comment out to show compilation commands (verbose)
 V=@
@@ -52,8 +52,8 @@ include $(MAKE_DIR)/CANLib.mk
 include $(MAKE_DIR)/RepRapFirmware.mk
 
 ifeq ($(BUILD),Debug)
-    DEBUG_FLAGS = -Os -g -DSTM32_DEBUG $(STARTUP_DELAY)
-    $(info - Build: Debug) 
+    DEBUG_FLAGS = -Os -g -DSTM32_DEBUG -DSTARTUP_DELAY=$(STARTUP_DELAY)
+    $(info - Build: Debug Startup: $(STARTUP_DELAY)) 
 else
     DEBUG_FLAGS = -Os
     $(info - Build: Release)
@@ -61,7 +61,7 @@ endif
 	
 
 #Linker script to avoid built in Bootloader
-LINKER_SCRIPT_BASE = $(REPRAPFIRMWARE_DIR)/src/Hardware/STM32/variants/$(VARIANT)/ldscript
+LINKER_SCRIPT_BASE = $(REPRAPFIRMWARE_DIR)/src/Hardware/TGBTC/variants/$(VARIANT)/ldscript
 
 
 
@@ -74,7 +74,7 @@ $(info - Linker Script used: $(LINKER_SCRIPT))
 FLAGS  = -flto=auto -D__$(PROCESSOR)__ -D_XOPEN_SOURCE -DSTM32 -DSTM32H7 -D$(VARIANT)xx -DSTM32H7xx
 
 # UART configuration
-FLAGS  += -DHAVE_HWSERIAL1 -DHAVE_HWSERIAL2 -DHAVE_HWSERIAL3 -DHAVE_HWSERIAL4 -DHAVE_HWSERIAL5 -DHAVE_HWSERIAL6 -DUSB_CDC_USE_DTR
+FLAGS  += -DUSB_CDC_USE_DTR
 FLAGS  += -DUSE_UART0=1 -DUSE_UART1=1 -DUSE_UART2=1 -DSUPPORT_USB=1
 # SPI configuration
 FLAGS  += -DUSE_SSP1=1 -DUSE_SSP2=1 -DUSE_SSP3=1 -DUSE_SSP4=1 -DUSE_SSP5=1 -DUSE_SSP6=1 -DUSE_SWSPI=1
@@ -83,7 +83,7 @@ FLAGS  += -DUSE_SDIO=1
 # General configuration
 FLAGS += -DRTOS -DFREERTOS_USED -DUSB_PRODUCT=\"RepRapFirmware\" -DVECT_TAB_OFFSET=0x20000
 #FLAGS += -DRTOS -DFREERTOS_USED -DUSB_PRODUCT=\"RepRapFirmware\" -DVECT_TAB_OFFSET=0x00000
-FLAGS += -DHAL_RRF=1 -DFORCE_ESTACK=1 -DSUPPORT_CAN=1
+FLAGS += -DTG_BTC=1 -DTGBTC=1 -DHAL_RRF=1 -DFORCE_ESTACK=1 -DSUPPORT_CAN=1
 FLAGS +=  -Wall -c -mfpu=fpv5-d16 -mfloat-abi=hard -mfp16-format=ieee -mcpu=cortex-m7 -mthumb -fno-math-errno -mno-unaligned-access -ffunction-sections -fdata-sections
 FLAGS += -nostdlib -Wdouble-promotion -fsingle-precision-constant -fstack-usage
 #FLAGS += -Wfloat-equal
