@@ -7,7 +7,7 @@ RRF_LIBRARY_SRC = $(RRF_LIBRARY_SRC_BASE) $(addprefix $(RRF_LIBRARY_SRC_BASE)/, 
 RRFLIBRARIES_OBJ_SRC_C      += $(foreach src, $(RRF_LIBRARY_SRC), $(wildcard $(src)/*.c) ) 
 RRFLIBRARIES_OBJ_SRC_CXX   += $(foreach src, $(RRF_LIBRARY_SRC), $(wildcard $(src)/*.cpp) )
 #RRF_INCLUDES += $(addprefix -I, $(RRF_LIBRARY_SRC))
-RRFLIBRARIES_INCLUDES = -I$(RRFLIBRARIES_DIR)/src
+RRFLIBRARIES_INCLUDES = -I$(RRFLIBRARIES_DIR)/src -I$(RRFLIBRARIES_DIR)/src/Math
 
 RRFLIBRARIES_OBJS = $(patsubst %.c,$(BUILD_DIR)/%.o,$(RRFLIBRARIES_OBJ_SRC_C)) $(patsubst %.cpp,$(BUILD_DIR)/%.o,$(RRFLIBRARIES_OBJ_SRC_CXX))
 #end RRF Libraries
