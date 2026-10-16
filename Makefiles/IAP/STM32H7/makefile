@@ -42,7 +42,7 @@ BUILDCONFIG += -DBOARD_NAME=\"$(BOARD_NAME)\" -DLED_PIN=$(LED_PIN) -DCAN_ADDRESS
 LDNAME=iapbl
 VECTOR= -DVECT_TAB_OFFSET=0x0000
 else
-BUILDCONFIG = -DUSE_SSP1=1 -DUSE_SSP2=1 -DUSE_SSP3=1
+BUILDCONFIG = -DUSE_SSP1=1 -DUSE_SSP2=1 -DUSE_SSP3=1 -DUSE_UART0=1
 SDTYPE=255
 LDNAME=iapspi
 ifeq ($(VARIANT),STM32H723)
@@ -93,7 +93,7 @@ $(info - Output name: $(OUTPUT_NAME))
 FLAGS  = -D__$(PROCESSOR)__ -D_XOPEN_SOURCE -DSTM32 -DSTM32H7 -D$(VARIANT)xx -DSTM32H7xx
 #Build config flags
 FLAGS += -D$(CONFIG)=1 -DSDTYPE=$(SDTYPE) $(BUILDCONFIG) -DUSE_SD=$(USE_SD) -DUSE_CAN=$(USE_CAN) -DCAN_READ=$(CAN_READ) -DCAN_WRITE=$(CAN_WRITE)
-FLAGS += -DSUPPORT_USB=1 -DUSBCON -DUSBD_USE_CDC -DUSB_PRODUCT=\"RepRapFirmware\" $(VECTOR)
+FLAGS += -DSUPPORT_USB=1 -DUSBCON -DUSBD_USE_CDC -DUSB_PRODUCT=\"IAP\" $(VECTOR)
 FLAGS += -DSTM32BTC=1 -DTGBTC=1 -DHAL_RRF=1 -DNO_PRINTF_FLOAT -DSUPPORT_CAN=$(USE_CAN)
 FLAGS +=  -Wall -c -mfpu=fpv5-d16 -mfloat-abi=hard -mfp16-format=ieee -mcpu=cortex-m7 -mthumb -fno-math-errno -mno-unaligned-access -ffunction-sections -fdata-sections
 FLAGS += -nostdlib -Wdouble-promotion -fsingle-precision-constant -fstack-usage
