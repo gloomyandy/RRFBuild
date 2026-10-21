@@ -25,7 +25,7 @@ rm -f ${OUTPUT}/base/${OUTNAME}.*
 rm -f ${OUTPUT}/map/${OUTNAME}.*
 
 make distclean PROJECT=IAP
-make -j8 PROJECT=IAP CORE=${CORE} MCU=${MCU} VARIANT=${VARIANT} CONFIG=IAP_SPI_LOADER OUTPUT_NAME=${OUTNAME} all
+make -j8 PROJECT=IAP CORE=${CORE} MCU=${MCU} VARIANT=${VARIANT} CONFIG=IAP_SPI_USB_LOADER OUTPUT_NAME=${OUTNAME} all
 if [ -f ./iapbuild/${OUTNAME}.bin ]; then
     mv ./iapbuild/${OUTNAME}.bin ${OUTPUT}/base/${OUTNAME}.bin
     mv ./iapbuild/${OUTNAME}.map ${OUTPUT}/map/${OUTNAME}.map
