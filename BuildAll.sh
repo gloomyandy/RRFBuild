@@ -53,6 +53,8 @@ case "$VER" in
     "3.6.0"*) WIFIVER=2.2.1 ;;
     "3.6.1"*) WIFIVER=2.2.1 ;;
     "3.6.2"*) WIFIVER=2.2.1 ;;
+    "3.6.3"*) WIFIVER=3.0.0 ;;
+    "3.6.4"*) WIFIVER=3.1.2 ;;
     *) WIFIVER=`awk 'sub(/.*VERSION_MAIN/,""){print $1}' WiFiSocketServerRTOS/src/Config.h  | awk 'gsub(/"/, "", $1)'` ;;
 esac
 echo "WiFi Version:" $WIFIVER
